@@ -9,6 +9,7 @@ import 'package:flutter_a2z/screens/buttons/my_radio_button.dart';
 import 'package:flutter_a2z/screens/buttons/my_toggle_button.dart';
 import 'package:flutter_a2z/screens/home/home_screen.dart';
 import 'package:flutter_a2z/screens/login/login_screen.dart';
+import 'package:flutter_a2z/screens/tab_view_layout/tab_view_layout.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
@@ -94,5 +95,14 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
     /*--------------------------------- Flutter BottomNavigationView : End---------------------------------*/
+
+    /*--------------------------------- TabViewLayout : Start ---------------------------------*/
+    case FLUTTER_TAB_VIEW_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => TabViewLayout(
+          title: FLUTTER_TAB_VIEW_SCREEN_TITLE,
+        ),
+      );
+    /*--------------------------------- TabViewLayout : End ---------------------------------*/
   }
 }

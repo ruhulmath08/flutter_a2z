@@ -15,6 +15,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   List<HomeCardItem> cardItemList = [];
+
   //MyPopupMenu _selectedMenus = myPopupMenu[0];
 
   @override
@@ -35,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: ListTile(
                   leading: popupMenu.icon,
                   title: Text(popupMenu.title),
-                  onTap: (){
+                  onTap: () {
                     selectedPopUpMenu(popupMenu);
                     Navigator.of(context).pop();
                   },
@@ -89,6 +90,9 @@ class _HomeScreenState extends State<HomeScreen> {
       case FLUTTER_BOTTOM_NAVIGATION_VIEW_SCREEN_TITLE:
         Navigator.pushNamed(context, FLUTTER_BOTTOM_NAVIGATION_VIEW_SCREEN_ROUTE);
         break;
+
+      case FLUTTER_TAB_VIEW_SCREEN_TITLE:
+        Navigator.pushNamed(context, FLUTTER_TAB_VIEW_SCREEN_ROUTE);
     }
   }
 }

@@ -41,3 +41,9 @@ const String FLUTTER_POPUP_BUTTON_SCREEN_TITLE = "Flutter Popup Button";
 const String FLUTTER_BOTTOM_NAVIGATION_VIEW_SCREEN_ROUTE = "/flutter_bottom_navigation";
 const String FLUTTER_BOTTOM_NAVIGATION_VIEW_SCREEN_TITLE = "BottomNavigation";
 /*--------------------------------- Button : End---------------------------------*/
+
+/*--------------------------------- TabViewLayout : Start---------------------------------*/
+const String FLUTTER_TAB_VIEW_SCREEN_ROUTE = "/flutter_tab_view";
+const String FLUTTER_TAB_VIEW_SCREEN_TITLE = "TabView";
+/*--------------------------------- TabViewLayout : End---------------------------------*/
+

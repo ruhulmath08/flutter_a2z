@@ -28,27 +28,29 @@ class _MyBottomNavigationState extends State<MyBottomNavigation> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectPage,
         selectedFontSize: 16,
-        onTap: (int index){
+        onTap: (int index) {
           setState(() {
             _selectPage = index;
           });
         },
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home),
-          label: "Home",
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: "Home",
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.dashboard),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.dashboard),
             label: "Daily",
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.landscape),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.landscape),
             label: "Landscape",
-          )
+          ),
         ],
       ),
     );
   }
 }
-
 
 //home page
 class HomePage extends StatefulWidget {
