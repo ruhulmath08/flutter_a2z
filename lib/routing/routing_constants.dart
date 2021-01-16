@@ -65,3 +65,12 @@ const String FLUTTER_CRUD_DELETE_SCREEN_ROUTE = "/flutter_crud_delete";
 const String FLUTTER_CRUD_DELETE_SCREEN_TITLE = "Flutter CRUD Delete";
 /*--------------------------------- Flutter CRUD : End---------------------------------*/
 
+/*--------------------------------- Flutter CARD : Start---------------------------------*/
+//flutter card
+const String FLUTTER_CARD_SCREEN_ROUTE = "/flutter_card";
+const String FLUTTER_CARD_SCREEN_TITLE = "Flutter Card";
+
+//flutter flip_card
+const String FLUTTER_FLIP_CARD_SCREEN_ROUTE = "/flutter_flip_card";
+const String FLUTTER_FLIP_CARD_SCREEN_TITLE = "Flutter Flip Card";
+/*--------------------------------- Flutter CARD : End---------------------------------*/

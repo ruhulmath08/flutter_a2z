@@ -7,6 +7,8 @@ import 'package:flutter_a2z/screens/buttons/my_dropdown_button.dart';
 import 'package:flutter_a2z/screens/buttons/my_popup_button.dart';
 import 'package:flutter_a2z/screens/buttons/my_radio_button.dart';
 import 'package:flutter_a2z/screens/buttons/my_toggle_button.dart';
+import 'package:flutter_a2z/screens/cards/flutter_card.dart';
+import 'package:flutter_a2z/screens/cards/flutter_flip_card/flutter_flip_card.dart';
 import 'package:flutter_a2z/screens/crud/flutter_crud/flutter_crud.dart';
 import 'package:flutter_a2z/screens/crud/flutter_crud_add/flutter_crud_add.dart';
 import 'package:flutter_a2z/screens/home/home_screen.dart';
@@ -105,6 +107,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
           title: FLUTTER_TAB_VIEW_SCREEN_TITLE,
         ),
       );
+      break;
     /*--------------------------------- TabViewLayout : End ---------------------------------*/
 
     /*--------------------------------- Flutter CRUD : Start---------------------------------*/
@@ -115,16 +118,39 @@ Route<dynamic> generateRoute(RouteSettings settings) {
           title: FLUTTER_CRUD_SCREEN_TITLE,
         ),
       );
+      break;
 
-  //flutter CRUD ADD
+    //flutter CRUD ADD
     case FLUTTER_CRUD_ADD_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => FlutterCrudAdd(
           title: FLUTTER_CRUD_ADD_SCREEN_TITLE,
         ),
       );
-  //flutter CRUD UPDATE
-  //flutter CRUD
+      break;
+
+    //flutter CRUD UPDATE
+    //flutter CRUD
     /*--------------------------------- Flutter CRUD : End---------------------------------*/
+
+    /*--------------------------------- Flutter CARD : Start---------------------------------*/
+    //flutter card
+    case FLUTTER_CARD_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => FlutterCard(
+          title: FLUTTER_CARD_SCREEN_TITLE,
+        ),
+      );
+      break;
+
+    //flutter card
+    case FLUTTER_FLIP_CARD_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => FlutterFlipCard(
+          title: FLUTTER_FLIP_CARD_SCREEN_TITLE,
+        ),
+      );
+      break;
+    /*--------------------------------- Flutter CARD : End---------------------------------*/
   }
 }

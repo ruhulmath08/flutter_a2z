@@ -48,32 +48,41 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       drawer: myDrawer(context),
       body: GridView(
+        padding: const EdgeInsets.all(5),
         physics: BouncingScrollPhysics(),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
         children: cardItemList.map((card) {
-          return InkWell(
-            child: Card(
-              elevation: 10,
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Icon(card.icon, size: 30, color: Colors.grey),
-                  ),
-                  Text(
-                    "${card.title}",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
+          return Card(
+            color: Colors.blue,
+            elevation: 10,
+            child: Material(
+              child: InkWell(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      decoration:  BoxDecoration(
+                        borderRadius: BorderRadius.circular(100),
+                        border: Border.all(width: 2.0, color: Colors.blue),
+                      ),
+                      child: Icon(card.icon, size: 30, color: Colors.blue),
                     ),
-                  ),
-                ],
+                    SizedBox(height: 10),
+                    Text(
+                      "${card.title}",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+                onTap: () {
+                  gotoCorrespondScreen(card.title);
+                },
               ),
             ),
-            onTap: () {
-              gotoCorrespondScreen(card.title);
-            },
           );
         }).toList(),
       ),
@@ -82,6 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   //go to correspond screen
   void gotoCorrespondScreen(String pageName) {
+    print(pageName);
     switch (pageName) {
       case FLUTTER_BUTTON_SCREEN_TITLE:
         Navigator.pushNamed(context, FLUTTER_BUTTON_SCREEN_ROUTE);
@@ -97,6 +107,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
       case FLUTTER_CRUD_SCREEN_TITLE:
         Navigator.pushNamed(context, FLUTTER_CRUD_SCREEN_ROUTE);
+        break;
+
+      case FLUTTER_CARD_SCREEN_TITLE:
+        Navigator.pushNamed(context, FLUTTER_CARD_SCREEN_ROUTE);
         break;
     }
   }

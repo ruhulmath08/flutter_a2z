@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_a2z/routing/routing_constants.dart';
 
 class HomeCardItem {
   int id;
@@ -30,12 +31,12 @@ class HomeCardItem {
       ),
       HomeCardItem(
         4,
-        "Cards",
+        "App Bar",
         Icons.title,
       ),
       HomeCardItem(
         5,
-        "Cards",
+        FLUTTER_CARD_SCREEN_TITLE,
         Icons.credit_card_rounded,
       ),
       HomeCardItem(
