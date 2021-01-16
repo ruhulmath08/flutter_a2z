@@ -47,3 +47,21 @@ const String FLUTTER_TAB_VIEW_SCREEN_ROUTE = "/flutter_tab_view";
 const String FLUTTER_TAB_VIEW_SCREEN_TITLE = "TabView";
 /*--------------------------------- TabViewLayout : End---------------------------------*/
 
+/*--------------------------------- Flutter CRUD : Start---------------------------------*/
+//flutter CRUD
+const String FLUTTER_CRUD_SCREEN_ROUTE = "/flutter_crud";
+const String FLUTTER_CRUD_SCREEN_TITLE = "Flutter CRUD";
+
+//add data
+const String FLUTTER_CRUD_ADD_SCREEN_ROUTE = "/flutter_crud_add";
+const String FLUTTER_CRUD_ADD_SCREEN_TITLE = "Flutter CRUD ADD";
+
+//update data
+const String FLUTTER_CRUD_UPDATE_SCREEN_ROUTE = "/flutter_crud_update";
+const String FLUTTER_CRUD_UPDATE_SCREEN_TITLE = "Flutter CRUD Update";
+
+//delete data
+const String FLUTTER_CRUD_DELETE_SCREEN_ROUTE = "/flutter_crud_delete";
+const String FLUTTER_CRUD_DELETE_SCREEN_TITLE = "Flutter CRUD Delete";
+/*--------------------------------- Flutter CRUD : End---------------------------------*/
+

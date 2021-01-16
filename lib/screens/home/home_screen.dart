@@ -93,6 +93,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
       case FLUTTER_TAB_VIEW_SCREEN_TITLE:
         Navigator.pushNamed(context, FLUTTER_TAB_VIEW_SCREEN_ROUTE);
+        break;
+
+      case FLUTTER_CRUD_SCREEN_TITLE:
+        Navigator.pushNamed(context, FLUTTER_CRUD_SCREEN_ROUTE);
+        break;
     }
   }
 }

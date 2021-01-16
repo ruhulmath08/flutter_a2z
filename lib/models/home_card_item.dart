@@ -103,6 +103,11 @@ class HomeCardItem {
         "Drawer",
         Icons.navigation,
       ),
+      HomeCardItem(
+        18,
+        "Flutter CRUD",
+        Icons.add_to_photos_rounded,
+      ),
     ];
   }
 }

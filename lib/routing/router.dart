@@ -7,6 +7,8 @@ import 'package:flutter_a2z/screens/buttons/my_dropdown_button.dart';
 import 'package:flutter_a2z/screens/buttons/my_popup_button.dart';
 import 'package:flutter_a2z/screens/buttons/my_radio_button.dart';
 import 'package:flutter_a2z/screens/buttons/my_toggle_button.dart';
+import 'package:flutter_a2z/screens/crud/flutter_crud/flutter_crud.dart';
+import 'package:flutter_a2z/screens/crud/flutter_crud_add/flutter_crud_add.dart';
 import 'package:flutter_a2z/screens/home/home_screen.dart';
 import 'package:flutter_a2z/screens/login/login_screen.dart';
 import 'package:flutter_a2z/screens/tab_view_layout/tab_view_layout.dart';
@@ -104,5 +106,25 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
     /*--------------------------------- TabViewLayout : End ---------------------------------*/
+
+    /*--------------------------------- Flutter CRUD : Start---------------------------------*/
+    //flutter CRUD
+    case FLUTTER_CRUD_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => FlutterCrud(
+          title: FLUTTER_CRUD_SCREEN_TITLE,
+        ),
+      );
+
+  //flutter CRUD ADD
+    case FLUTTER_CRUD_ADD_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => FlutterCrudAdd(
+          title: FLUTTER_CRUD_ADD_SCREEN_TITLE,
+        ),
+      );
+  //flutter CRUD UPDATE
+  //flutter CRUD
+    /*--------------------------------- Flutter CRUD : End---------------------------------*/
   }
 }
