@@ -2,15 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_a2z/bottom_navigaion/my_bottom_navigation.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
 import 'package:flutter_a2z/screens/buttons/flutter_buttons.dart';
-import 'package:flutter_a2z/screens/buttons/my_check_box.dart';
-import 'package:flutter_a2z/screens/buttons/my_dropdown_button.dart';
-import 'package:flutter_a2z/screens/buttons/my_popup_button.dart';
-import 'package:flutter_a2z/screens/buttons/my_radio_button.dart';
-import 'package:flutter_a2z/screens/buttons/my_toggle_button.dart';
+import 'package:flutter_a2z/screens/buttons/my_checkbox/my_check_box.dart';
+import 'package:flutter_a2z/screens/buttons/my_dropdown_button/my_dropdown_button.dart';
+import 'package:flutter_a2z/screens/buttons/my_popup_menu_button/my_popup_menu_button.dart';
+import 'package:flutter_a2z/screens/buttons/my_radio_button/my_radio_button.dart';
+import 'package:flutter_a2z/screens/buttons/my_toggle_button/my_toggle_button.dart';
 import 'package:flutter_a2z/screens/cards/flutter_card.dart';
 import 'package:flutter_a2z/screens/cards/flutter_flip_card/flutter_flip_card.dart';
 import 'package:flutter_a2z/screens/crud/flutter_crud/flutter_crud.dart';
 import 'package:flutter_a2z/screens/crud/flutter_crud_add/flutter_crud_add.dart';
+import 'package:flutter_a2z/screens/display_code/display_code.dart';
 import 'package:flutter_a2z/screens/home/home_screen.dart';
 import 'package:flutter_a2z/screens/login/login_screen.dart';
 import 'package:flutter_a2z/screens/sign_up/sign_up_screen.dart';
@@ -79,7 +80,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     case FLUTTER_TOGGLE_BUTTON_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => MyToggleButton(
-          title: FLUTTER__TOGGLE_BUTTON__SCREEN_TITLE,
+          title: FLUTTER_TOGGLE_BUTTON__SCREEN_TITLE,
         ),
       );
       break;
@@ -94,10 +95,10 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       break;
 
     //popup button
-    case FLUTTER_POPUP_BUTTON_SCREEN_ROUTE:
+    case FLUTTER_POPUP_MENU_BUTTON_SCREEN_ROUTE:
       return MaterialPageRoute(
-        builder: (context) => MyPopupButton(
-          title: FLUTTER_POPUP_BUTTON_SCREEN_TITLE,
+        builder: (context) => MyPopupMenuButton(
+          title: FLUTTER_POPUP_MENU_BUTTON_SCREEN_TITLE,
         ),
       );
       break;

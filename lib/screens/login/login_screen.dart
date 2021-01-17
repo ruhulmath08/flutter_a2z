@@ -30,7 +30,7 @@ class _LoginScreenState extends State<LoginScreen> {
             children: <Widget>[
               Center(
                 child: CircleAvatar(
-                  backgroundImage: AssetImage("assets/images/flutter_a2z.png"),
+                  backgroundImage: const AssetImage("assets/images/flutter_a2z.png"),
                   backgroundColor: Colors.white,
                   minRadius: 60,
                   maxRadius: 80,
@@ -84,13 +84,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: RaisedButton(
                   color: Colors.blue,
                   elevation: 5,
-                  child: Text(
-                    'Login',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                    ),
-                  ),
+                  child: const Text("Login", style: TextStyle(fontSize: 20, color: Colors.white)),
                   onPressed: () {
                     Navigator.pushNamed(context, HOME_SCREEN_ROUTE);
                   },
@@ -125,19 +119,19 @@ class _LoginScreenState extends State<LoginScreen> {
         children: <Widget>[
           Expanded(
             child: Padding(
-              padding: EdgeInsets.only(right: 5),
+              padding: const EdgeInsets.only(right: 5),
               child: Divider(
                 thickness: 2,
               ),
             ),
           ),
-          Text(
+          const Text(
             "Social Login",
             style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold, color: Colors.grey),
           ),
           Expanded(
             child: Padding(
-              padding: EdgeInsets.only(left: 5),
+              padding: const EdgeInsets.only(left: 5),
               child: Divider(
                 thickness: 2,
               ),
@@ -165,7 +159,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), topLeft: Radius.circular(5)),
               ),
               alignment: Alignment.center,
-              child: Text('f', style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.w400)),
+              child: const Text('f', style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.w400)),
             ),
           ),
           Expanded(
@@ -176,7 +170,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 borderRadius: BorderRadius.only(bottomRight: Radius.circular(5), topRight: Radius.circular(5)),
               ),
               alignment: Alignment.center,
-              child: Text('Log in with Facebook', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w400)),
+              child: const Text('Log in with Facebook', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w400)),
             ),
           ),
         ],
@@ -201,7 +195,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), topLeft: Radius.circular(5)),
               ),
               alignment: Alignment.center,
-              child: Text('G', style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.w400)),
+              child: const Text('G', style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.w400)),
             ),
           ),
           Expanded(
@@ -212,7 +206,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 borderRadius: BorderRadius.only(bottomRight: Radius.circular(5), topRight: Radius.circular(5)),
               ),
               alignment: Alignment.center,
-              child: Text('Log in with Google', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w400)),
+              child: const Text('Log in with Google', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w400)),
             ),
           ),
         ],
@@ -229,14 +223,14 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
-            Text(
+            const Text(
               'Don\'t have an account ?',
               style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
             ),
             SizedBox(
               width: 10,
             ),
-            Text(
+            const Text(
               'Sign Up',
               style: TextStyle(color: Colors.blue, fontSize: 15, fontWeight: FontWeight.w600),
             ),

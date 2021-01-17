@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class MyToggleButton extends StatefulWidget {
+class MyPopupMenuButton extends StatefulWidget {
   final String title;
 
-  const MyToggleButton({Key key, this.title}) : super(key: key);
+  const MyPopupMenuButton({Key key, this.title}) : super(key: key);
 
   @override
-  _MyToggleButtonState createState() => _MyToggleButtonState();
+  _MyPopupMenuButtonState createState() => _MyPopupMenuButtonState();
 }
 
-class _MyToggleButtonState extends State<MyToggleButton> {
+class _MyPopupMenuButtonState extends State<MyPopupMenuButton> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

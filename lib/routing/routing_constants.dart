@@ -30,15 +30,15 @@ const String FLUTTER_CHECKBOX_SCREEN_TITLE = "Flutter Checkbox";
 
 //toggle button
 const String FLUTTER_TOGGLE_BUTTON_SCREEN_ROUTE = "/flutter_toggle_button";
-const String FLUTTER__TOGGLE_BUTTON__SCREEN_TITLE = "Flutter Toggle Button";
+const String FLUTTER_TOGGLE_BUTTON__SCREEN_TITLE = "Flutter Toggle Button";
 
 //dropdown button
 const String FLUTTER_DROPDOWN_BUTTON_SCREEN_ROUTE = "/flutter_dropdown_button";
 const String FLUTTER_DROPDOWN_BUTTON_SCREEN_TITLE = "Flutter Dropdown Button";
 
 //popup button
-const String FLUTTER_POPUP_BUTTON_SCREEN_ROUTE = "/flutter_popup_button";
-const String FLUTTER_POPUP_BUTTON_SCREEN_TITLE = "Flutter Popup Button";
+const String FLUTTER_POPUP_MENU_BUTTON_SCREEN_ROUTE = "/flutter_popup_button";
+const String FLUTTER_POPUP_MENU_BUTTON_SCREEN_TITLE = "Popup Menu Button";
 /*--------------------------------- Button : End---------------------------------*/
 
 /*--------------------------------- Button : Start---------------------------------*/

@@ -9,7 +9,7 @@ class CommonWidgets{
       gravity: Toast.CENTER,
       backgroundColor: Colors.grey,
       textColor: Colors.white,
-      duration: Toast.LENGTH_SHORT,
+      duration: Toast.LENGTH_LONG,
     );
   }
 }
