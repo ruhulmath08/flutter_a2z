@@ -6,6 +6,10 @@ const String LOGIN_SCREEN_ROUTE = "/";
 const String LOGIN_SCREEN_TITLE = "Login";
 /*--------------------------------- Login : End---------------------------------*/
 
+/*--------------------------------- Login : Start---------------------------------*/
+const String SIGN_UP_SCREEN_ROUTE = "/sign_up";
+const String SIGN_UP_SCREEN__TITLE = "SignUp";
+/*--------------------------------- Login : End---------------------------------*/
 
 /*--------------------------------- Home : Start---------------------------------*/
 const String HOME_SCREEN_ROUTE = "/home";

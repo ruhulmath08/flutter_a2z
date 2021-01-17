@@ -13,11 +13,12 @@ import 'package:flutter_a2z/screens/crud/flutter_crud/flutter_crud.dart';
 import 'package:flutter_a2z/screens/crud/flutter_crud_add/flutter_crud_add.dart';
 import 'package:flutter_a2z/screens/home/home_screen.dart';
 import 'package:flutter_a2z/screens/login/login_screen.dart';
+import 'package:flutter_a2z/screens/sign_up/sign_up_screen.dart';
 import 'package:flutter_a2z/screens/tab_view_layout/tab_view_layout.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
-    //login screen
+    /*--------------------------------- Login : Start---------------------------------*/
     case LOGIN_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => LoginScreen(
@@ -25,8 +26,18 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
       break;
+    /*--------------------------------- Login : End---------------------------------*/
 
-    //home screen
+    /*--------------------------------- SignUp : Start---------------------------------*/
+    case SIGN_UP_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => SignUpScreen(
+          title: SIGN_UP_SCREEN__TITLE,
+        ),
+      );
+    /*--------------------------------- SignUp : End---------------------------------*/
+
+    /*--------------------------------- HomeScreen : Start---------------------------------*/
     case HOME_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => HomeScreen(
@@ -34,6 +45,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
       break;
+    /*--------------------------------- HomeScreen : End---------------------------------*/
 
     /*--------------------------------- Flutter Button : Start---------------------------------*/
     //button

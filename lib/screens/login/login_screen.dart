@@ -25,21 +25,15 @@ class _LoginScreenState extends State<LoginScreen> {
       appBar: AppBar(title: Text("${widget.title}")),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.only(
-            top: 20.0,
-            right: 10.0,
-            bottom: 10.0,
-            left: 10.0,
-          ),
+          padding: const EdgeInsets.only(top: 10.0, right: 10.0, bottom: 10.0, left: 10.0),
           child: ListView(
             children: <Widget>[
               Center(
                 child: CircleAvatar(
-                  backgroundImage:
-                  NetworkImage("https://i.imgur.com/XyT4vI9.png"),
-                  backgroundColor: Colors.red,
-                  minRadius: 90,
-                  maxRadius: 100,
+                  backgroundImage: AssetImage("assets/images/flutter_a2z.png"),
+                  backgroundColor: Colors.white,
+                  minRadius: 60,
+                  maxRadius: 80,
                 ),
               ),
               SizedBox(
@@ -51,7 +45,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 decoration: InputDecoration(
                   hintText: "Username",
                   labelText: "Username",
-                  prefixIcon: Icon(Icons.person),
+                  prefixIcon: const Icon(Icons.person),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(5.0),
                   ),
@@ -67,7 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 decoration: InputDecoration(
                     hintText: 'Password',
                     labelText: 'Password',
-                    prefixIcon: Icon(Icons.lock),
+                    prefixIcon: const Icon(Icons.lock),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5.0),
                     ),
@@ -76,11 +70,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         setState(() {
                           _obscureText = !_obscureText;
                         });
-                        print(_obscureText);
                       },
                       child: Icon(
                         _obscureText ? Icons.visibility : Icons.visibility_off,
-                        semanticLabel: "uuuuu",
                       ),
                     )),
               ),
@@ -91,7 +83,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 50.0,
                 child: RaisedButton(
                   color: Colors.blue,
-                  elevation: 10,
+                  elevation: 5,
                   child: Text(
                     'Login',
                     style: TextStyle(
@@ -103,9 +95,152 @@ class _LoginScreenState extends State<LoginScreen> {
                     Navigator.pushNamed(context, HOME_SCREEN_ROUTE);
                   },
                 ),
-              )
+              ),
+              SizedBox(
+                height: 20.0,
+              ),
+              _createAccountLabel(),
+              SizedBox(
+                height: 20.0,
+              ),
+              _divider(),
+              SizedBox(
+                height: 20.0,
+              ),
+              _facebookButton(),
+              SizedBox(
+                height: 20.0,
+              ),
+              _googleButton(),
             ],
           ),
+        ),
+      ),
+    );
+  }
+
+  Widget _divider() {
+    return Container(
+      child: Row(
+        children: <Widget>[
+          Expanded(
+            child: Padding(
+              padding: EdgeInsets.only(right: 5),
+              child: Divider(
+                thickness: 2,
+              ),
+            ),
+          ),
+          Text(
+            "Social Login",
+            style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold, color: Colors.grey),
+          ),
+          Expanded(
+            child: Padding(
+              padding: EdgeInsets.only(left: 5),
+              child: Divider(
+                thickness: 2,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _facebookButton() {
+    return Container(
+      height: 50,
+      //margin: EdgeInsets.symmetric(vertical: 20),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.all(Radius.circular(10)),
+      ),
+      child: Row(
+        children: <Widget>[
+          Expanded(
+            flex: 1,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Color(0xff1959a9),
+                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), topLeft: Radius.circular(5)),
+              ),
+              alignment: Alignment.center,
+              child: Text('f', style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.w400)),
+            ),
+          ),
+          Expanded(
+            flex: 5,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                borderRadius: BorderRadius.only(bottomRight: Radius.circular(5), topRight: Radius.circular(5)),
+              ),
+              alignment: Alignment.center,
+              child: Text('Log in with Facebook', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w400)),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _googleButton() {
+    return Container(
+      height: 50,
+      //margin: EdgeInsets.symmetric(vertical: 20),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.all(Radius.circular(10)),
+      ),
+      child: Row(
+        children: <Widget>[
+          Expanded(
+            flex: 1,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Color(0xff34a853),
+                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), topLeft: Radius.circular(5)),
+              ),
+              alignment: Alignment.center,
+              child: Text('G', style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.w400)),
+            ),
+          ),
+          Expanded(
+            flex: 5,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                borderRadius: BorderRadius.only(bottomRight: Radius.circular(5), topRight: Radius.circular(5)),
+              ),
+              alignment: Alignment.center,
+              child: Text('Log in with Google', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w400)),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _createAccountLabel() {
+    return InkWell(
+      onTap: () {
+        Navigator.pushNamed(context, SIGN_UP_SCREEN_ROUTE);
+      },
+      child: Container(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: <Widget>[
+            Text(
+              'Don\'t have an account ?',
+              style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
+            ),
+            SizedBox(
+              width: 10,
+            ),
+            Text(
+              'Sign Up',
+              style: TextStyle(color: Colors.blue, fontSize: 15, fontWeight: FontWeight.w600),
+            ),
+          ],
         ),
       ),
     );
