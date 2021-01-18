@@ -16,9 +16,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
   toast: ^0.1.5 #05-01-2020
-  animated_floatactionbuttons: ^0.1.0  #17-01-2020
-  syntax_highlighter: ^0.1.1  #17-01-2020
   url_launcher: ^5.7.10  #17-01-2020
+  flutter_syntax_view: ^2.2.2 #17-01-2020
+  flutter_speed_dial: ^1.2.5 #18-01-2020
 
 dev_dependencies:
   flutter_test:
@@ -29,3 +29,4 @@ flutter:
 
   assets:
     - assets/images/
+    - lib/screens/buttons/my_toggle_button/

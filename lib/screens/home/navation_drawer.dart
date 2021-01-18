@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_a2z/screens/common_widgets/common_widgets.dart';
+import 'package:flutter_a2z/common_widgets/common_widgets.dart';
 
 Widget myDrawer(BuildContext context) {
   return Drawer(

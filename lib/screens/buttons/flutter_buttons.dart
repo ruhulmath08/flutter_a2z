@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
-import 'package:flutter_a2z/screens/common_widgets/common_widgets.dart';
+import 'package:flutter_a2z/common_widgets/common_widgets.dart';
 
 class FlutterButton extends StatefulWidget {
   final String title;
@@ -21,6 +21,7 @@ class _FlutterButtonState extends State<FlutterButton> {
         title: Text(widget.title),
       ),
       floatingActionButton: FloatingActionButton(
+        heroTag: "add_button",
         child: Icon(Icons.add),
         onPressed: () {
           CommonWidgets.showToast(context, "FloatingActionButton");

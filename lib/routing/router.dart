@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_a2z/bottom_navigaion/my_bottom_navigation.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
+import 'package:flutter_a2z/screens/bottom_navigaion/my_bottom_navigation.dart';
 import 'package:flutter_a2z/screens/buttons/flutter_buttons.dart';
 import 'package:flutter_a2z/screens/buttons/my_checkbox/my_check_box.dart';
 import 'package:flutter_a2z/screens/buttons/my_dropdown_button/my_dropdown_button.dart';
@@ -11,7 +11,6 @@ import 'package:flutter_a2z/screens/cards/flutter_card.dart';
 import 'package:flutter_a2z/screens/cards/flutter_flip_card/flutter_flip_card.dart';
 import 'package:flutter_a2z/screens/crud/flutter_crud/flutter_crud.dart';
 import 'package:flutter_a2z/screens/crud/flutter_crud_add/flutter_crud_add.dart';
-import 'package:flutter_a2z/screens/display_code/display_code.dart';
 import 'package:flutter_a2z/screens/home/home_screen.dart';
 import 'package:flutter_a2z/screens/login/login_screen.dart';
 import 'package:flutter_a2z/screens/sign_up/sign_up_screen.dart';
