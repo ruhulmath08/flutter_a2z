@@ -15,6 +15,10 @@ class _MyCheckBoxState extends State<MyCheckBox> {
     return Scaffold(
       appBar: AppBar(title:Text(widget.title)),
       body: Center(child: Text(widget.title),),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {  },
+        child: const Icon(Icons.code),
+      ),
     );
   }
 }

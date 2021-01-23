@@ -21,7 +21,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     /*--------------------------------- Login : Start---------------------------------*/
     case LOGIN_SCREEN_ROUTE:
       return MaterialPageRoute(
-        builder: (context) => LoginScreen(
+        builder: (context) => const LoginScreen(
           title: LOGIN_SCREEN_TITLE,
         ),
       );
@@ -40,7 +40,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     /*--------------------------------- HomeScreen : Start---------------------------------*/
     case HOME_SCREEN_ROUTE:
       return MaterialPageRoute(
-        builder: (context) => HomeScreen(
+        builder: (context) => const HomeScreen(
           title: HOME_SCREEN_TITLE,
         ),
       );
@@ -51,7 +51,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     //button
     case FLUTTER_BUTTON_SCREEN_ROUTE:
       return MaterialPageRoute(
-        builder: (context) => FlutterButton(
+        builder: (context) => const FlutterButton(
           title: FLUTTER_BUTTON_SCREEN_TITLE,
         ),
       );
@@ -60,7 +60,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     //radio button
     case FLUTTER_RADIOBUTTON_SCREEN_ROUTE:
       return MaterialPageRoute(
-        builder: (context) => MyRadioButton(
+        builder: (context) => const MyRadioButton(
           title: FLUTTER_RADIOBUTTON_SCREEN_TITLE,
         ),
       );
@@ -69,7 +69,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     //checkbox
     case FLUTTER_CHECKBOX_SCREEN_ROUTE:
       return MaterialPageRoute(
-        builder: (context) => MyCheckBox(
+        builder: (context) => const MyCheckBox(
           title: FLUTTER_CHECKBOX_SCREEN_TITLE,
         ),
       );
@@ -78,7 +78,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     //toggle button
     case FLUTTER_TOGGLE_BUTTON_SCREEN_ROUTE:
       return MaterialPageRoute(
-        builder: (context) => MyToggleButton(
+        builder: (context) => const MyToggleButton(
           title: FLUTTER_TOGGLE_BUTTON__SCREEN_TITLE,
         ),
       );
@@ -87,7 +87,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     //dropdown button
     case FLUTTER_DROPDOWN_BUTTON_SCREEN_ROUTE:
       return MaterialPageRoute(
-        builder: (context) => MyDropdownButton(
+        builder: (context) => const MyDropdownButton(
           title: FLUTTER_DROPDOWN_BUTTON_SCREEN_TITLE,
         ),
       );
@@ -96,7 +96,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     //popup button
     case FLUTTER_POPUP_MENU_BUTTON_SCREEN_ROUTE:
       return MaterialPageRoute(
-        builder: (context) => MyPopupMenuButton(
+        builder: (context) => const MyPopupMenuButton(
           title: FLUTTER_POPUP_MENU_BUTTON_SCREEN_TITLE,
         ),
       );
@@ -106,7 +106,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     /*--------------------------------- Flutter BottomNavigationView : Start---------------------------------*/
     case FLUTTER_BOTTOM_NAVIGATION_VIEW_SCREEN_ROUTE:
       return MaterialPageRoute(
-        builder: (context) => MyBottomNavigation(
+        builder: (context) => const MyBottomNavigation(
           title: FLUTTER_BOTTOM_NAVIGATION_VIEW_SCREEN_TITLE,
         ),
       );
@@ -115,7 +115,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     /*--------------------------------- TabViewLayout : Start ---------------------------------*/
     case FLUTTER_TAB_VIEW_SCREEN_ROUTE:
       return MaterialPageRoute(
-        builder: (context) => TabViewLayout(
+        builder: (context) => const TabViewLayout(
           title: FLUTTER_TAB_VIEW_SCREEN_TITLE,
         ),
       );
@@ -126,7 +126,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     //flutter CRUD
     case FLUTTER_CRUD_SCREEN_ROUTE:
       return MaterialPageRoute(
-        builder: (context) => FlutterCrud(
+        builder: (context) => const FlutterCrud(
           title: FLUTTER_CRUD_SCREEN_TITLE,
         ),
       );
@@ -149,7 +149,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     //flutter card
     case FLUTTER_CARD_SCREEN_ROUTE:
       return MaterialPageRoute(
-        builder: (context) => FlutterCard(
+        builder: (context) => const FlutterCard(
           title: FLUTTER_CARD_SCREEN_TITLE,
         ),
       );
@@ -158,7 +158,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     //flutter card
     case FLUTTER_FLIP_CARD_SCREEN_ROUTE:
       return MaterialPageRoute(
-        builder: (context) => FlutterFlipCard(
+        builder: (context) => const FlutterFlipCard(
           title: FLUTTER_FLIP_CARD_SCREEN_TITLE,
         ),
       );

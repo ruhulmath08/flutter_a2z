@@ -7,81 +7,81 @@ Widget myDrawer(BuildContext context) {
     child: Column(
       children: [
         UserAccountsDrawerHeader(
-          accountName: Text("Md. Ruhul Amin"),
-          accountEmail: Text("ruhulmath08@gmail.com"),
-          currentAccountPicture: CircleAvatar(
-            backgroundImage: NetworkImage("https://avatars3.githubusercontent.com/u/19272924?s=460&u=bff8f9b0562582e2503af1fe87323e7b8bbee33d&v=4"),
+          accountName: const Text('Md. Ruhul Amin'),
+          accountEmail: const Text('ruhulmath08@gmail.com'),
+          currentAccountPicture: const CircleAvatar(
+            backgroundImage: NetworkImage('https://avatars3.githubusercontent.com/u/19272924?s=460&u=bff8f9b0562582e2503af1fe87323e7b8bbee33d&v=4'),
           ),
           otherAccountsPictures: <Widget>[
             CircleAvatar(
               child: InkWell(
-                child: Icon(Icons.edit),
                 onTap: () {
-                  CommonWidgets.showToast(context, "edit profile");
+                  CommonWidgets.showToast(context, 'edit profile');
                   Navigator.of(context).pop();
                 },
+                child: const Icon(Icons.edit),
               ),
             )
           ],
         ),
         ListTile(
-          visualDensity: VisualDensity(horizontal: 0, vertical: -4), //reduce padding
-          trailing: Icon(Icons.arrow_forward_ios, color: Colors.black),
-          title: Text("Flutter Basic"),
+          visualDensity: const VisualDensity(horizontal: 0, vertical: -4), //reduce padding
+          trailing: const Icon(Icons.arrow_forward_ios, color: Colors.black),
+          title: const Text('Flutter Basic'),
           onTap: () {
-            CommonWidgets.showToast(context, "Flutter Basic");
+            CommonWidgets.showToast(context, 'Flutter Basic');
           },
         ),
-        Divider(color: Colors.blue, thickness: 1),
+        const Divider(color: Colors.blue, thickness: 1),
         ListTile(
-          visualDensity: VisualDensity(horizontal: 0, vertical: -4), //reduce padding
-          trailing: Icon(Icons.info_outlined, color: Colors.black),
-          title: Text("Flutter Intermediate"),
+          visualDensity: const VisualDensity(horizontal: 0, vertical: -4), //reduce padding
+          trailing: const Icon(Icons.info_outlined, color: Colors.black),
+          title: const Text('Flutter Intermediate'),
           onTap: () {
-            CommonWidgets.showToast(context, "Flutter Basic");
+            CommonWidgets.showToast(context, 'Flutter Basic');
           },
         ),
-        Divider(color: Colors.blue, thickness: 1),
+        const Divider(color: Colors.blue, thickness: 1),
         ListTile(
-          visualDensity: VisualDensity(horizontal: 0, vertical: -4), //reduce padding
-          trailing: Icon(Icons.text_rotation_none, color: Colors.black),
-          title: Text("Flutter Advanced"),
+          visualDensity: const VisualDensity(horizontal: 0, vertical: -4), //reduce padding
+          trailing: const Icon(Icons.text_rotation_none, color: Colors.black),
+          title: const Text('Flutter Advanced'),
           onTap: () {
-            CommonWidgets.showToast(context, "Flutter Advanced");
+            CommonWidgets.showToast(context, 'Flutter Advanced');
           },
         ),
-        Divider(color: Colors.blue, thickness: 1),
+        const Divider(color: Colors.blue, thickness: 1),
         ListTile(
-          visualDensity: VisualDensity(horizontal: 0, vertical: -4), //reduce padding
-          trailing: Icon(Icons.local_fire_department, color: Colors.black),
-          title: Text("Flutter And Firebase"),
+          visualDensity: const VisualDensity(horizontal: 0, vertical: -4), //reduce padding
+          trailing: const Icon(Icons.local_fire_department, color: Colors.black),
+          title: const Text('Flutter And Firebase'),
           onTap: () {
-            CommonWidgets.showToast(context, "Flutter Advanced");
+            CommonWidgets.showToast(context, 'Flutter Advanced');
           },
         ),
-        Divider(color: Colors.blue, thickness: 1),
+        const Divider(color: Colors.blue, thickness: 1),
         ListTile(
-          visualDensity: VisualDensity(horizontal: 0, vertical: -4), //reduce padding
-          trailing: Icon(Icons.location_pin, color: Colors.black),
-          title: Text("Flutter With Map"),
+          visualDensity: const VisualDensity(horizontal: 0, vertical: -4), //reduce padding
+          trailing: const Icon(Icons.location_pin, color: Colors.black),
+          title: const Text('Flutter With Map'),
           onTap: () {
-            CommonWidgets.showToast(context, "Flutter Advanced");
+            CommonWidgets.showToast(context, 'Flutter Advanced');
           },
         ),
-        Divider(color: Colors.blue, thickness: 1),
+        const Divider(color: Colors.blue, thickness: 1),
         Expanded(
           child: Align(
             alignment: Alignment.bottomLeft,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Divider(color: Colors.blue, thickness: 1),
+                const Divider(color: Colors.blue, thickness: 1),
                 ListTile(
-                  visualDensity: VisualDensity(horizontal: 0, vertical: -4), //reduce padding
-                  trailing: Icon(Icons.touch_app_sharp, color: Colors.black),
-                  title: Text("Setting"),
+                  visualDensity: const VisualDensity(horizontal: 0, vertical: -4), //reduce padding
+                  trailing: const Icon(Icons.touch_app_sharp, color: Colors.black),
+                  title: const Text('Setting'),
                   onTap: () {
-                    CommonWidgets.showToast(context, "Setting");
+                    CommonWidgets.showToast(context, 'Setting');
                   },
                 ),
               ],

@@ -15,11 +15,11 @@ class FlutterCrudAdd extends StatefulWidget {
 class _FlutterCrudAddState extends State<FlutterCrudAdd> {
   final _formKey = GlobalKey<FormState>();
 
-  TextEditingController _controllerFullName = TextEditingController();
-  TextEditingController _controllerUserName = TextEditingController();
-  TextEditingController _controllerEmail = TextEditingController();
-  TextEditingController _controllerAddress = TextEditingController();
-  TextEditingController _controllerPassword = TextEditingController();
+  final TextEditingController _controllerFullName = TextEditingController();
+  final TextEditingController _controllerUserName = TextEditingController();
+  final TextEditingController _controllerEmail = TextEditingController();
+  final TextEditingController _controllerAddress = TextEditingController();
+  final TextEditingController _controllerPassword = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -31,36 +31,36 @@ class _FlutterCrudAddState extends State<FlutterCrudAdd> {
         body: Form(
           key: _formKey,
           child: ListView(
-            padding: EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
             children: [
               TextFormField(
                 controller: _controllerFullName,
-                decoration: InputDecoration(labelText: "Full Name", hintText: "Full Name"),
+                decoration: const InputDecoration(labelText: 'Full Name', hintText: 'Full Name'),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               TextFormField(
                 controller: _controllerUserName,
-                decoration: InputDecoration(labelText: "User Name", hintText: "User Name"),
+                decoration: const InputDecoration(labelText: 'User Name', hintText: 'User Name'),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               TextFormField(
-                controller: _controllerUserName,
-                decoration: InputDecoration(labelText: "Enter Password", hintText: "Enter Password"),
+                controller: _controllerPassword,
+                decoration: const InputDecoration(labelText: 'Enter Password', hintText: 'Enter Password'),
               ),
-              SizedBox(height: 10),
-              TextFormField(
-                controller: _controllerEmail,
-                decoration: InputDecoration(labelText: "Email Address", hintText: "Email Address"),
-              ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               TextFormField(
                 controller: _controllerEmail,
-                decoration: InputDecoration(labelText: "Your Address", hintText: "Your Address"),
+                decoration: const InputDecoration(labelText: 'Email Address', hintText: 'Email Address'),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 10),
+              TextFormField(
+                controller: _controllerAddress,
+                decoration: const InputDecoration(labelText: 'Your Address', hintText: 'Your Address'),
+              ),
+              const SizedBox(height: 20),
               ElevatedButton.icon(
-                label: Text("Save"),
-                icon: Icon(Icons.save),
+                label: const Text('Save'),
+                icon: const Icon(Icons.save),
                 onPressed: () {
                   Navigator.pushNamed(context, FLUTTER_CRUD_SCREEN_ROUTE);
                 },

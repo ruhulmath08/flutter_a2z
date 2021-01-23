@@ -16,22 +16,22 @@ class HomeCardItem {
     return [
       HomeCardItem(
         1,
-        "Buttons",
+        'Buttons',
         Icons.smart_button_rounded,
       ),
       HomeCardItem(
         2,
-        "Alert Dialog",
+        'Alert Dialog',
         Icons.add_alert,
       ),
       HomeCardItem(
         3,
-        "App Bar",
+        'App Bar',
         Icons.title,
       ),
       HomeCardItem(
         4,
-        "App Bar",
+        'App Bar',
         Icons.title,
       ),
       HomeCardItem(
@@ -41,72 +41,72 @@ class HomeCardItem {
       ),
       HomeCardItem(
         6,
-        "Chart",
+        'Chart',
         Icons.pie_chart,
       ),
       HomeCardItem(
         7,
-        "API Handling",
+        'API Handling',
         Icons.api,
       ),
       HomeCardItem(
         8,
-        "Firebase",
+        'Firebase',
         Icons.local_fire_department_rounded,
       ),
       HomeCardItem(
         9,
-        "Form",
+        'Form',
         Icons.format_align_justify,
       ),
       HomeCardItem(
         10,
-        "Google Sheet",
+        'Google Sheet',
         Icons.explicit_rounded,
       ),
       HomeCardItem(
         11,
-        "GridView",
+        'GridView',
         Icons.grid_on_outlined,
       ),
       HomeCardItem(
         12,
-        "ListView",
+        'ListView',
         Icons.list,
       ),
       HomeCardItem(
         13,
-        "TabView",
+        'TabView',
         Icons.table_view_rounded,
       ),
       HomeCardItem(
         14,
-        "BottomNavigation",
+        'BottomNavigation',
         Icons.backup_table_sharp,
       ),
       HomeCardItem(
         15,
-        "Table",
+        'Table',
         Icons.table_chart,
       ),
       HomeCardItem(
         16,
-        "Maps",
+        'Maps',
         Icons.location_pin,
       ),
       HomeCardItem(
         17,
-        "SQLite",
+        'SQLite',
         Icons.cloud,
       ),
       HomeCardItem(
         18,
-        "Drawer",
+        'Drawer',
         Icons.navigation,
       ),
       HomeCardItem(
         18,
-        "Flutter CRUD",
+        'Flutter CRUD',
         Icons.add_to_photos_rounded,
       ),
     ];

@@ -20,7 +20,7 @@ class FlutterCard extends StatelessWidget {
               Navigator.pushNamed(context, FLUTTER_FLIP_CARD_SCREEN_ROUTE);
             },
             icon: const Icon(Icons.wifi_protected_setup),
-            label: Text("Flutter Flip Card"),
+            label: const Text('Flutter Flip Card'),
           )
         ],
       ),

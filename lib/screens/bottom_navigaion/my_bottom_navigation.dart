@@ -34,17 +34,17 @@ class _MyBottomNavigationState extends State<MyBottomNavigation> {
           });
         },
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: "Home",
+            label: 'Home',
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.dashboard),
-            label: "Daily",
+            label: 'Daily',
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.landscape),
-            label: "Landscape",
+            label: 'Landscape',
           ),
         ],
       ),
@@ -61,9 +61,10 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    // ignore: avoid_unnecessary_containers
     return Container(
-      child: Center(
-        child: Text("Home Page"),
+      child: const Center(
+        child: Text('Home Page'),
       ),
     );
   }
@@ -78,10 +79,8 @@ class DailyPage extends StatefulWidget {
 class _DailyPageState extends State<DailyPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text("Daily Page"),
-      ),
+    return const Center(
+      child: Text('Daily Page'),
     );
   }
 }
@@ -95,10 +94,8 @@ class LandscapePage extends StatefulWidget {
 class _LandscapePageState extends State<LandscapePage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text("Landscape Page"),
-      ),
+    return const Center(
+      child: Text( 'Landscape Page'),
     );
   }
 }

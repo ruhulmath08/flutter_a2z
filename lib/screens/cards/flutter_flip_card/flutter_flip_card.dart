@@ -26,23 +26,23 @@ class _FlutterFlipCardState extends State<FlutterFlipCard> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(this.widget.title),
+        title: Text(widget.title),
         actions: [
           IconButton(
             icon: RotatedBox(
-              child: Icon(Icons.flip),
               quarterTurns: _flipXAxis ? 0 : 1,
+              child: const Icon(Icons.flip),
             ),
             onPressed: _changeRotationAxis,
           ),
         ],
       ),
       body: DefaultTextStyle(
-        style: TextStyle(color: Colors.white),
+        style: const TextStyle(color: Colors.white),
         textAlign: TextAlign.center,
         child: Center(
           child: Container(
-            constraints: BoxConstraints.tight(Size.square(200.0)),
+            constraints: BoxConstraints.tight(const Size.square(200.0)),
             child: _buildFlipAnimation(),
           ),
         ),
@@ -66,12 +66,12 @@ class _FlutterFlipCardState extends State<FlutterFlipCard> {
     return GestureDetector(
       onTap: _switchCard,
       child: AnimatedSwitcher(
-        duration: Duration(milliseconds: 800),
+        duration: const Duration(milliseconds: 800),
         transitionBuilder: __transitionBuilder,
         layoutBuilder: (widget, list) => Stack(children: [widget, ...list]),
-        child: _showFrontSide ? _buildFront() : _buildRear(),
         switchInCurve: Curves.easeInBack,
         switchOutCurve: Curves.easeInBack.flipped,
+        child: _showFrontSide ? _buildFront() : _buildRear(),
       ),
     );
   }
@@ -80,8 +80,8 @@ class _FlutterFlipCardState extends State<FlutterFlipCard> {
     final rotateAnim = Tween(begin: pi, end: 0.0).animate(animation);
     return AnimatedBuilder(
       animation: rotateAnim,
-      child: widget,
       builder: (context, widget) {
+        // ignore: unnecessary_parenthesis
         final isUnder = (ValueKey(_showFrontSide) != widget.key);
         var tilt = ((animation.value - 0.5).abs() - 0.5) * 0.003;
         tilt *= isUnder ? -1.0 : 1.0;
@@ -94,15 +94,16 @@ class _FlutterFlipCardState extends State<FlutterFlipCard> {
           alignment: Alignment.center,
         );
       },
+      child: widget,
     );
   }
 
   Widget _buildFront() {
     return __buildLayout(
-      key: ValueKey(true),
+      key: const ValueKey(true),
       backgroundColor: Colors.blue,
-      faceName: "Front",
-      child: Padding(
+      faceName: 'Front',
+      child: const Padding(
         padding: EdgeInsets.all(32.0),
         child: ColorFiltered(
           colorFilter: ColorFilter.mode(Colors.white, BlendMode.srcATop),
@@ -114,14 +115,14 @@ class _FlutterFlipCardState extends State<FlutterFlipCard> {
 
   Widget _buildRear() {
     return __buildLayout(
-      key: ValueKey(false),
+      key: const ValueKey(false),
       backgroundColor: Colors.blue.shade700,
-      faceName: "Rear",
-      child: Padding(
+      faceName: 'Rear',
+      child: const Padding(
         padding: EdgeInsets.all(20.0),
         child: ColorFiltered(
           colorFilter: ColorFilter.mode(Colors.white, BlendMode.srcATop),
-          child: Center(child: Text("Flutter", style: TextStyle(fontSize: 50.0))),
+          child: Center(child: Text('Flutter', style: TextStyle(fontSize: 50.0))),
         ),
       ),
     );
@@ -131,12 +132,11 @@ class _FlutterFlipCardState extends State<FlutterFlipCard> {
     return Container(
       key: key,
       decoration: BoxDecoration(
-        shape: BoxShape.rectangle,
         borderRadius: BorderRadius.circular(10.0),
         color: backgroundColor,
       ),
       child: Center(
-        child: Text(faceName.substring(0, 1), style: TextStyle(fontSize: 80.0)),
+        child: Text(faceName.substring(0, 1), style: const TextStyle(fontSize: 80.0)),
       ),
     );
   }

@@ -25,20 +25,19 @@ class CommonWidgets {
           child: Stack(
             children: [
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   left: Constants.DIALOG_PADDING,
                   top: Constants.DIALOG_AVATAR_RADIUS + Constants.DIALOG_PADDING,
                   right: Constants.DIALOG_PADDING,
                   bottom: Constants.DIALOG_PADDING,
                 ),
-                margin: EdgeInsets.only(top: Constants.DIALOG_AVATAR_RADIUS),
+                margin: const EdgeInsets.only(top: Constants.DIALOG_AVATAR_RADIUS),
                 decoration: BoxDecoration(
-                  shape: BoxShape.rectangle,
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(Constants.DIALOG_PADDING),
+                  // ignore: prefer_const_literals_to_create_immutables
                   boxShadow: [
-                    BoxShadow(
-                      color: Colors.black,
+                    const BoxShadow(
                       offset: Offset(0, 10),
                       blurRadius: 10,
                     ),
@@ -49,21 +48,21 @@ class CommonWidgets {
                   children: <Widget>[
                     Text(
                       title,
-                      style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+                      style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 15,
                     ),
                     Text(
                       description,
-                      style: TextStyle(fontSize: 14),
+                      style: const TextStyle(fontSize: 14),
                       textAlign: TextAlign.center,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 22,
                     ),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         FlatButton(
                           color: Colors.red,
@@ -72,10 +71,10 @@ class CommonWidgets {
                           },
                           child: Text(
                             noButton,
-                            style: TextStyle(fontSize: 18, color: Colors.white),
+                            style: const TextStyle(fontSize: 18, color: Colors.white),
                           ),
                         ),
-                        SizedBox(width: 20),
+                        const SizedBox(width: 20),
                         FlatButton(
                           color: Colors.blue,
                           onPressed: () {
@@ -84,7 +83,7 @@ class CommonWidgets {
                           },
                           child: Text(
                             yesButton,
-                            style: TextStyle(fontSize: 18, color: Colors.white),
+                            style: const TextStyle(fontSize: 18, color: Colors.white),
                           ),
                         ),
                       ],
@@ -96,10 +95,10 @@ class CommonWidgets {
                 left: Constants.DIALOG_PADDING,
                 right: Constants.DIALOG_PADDING,
                 child: CircleAvatar(
-                  backgroundColor: Colors.white,
+                  backgroundColor: Colors.blue,
                   radius: Constants.DIALOG_AVATAR_RADIUS,
                   child: ClipRRect(
-                    borderRadius: BorderRadius.all(
+                    borderRadius: const BorderRadius.all(
                       Radius.circular(Constants.DIALOG_PADDING),
                     ),
                     child: icon,
@@ -113,13 +112,12 @@ class CommonWidgets {
     );
   }
 
-  static showToast(BuildContext context, String message) {
+  static void showToast(BuildContext context, String message) {
     Toast.show(
-      "Pressed on: $message",
+      message,
       context,
       gravity: Toast.CENTER,
       backgroundColor: Colors.grey,
-      textColor: Colors.white,
       duration: Toast.LENGTH_LONG,
     );
   }

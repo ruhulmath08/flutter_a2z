@@ -8,7 +8,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  final String undefinedView = "Undefined View";
+  final String undefinedView = 'Undefined View';
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       onGenerateRoute: generateRoute,
       initialRoute: LOGIN_SCREEN_ROUTE,
       onUnknownRoute: (settings) => MaterialPageRoute(
-        builder: (context) => UndefinedScreen(title: UNDEFINED_SCREEN_TITLE),
+        builder: (context) => const UndefinedScreen(title: UNDEFINED_SCREEN_TITLE),
       ),
     );
   }

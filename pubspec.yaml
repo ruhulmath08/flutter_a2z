@@ -15,18 +15,21 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
-  toast: ^0.1.5 #05-01-2020
-  url_launcher: ^5.7.10  #17-01-2020
-  flutter_syntax_view: ^2.2.2 #17-01-2020
-  flutter_speed_dial: ^1.2.5 #18-01-2020
+  toast: ^0.1.5 #05-01-2021
+  url_launcher: ^5.7.10  #17-01-2021
+  flutter_syntax_view: ^2.2.2 #17-01-2021
+  flutter_speed_dial: ^1.2.5 #18-01-2021
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  lint: any #21-01-2021
 
 flutter:
   uses-material-design: true
 
   assets:
     - assets/images/
+    - lib/screens/buttons/
     - lib/screens/buttons/my_toggle_button/
+    - lib/screens/buttons/my_radio_button/

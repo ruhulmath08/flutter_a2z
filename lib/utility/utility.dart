@@ -4,11 +4,12 @@ import 'package:url_launcher/url_launcher.dart';
 
 class Utility{
    //open LINK in browser
+  // ignore: type_annotate_public_apis, always_declare_return_types
   static launchURL(BuildContext buildContext, String url) async {
     if (await canLaunch(url)) {
       await launch(url);
     } else {
-      CommonWidgets.showToast(buildContext, "Not yet implemented");
+      CommonWidgets.showToast(buildContext, 'Not yet implemented');
     }
   }
 }
