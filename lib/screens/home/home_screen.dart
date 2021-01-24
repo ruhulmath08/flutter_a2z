@@ -64,7 +64,6 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Padding(
                 padding: const EdgeInsets.all(5.0),
                 child: Column(
-                  mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
@@ -92,6 +91,10 @@ class _HomeScreenState extends State<HomeScreen> {
     switch (pageName) {
       case FLUTTER_BUTTON_SCREEN_TITLE:
         Navigator.pushNamed(context, FLUTTER_BUTTON_SCREEN_ROUTE);
+        break;
+
+      case FLUTTER_DIALOG_SCREEN_TITLE:
+        Navigator.pushNamed(context, FLUTTER_DIALOG_SCREEN_ROUTE);
         break;
 
       case FLUTTER_BOTTOM_NAVIGATION_VIEW_SCREEN_TITLE:

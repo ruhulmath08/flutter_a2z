@@ -28,6 +28,10 @@ class DisplayCode extends StatefulWidget {
 }
 
 class _DisplayCodeState extends State<DisplayCode> {
+  Future<String> function() async {
+    return 'abc';
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,7 +55,7 @@ class _DisplayCodeState extends State<DisplayCode> {
         ],
       ),
       body: FutureBuilder(
-        future: rootBundle.loadString(widget.filePath),
+        future: rootBundle.loadString(widget.filePath) ?? function(),
         builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
           if (snapshot.hasData) {
             return Scaffold(

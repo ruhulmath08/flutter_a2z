@@ -5,8 +5,11 @@ analyzer:
     prefer_single_quotes: error
     prefer_const_constructors: error
     avoid_unnecessary_containers: error
-    constant_identifier_names: warn
+    constant_identifier_names: erroe
     avoid_print: error
+    unnecessary_new: error
+    avoid_redundant_argument_values: error
+    avoid_escaping_inner_quotes: warning
 
 
 linter:
@@ -16,3 +19,6 @@ linter:
     avoid_unnecessary_containers: true
     constant_identifier_names: false
     avoid_print: true
+    unnecessary_new: true
+    avoid_redundant_argument_values: true
+    avoid_escaping_inner_quotes: false

@@ -78,3 +78,25 @@ const String FLUTTER_CARD_SCREEN_TITLE = 'Flutter Card';
 const String FLUTTER_FLIP_CARD_SCREEN_ROUTE = '/flutter_flip_card';
 const String FLUTTER_FLIP_CARD_SCREEN_TITLE = 'Flutter Flip Card';
 /*--------------------------------- Flutter CARD : End---------------------------------*/
+
+/*--------------------------------- Flutter AlertDialog : Start---------------------------------*/
+//flutter dialog
+const String FLUTTER_DIALOG_SCREEN_ROUTE = '/flutter_dialog';
+const String FLUTTER_DIALOG_SCREEN_TITLE = 'Alert Dialog';
+
+//flutter Default Dialog
+const String DEFAULT_DIALOG_SCREEN_ROUTE = '/default_dialog';
+const String DEFAULT_DIALOG_SCREEN_TITLE = 'Default Dialog';
+
+//flutter dialog with top_circle_image
+const String TOP_CIRCEL_IMAGE_DIALOG_SCREEN_ROUTE = '/top_circle_image_dialog';
+const String TOP_CIRCEL_IMAGE_DIALOG_SCREEN_TITLE = 'Top Circle Image Dialog';
+
+//dialog with InputField
+const String DIALOG_WITH_INPUT_FIELD_SCREEN_ROUTE = '/dialog_with_input_field';
+const String DIALOG_WITH_INPUT_FIELD_SCREEN_TITLE = 'Dialog With Input Field';
+
+//dialog for get location
+const String DIALOG_FOR_LOCATION_SCREEN_ROUTE = '/dialog_for_location';
+const String DIALOG_FOR_LOCATION_SCREEN_TITLE = 'Dialog For Location';
+/*--------------------------------- Flutter AlertDialog : End---------------------------------*/

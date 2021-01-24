@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_a2z/constants/constants.dart';
-import 'package:flutter_a2z/utility/utility.dart';
+import 'package:flutter_a2z/utility/common_function.dart';
 import 'package:toast/toast.dart';
 
 class CommonWidgets {
@@ -79,7 +79,7 @@ class CommonWidgets {
                           color: Colors.blue,
                           onPressed: () {
                             Navigator.of(buildContext).pop();
-                            Utility.launchURL(buildContext, url);
+                            launchURL(buildContext, url);
                           },
                           child: Text(
                             yesButton,
@@ -120,5 +120,13 @@ class CommonWidgets {
       backgroundColor: Colors.grey,
       duration: Toast.LENGTH_LONG,
     );
+  }
+
+  static Widget addVerticalSpace(double height) {
+    return SizedBox(height: height);
+  }
+
+  static Widget addHorizontalSpace(double width) {
+    return SizedBox(width: width);
   }
 }

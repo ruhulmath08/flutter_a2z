@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_a2z/constants/constants.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
 
 class FlutterCard extends StatelessWidget {
@@ -13,7 +14,7 @@ class FlutterCard extends StatelessWidget {
         title: Text(title),
       ),
       body: ListView(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(Constants.PAGE_DEFAULT_PADDING),
         children: [
           ElevatedButton.icon(
             onPressed: () {

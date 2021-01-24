@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_a2z/common_widgets/common_widgets.dart';
+import 'package:flutter_a2z/my_app_style/my_app_style.dart';
 
 Widget myDrawer(BuildContext context) {
   return Drawer(
     child: Column(
       children: [
         UserAccountsDrawerHeader(
+          arrowColor: COLOR_BLUE,
           accountName: const Text('Md. Ruhul Amin'),
           accountEmail: const Text('ruhulmath08@gmail.com'),
           currentAccountPicture: const CircleAvatar(
@@ -25,8 +27,8 @@ Widget myDrawer(BuildContext context) {
           ],
         ),
         ListTile(
-          visualDensity: const VisualDensity(horizontal: 0, vertical: -4), //reduce padding
-          trailing: const Icon(Icons.arrow_forward_ios, color: Colors.black),
+          visualDensity: const VisualDensity(vertical: -4), //reduce padding
+          trailing: const Icon(Icons.arrow_forward_ios),
           title: const Text('Flutter Basic'),
           onTap: () {
             CommonWidgets.showToast(context, 'Flutter Basic');
@@ -34,8 +36,8 @@ Widget myDrawer(BuildContext context) {
         ),
         const Divider(color: Colors.blue, thickness: 1),
         ListTile(
-          visualDensity: const VisualDensity(horizontal: 0, vertical: -4), //reduce padding
-          trailing: const Icon(Icons.info_outlined, color: Colors.black),
+          visualDensity: const VisualDensity(vertical: -4), //reduce padding
+          trailing: const Icon(Icons.info_outlined),
           title: const Text('Flutter Intermediate'),
           onTap: () {
             CommonWidgets.showToast(context, 'Flutter Basic');
@@ -43,8 +45,8 @@ Widget myDrawer(BuildContext context) {
         ),
         const Divider(color: Colors.blue, thickness: 1),
         ListTile(
-          visualDensity: const VisualDensity(horizontal: 0, vertical: -4), //reduce padding
-          trailing: const Icon(Icons.text_rotation_none, color: Colors.black),
+          visualDensity: const VisualDensity(vertical: -4), //reduce padding
+          trailing: const Icon(Icons.text_rotation_none),
           title: const Text('Flutter Advanced'),
           onTap: () {
             CommonWidgets.showToast(context, 'Flutter Advanced');
@@ -52,8 +54,8 @@ Widget myDrawer(BuildContext context) {
         ),
         const Divider(color: Colors.blue, thickness: 1),
         ListTile(
-          visualDensity: const VisualDensity(horizontal: 0, vertical: -4), //reduce padding
-          trailing: const Icon(Icons.local_fire_department, color: Colors.black),
+          visualDensity: const VisualDensity(vertical: -4), //reduce padding
+          trailing: const Icon(Icons.local_fire_department),
           title: const Text('Flutter And Firebase'),
           onTap: () {
             CommonWidgets.showToast(context, 'Flutter Advanced');
@@ -61,8 +63,8 @@ Widget myDrawer(BuildContext context) {
         ),
         const Divider(color: Colors.blue, thickness: 1),
         ListTile(
-          visualDensity: const VisualDensity(horizontal: 0, vertical: -4), //reduce padding
-          trailing: const Icon(Icons.location_pin, color: Colors.black),
+          visualDensity: const VisualDensity(vertical: -4), //reduce padding
+          trailing: const Icon(Icons.location_pin),
           title: const Text('Flutter With Map'),
           onTap: () {
             CommonWidgets.showToast(context, 'Flutter Advanced');
@@ -77,8 +79,8 @@ Widget myDrawer(BuildContext context) {
               children: [
                 const Divider(color: Colors.blue, thickness: 1),
                 ListTile(
-                  visualDensity: const VisualDensity(horizontal: 0, vertical: -4), //reduce padding
-                  trailing: const Icon(Icons.touch_app_sharp, color: Colors.black),
+                  visualDensity: const VisualDensity(vertical: -4), //reduce padding
+                  trailing: const Icon(Icons.settings),
                   title: const Text('Setting'),
                   onTap: () {
                     CommonWidgets.showToast(context, 'Setting');

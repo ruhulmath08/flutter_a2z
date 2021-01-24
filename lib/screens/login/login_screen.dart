@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_a2z/common_widgets/common_widgets.dart';
+import 'package:flutter_a2z/constants/constants.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -21,112 +23,107 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(widget.title)),
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.only(top: 10.0, right: 10.0, bottom: 10.0, left: 10.0),
-          child: ListView(
-            children: <Widget>[
-              const Center(
-                child: CircleAvatar(
-                  backgroundImage: AssetImage('assets/images/flutter_a2z.png'),
-                  backgroundColor: Colors.white,
-                  minRadius: 60,
-                  maxRadius: 80,
+    final ThemeData themeData = Theme.of(context);
+
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: Text(widget.title)),
+        body: ListView(
+          padding: const EdgeInsets.all(Constants.PAGE_DEFAULT_PADDING),
+          children: <Widget>[
+            const Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/images/flutter_a2z.png'),
+                backgroundColor: Colors.white,
+                minRadius: 60,
+                maxRadius: 80,
+              ),
+            ),
+            CommonWidgets.addVerticalSpace(20.0),
+            TextFormField(
+              keyboardType: TextInputType.emailAddress,
+              decoration: InputDecoration(
+                hintText: 'Username',
+                hintStyle: themeData.textTheme.bodyText1,
+                labelText: 'Username',
+                labelStyle: themeData.textTheme.bodyText1,
+                prefixIcon: const Icon(Icons.person),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(5.0),
                 ),
               ),
-              const SizedBox(
-                height: 20.0,
-              ),
-              TextFormField(
-                keyboardType: TextInputType.emailAddress,
-                autofocus: false,
-                decoration: InputDecoration(
-                  hintText: 'Username',
-                  labelText: 'Username',
-                  prefixIcon: const Icon(Icons.person),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(5.0),
+            ),
+            CommonWidgets.addVerticalSpace(20.0),
+            TextFormField(
+              keyboardType: TextInputType.emailAddress,
+              obscureText: _obscureText,
+              decoration: InputDecoration(
+                hintText: 'Password',
+                hintStyle: themeData.textTheme.bodyText1,
+                labelText: 'Password',
+                labelStyle: themeData.textTheme.bodyText1,
+                prefixIcon: const Icon(Icons.lock),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(5.0),
+                ),
+                suffixIcon: InkWell(
+                  onTap: () {
+                    setState(() {
+                      _obscureText = !_obscureText;
+                    });
+                  },
+                  child: Icon(
+                    _obscureText ? Icons.visibility : Icons.visibility_off,
                   ),
                 ),
               ),
-              const SizedBox(
-                height: 20.0,
-              ),
-              TextFormField(
-                keyboardType: TextInputType.emailAddress,
-                autofocus: false,
-                obscureText: _obscureText,
-                decoration: InputDecoration(
-                    hintText: 'Password',
-                    labelText: 'Password',
-                    prefixIcon: const Icon(Icons.lock),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(5.0),
-                    ),
-                    suffixIcon: InkWell(
-                      onTap: () {
-                        setState(() {
-                          _obscureText = !_obscureText;
-                        });
-                      },
-                      child: Icon(
-                        _obscureText ? Icons.visibility : Icons.visibility_off,
-                      ),
-                    )),
-              ),
-              const SizedBox(
-                height: 20.0,
-              ),
-              ButtonTheme(
-                height: 50.0,
-                child: RaisedButton(
-                  color: Colors.blue,
-                  elevation: 5,
-                  onPressed: () {
-                    Navigator.pushNamed(context, HOME_SCREEN_ROUTE);
-                  },
-                  child: const Text('Login', style: TextStyle(fontSize: 20, color: Colors.white)),
+            ),
+            CommonWidgets.addVerticalSpace(20.0),
+            ButtonTheme(
+              height: 50.0,
+              child: RaisedButton(
+                color: Colors.blue,
+                elevation: 5,
+                onPressed: () {
+                  Navigator.pushNamed(context, HOME_SCREEN_ROUTE);
+                },
+                child: Text(
+                  'Login',
+                  style: themeData.textTheme.button,
                 ),
               ),
-              const SizedBox(
-                height: 20.0,
-              ),
-              _createAccountLabel(),
-              const SizedBox(
-                height: 20.0,
-              ),
-              _divider(),
-              const SizedBox(
-                height: 20.0,
-              ),
-              _facebookButton(),
-              const SizedBox(
-                height: 20.0,
-              ),
-              _googleButton(),
-            ],
-          ),
+            ),
+            CommonWidgets.addVerticalSpace(20.0),
+            _createAccountLabel(),
+            CommonWidgets.addVerticalSpace(20.0),
+            _divider(),
+            const SizedBox(
+              height: 20.0,
+            ),
+            _facebookButton(),
+            CommonWidgets.addVerticalSpace(20.0),
+            _googleButton(),
+          ],
         ),
       ),
     );
   }
 
   Widget _divider() {
+    final ThemeData themeData = Theme.of(context);
     return Row(
-      children: <Widget>[
+      children:  <Widget>[
         const Expanded(
           child: Padding(
-            padding: const EdgeInsets.only(right: 5),
+            padding: EdgeInsets.only(right: 5),
             child: Divider(
               thickness: 2,
             ),
           ),
         ),
-        const Text(
+        Text(
           'Social Login',
-          style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold, color: Colors.grey),
+          style: themeData.textTheme.headline4,
         ),
         const Expanded(
           child: Padding(
@@ -141,6 +138,7 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Widget _facebookButton() {
+    final ThemeData themeData = Theme.of(context);
     return Container(
       height: 50,
       //margin: EdgeInsets.symmetric(vertical: 20),
@@ -150,14 +148,13 @@ class _LoginScreenState extends State<LoginScreen> {
       child: Row(
         children: <Widget>[
           Expanded(
-            flex: 1,
             child: Container(
               decoration: const BoxDecoration(
                 color: Color(0xff1959a9),
                 borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), topLeft: Radius.circular(5)),
               ),
               alignment: Alignment.center,
-              child: const Text('f', style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.w400)),
+              child: Text('f', style: themeData.textTheme.button),
             ),
           ),
           Expanded(
@@ -168,7 +165,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 borderRadius: BorderRadius.only(bottomRight: Radius.circular(5), topRight: Radius.circular(5)),
               ),
               alignment: Alignment.center,
-              child: const Text('Log in with Facebook', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w400)),
+              child: Text('Log in with Facebook', style: themeData.textTheme.caption),
             ),
           ),
         ],
@@ -177,6 +174,7 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Widget _googleButton() {
+    final ThemeData themeData = Theme.of(context);
     return Container(
       height: 50,
       //margin: EdgeInsets.symmetric(vertical: 20),
@@ -186,14 +184,13 @@ class _LoginScreenState extends State<LoginScreen> {
       child: Row(
         children: <Widget>[
           Expanded(
-            flex: 1,
             child: Container(
               decoration: const BoxDecoration(
                 color: Color(0xff34a853),
                 borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), topLeft: Radius.circular(5)),
               ),
               alignment: Alignment.center,
-              child: const Text('G', style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.w400)),
+              child:  Text('G', style: themeData.textTheme.button),
             ),
           ),
           Expanded(
@@ -204,7 +201,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 borderRadius: BorderRadius.only(bottomRight: Radius.circular(5), topRight: Radius.circular(5)),
               ),
               alignment: Alignment.center,
-              child: const Text('Log in with Google', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w400)),
+              child: Text('Log in with Google', style: themeData.textTheme.caption),
             ),
           ),
         ],
@@ -213,20 +210,19 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Widget _createAccountLabel() {
+    final ThemeData themeData = Theme.of(context);
     return InkWell(
       onTap: () {
         Navigator.pushNamed(context, SIGN_UP_SCREEN_ROUTE);
       },
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
-        children: <Widget>[
-          const Text(
-            'Don\'t have an account ?',
-            style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
+        children:  <Widget>[
+          Text(
+            'Don\'t have an account?',
+            style: themeData.textTheme.bodyText1,
           ),
-          const SizedBox(
-            width: 10,
-          ),
+          CommonWidgets.addHorizontalSpace(10.0),
           const Text(
             'Sign Up',
             style: TextStyle(color: Colors.blue, fontSize: 15, fontWeight: FontWeight.w600),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_a2z/constants/display_code_related_link.dart';
+import 'package:flutter_a2z/my_app_style/my_app_style.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
 import 'package:flutter_a2z/common_widgets/common_widgets.dart';
 import 'package:flutter_a2z/screens/display_code/display_code.dart';
@@ -46,8 +47,8 @@ class _FlutterButtonState extends State<FlutterButton> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: COLOR_BLUE,
         heroTag: 'display_code_add_button',
-        child: const Icon(Icons.code),
         onPressed: () {
           Navigator.push(
             context,
@@ -63,6 +64,7 @@ class _FlutterButtonState extends State<FlutterButton> {
             ),
           );
         },
+        child: const Icon(Icons.code),
       ),
     );
   }

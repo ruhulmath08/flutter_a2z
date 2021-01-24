@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
+import 'package:flutter_a2z/screens/alert_dialog/default_dialog/default_dialog.dart';
+import 'package:flutter_a2z/screens/alert_dialog/dialog_with_input_field/dialog_with_input_field.dart';
+import 'package:flutter_a2z/screens/alert_dialog/my_alert_dialog.dart';
+import 'package:flutter_a2z/screens/alert_dialog/top_circle_image_dialog/top_circle_image_dialog.dart';
 import 'package:flutter_a2z/screens/bottom_navigaion/my_bottom_navigation.dart';
 import 'package:flutter_a2z/screens/buttons/flutter_buttons.dart';
 import 'package:flutter_a2z/screens/buttons/my_checkbox/my_check_box.dart';
@@ -164,5 +168,47 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       );
       break;
     /*--------------------------------- Flutter CARD : End---------------------------------*/
+
+    /*--------------------------------- Flutter AlertDialog : Start---------------------------------*/
+    //flutter dialog
+    case FLUTTER_DIALOG_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const MyAlertDialog(
+          title: FLUTTER_DIALOG_SCREEN_TITLE,
+        ),
+      );
+      break;
+
+    //default dialog
+    case DEFAULT_DIALOG_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const DefaultDialog(
+          title: DEFAULT_DIALOG_SCREEN_TITLE,
+        ),
+      );
+      break;
+
+    //flutter dialog with top_circle_image
+    case TOP_CIRCEL_IMAGE_DIALOG_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const TopCircleImageDialog(
+          title: TOP_CIRCEL_IMAGE_DIALOG_SCREEN_TITLE,
+        ),
+      );
+      break;
+
+    //dialog with InputField
+    case DIALOG_WITH_INPUT_FIELD_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const DialogWithInputField(
+          title: DIALOG_WITH_INPUT_FIELD_SCREEN_TITLE,
+        ),
+      );
+      break;
+    /*--------------------------------- Flutter AlertDialog : End---------------------------------*/
+
+    default:
+      return null;
+      break;
   }
 }

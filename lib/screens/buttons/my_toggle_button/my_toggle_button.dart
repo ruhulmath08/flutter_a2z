@@ -102,7 +102,6 @@ class _MyToggleButtonState extends State<MyToggleButton> {
           selectedColor: Colors.white,
           color: Colors.black,
           fillColor: Colors.lightBlue.shade900,
-          renderBorder: true,
           splashColor: Colors.red.withOpacity(0.5),
           onPressed: (int newIndex) {
             setState(() {
@@ -117,7 +116,7 @@ class _MyToggleButtonState extends State<MyToggleButton> {
           },
           // ignore: prefer_const_literals_to_create_immutables
           children: <Widget> [
-            const Padding(
+             const Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: 12,
               ),
