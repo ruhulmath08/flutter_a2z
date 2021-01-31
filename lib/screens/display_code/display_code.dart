@@ -28,8 +28,8 @@ class DisplayCode extends StatefulWidget {
 }
 
 class _DisplayCodeState extends State<DisplayCode> {
-  Future<String> function() async {
-    return 'abc';
+  Future<String> function(String link) async {
+    return 'Cannot access: $link';
   }
 
   @override
@@ -42,7 +42,7 @@ class _DisplayCodeState extends State<DisplayCode> {
             onPressed: () {
               CommonWidgets.browsLinkDialog(
                 buildContext: context,
-                icon: const Icon(Icons.open_in_new, color: Colors.white, size: 60),
+                icon: const Icon(Icons.open_in_new, color: COLOR_WHITE, size: 60),
                 title: 'Brows GitHub Link',
                 description: 'Are you sure to visit GitHub link for details information?',
                 url: widget.githubLink,
@@ -55,7 +55,7 @@ class _DisplayCodeState extends State<DisplayCode> {
         ],
       ),
       body: FutureBuilder(
-        future: rootBundle.loadString(widget.filePath) ?? function(),
+        future: rootBundle.loadString(widget.filePath) ?? function(widget.filePath),
         builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
           if (snapshot.hasData) {
             return Scaffold(
@@ -74,6 +74,7 @@ class _DisplayCodeState extends State<DisplayCode> {
       ),
       floatingActionButton: SpeedDial(
         animatedIcon: AnimatedIcons.menu_close,
+        backgroundColor: COLOR_BLUE,
         curve: Curves.bounceInOut,
         overlayColor: Colors.black87,
         overlayOpacity: 0.7,
@@ -87,7 +88,7 @@ class _DisplayCodeState extends State<DisplayCode> {
                 //_launchURL(widget.webLink);
                 CommonWidgets.browsLinkDialog(
                   buildContext: context,
-                  icon: const Icon(Icons.web, color: Colors.white, size: 60),
+                  icon: const Icon(Icons.web, color: COLOR_WHITE, size: 60),
                   title: 'Brows Website Link',
                   description: 'Are you sure to visit Website link for details information?',
                   url: widget.webLink,
@@ -104,7 +105,11 @@ class _DisplayCodeState extends State<DisplayCode> {
                 //_launchURL(widget.youTubeLink);
                 CommonWidgets.browsLinkDialog(
                   buildContext: context,
-                  icon: const Icon(Icons.play_circle_fill_rounded, color: Colors.white, size: 60),
+                  icon: const Icon(
+                    Icons.play_circle_fill_rounded,
+                    color: COLOR_WHITE,
+                    size: 60,
+                  ),
                   title: 'Brows Youtube Link',
                   description: 'Are you sure to visit Youtube for details information?',
                   url: widget.youTubeLink,
@@ -120,7 +125,7 @@ class _DisplayCodeState extends State<DisplayCode> {
               onTap: () {
                 CommonWidgets.browsLinkDialog(
                   buildContext: context,
-                  icon: const Icon(Icons.dock, color: Colors.white, size: 60),
+                  icon: const Icon(Icons.dock, color: COLOR_WHITE, size: 60),
                   title: 'Brows Documentation Link',
                   description: 'Are you sure to visit Documentation link for details information?',
                   url: widget.docLink,

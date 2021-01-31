@@ -32,10 +32,10 @@ class _MyAlertDialogState extends State<MyAlertDialog> {
             ),
             ElevatedButton.icon(
               onPressed: () {
-                Navigator.pushNamed(context, TOP_CIRCEL_IMAGE_DIALOG_SCREEN_ROUTE);
+                Navigator.pushNamed(context, TOP_CIRCLE_IMAGE_DIALOG_SCREEN_ROUTE);
               },
               icon: const Icon(Icons.image),
-              label: const Text(TOP_CIRCEL_IMAGE_DIALOG_SCREEN_TITLE),
+              label: const Text(TOP_CIRCLE_IMAGE_DIALOG_SCREEN_TITLE),
             ),
             ElevatedButton.icon(
               onPressed: () {
@@ -50,6 +50,13 @@ class _MyAlertDialogState extends State<MyAlertDialog> {
               },
               icon: const Icon(Icons.location_pin),
               label: const Text(DIALOG_FOR_LOCATION_SCREEN_TITLE),
+            ),
+            ElevatedButton.icon(
+              onPressed: () {
+                Navigator.pushNamed(context, DIALOG_WITH_FULL_IMAGE_SCREEN_ROUTE);
+              },
+              icon: const Icon(Icons.fullscreen),
+              label: const Text(DIALOG_WITH_FULL_IMAGE_SCREEN_TITLE),
             )
           ],
         ),

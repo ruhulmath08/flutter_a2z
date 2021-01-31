@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_a2z/common_widgets/common_widgets.dart';
+import 'package:flutter_a2z/constants/constants.dart';
 import 'package:flutter_a2z/constants/display_code_related_link.dart';
 import 'package:flutter_a2z/my_app_style/my_app_style.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
@@ -16,16 +18,17 @@ class MyToggleButton extends StatefulWidget {
 class _MyToggleButtonState extends State<MyToggleButton> {
   @override
   Widget build(BuildContext context) {
+    final ThemeData themeData = Theme.of(context);
     return Scaffold(
       appBar: AppBar(title: Text(widget.title)),
       body: ListView(
-        padding: const EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(Constants.PAGE_DEFAULT_PADDING),
         children: [
-          const Text(
+          Text(
             'Single+Required ToggleButton',
-              style: buttonTitleStyle
+            style: themeData.textTheme.headline3,
           ),
-          const SizedBox(height: 20),
+          CommonWidgets.addVerticalSpace(20),
           singleAndRequiredToggleButton(context),
           const Padding(
             padding: EdgeInsets.symmetric(vertical: 10),
@@ -34,11 +37,11 @@ class _MyToggleButtonState extends State<MyToggleButton> {
               color: Colors.black,
             ),
           ),
-          const Text(
+          Text(
             'Single+NotRequired ToggleButton',
-              style: buttonTitleStyle
+            style: themeData.textTheme.headline3,
           ),
-          const SizedBox(height: 20),
+          CommonWidgets.addVerticalSpace(20),
           singleAndNotRequiredToggleButton(context),
           const Padding(
             padding: EdgeInsets.symmetric(vertical: 10),
@@ -47,11 +50,11 @@ class _MyToggleButtonState extends State<MyToggleButton> {
               color: Colors.black,
             ),
           ),
-          const Text(
+          Text(
             'Multiple+Required ToggleButton',
-              style: buttonTitleStyle
+            style: themeData.textTheme.headline3,
           ),
-          const SizedBox(height: 20),
+          CommonWidgets.addVerticalSpace(20),
           multipleAndRequiredToggleButton(context),
           const Padding(
             padding: EdgeInsets.symmetric(vertical: 10),
@@ -60,11 +63,11 @@ class _MyToggleButtonState extends State<MyToggleButton> {
               color: Colors.black,
             ),
           ),
-          const Text(
+          Text(
             'Multiple+NotRequired ToggleButton',
-              style: buttonTitleStyle
+            style: themeData.textTheme.headline3,
           ),
-          const SizedBox(height: 20),
+          CommonWidgets.addVerticalSpace(20),
           multipleAndNotRequiredToggleButton(context),
         ],
       ),
@@ -85,6 +88,7 @@ class _MyToggleButtonState extends State<MyToggleButton> {
           );
         },
         heroTag: 'display_code_toggle_button',
+        backgroundColor: COLOR_BLUE,
         child: const Icon(Icons.code),
       ),
     );
@@ -94,6 +98,8 @@ class _MyToggleButtonState extends State<MyToggleButton> {
   final List<bool> _isSelectedSingleAndRequired = [true, false, false];
 
   Widget singleAndRequiredToggleButton(BuildContext context) {
+    final ThemeData themeData = Theme.of(context);
+
     return Center(
       child: Container(
         color: Colors.green.withOpacity(0.5),
@@ -101,6 +107,7 @@ class _MyToggleButtonState extends State<MyToggleButton> {
           isSelected: _isSelectedSingleAndRequired,
           selectedColor: Colors.white,
           color: Colors.black,
+          textStyle: themeData.textTheme.button,
           fillColor: Colors.lightBlue.shade900,
           splashColor: Colors.red.withOpacity(0.5),
           onPressed: (int newIndex) {
@@ -114,35 +121,29 @@ class _MyToggleButtonState extends State<MyToggleButton> {
               }
             });
           },
-          // ignore: prefer_const_literals_to_create_immutables
-          children: <Widget> [
-             const Padding(
+          children: const <Widget>[
+            Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: 12,
               ),
-              // ignore: prefer_const_literals_to_create_immutables
               child: Text(
                 'Flutter',
-                style: TextStyle(fontSize: 18),
               ),
             ),
-            const Padding(
+            Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: 12,
               ),
               child: Text(
                 'Kotlin',
-                style: TextStyle(fontSize: 18),
               ),
             ),
-            const Padding(
+            Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: 12,
               ),
               child: Text(
-                // ignore: prefer_const_literals_to_create_immutables, prefer_const_literals_to_create_immutables
                 'Java',
-                style: TextStyle(fontSize: 18),
               ),
             ),
           ],
@@ -228,43 +229,43 @@ class _MyToggleButtonState extends State<MyToggleButton> {
   final List<bool> _isSelectedMultipleAndNotRequired = [false, false, false, false];
 
   Widget multipleAndNotRequiredToggleButton(BuildContext context) {
+    final ThemeData themeData = Theme.of(context);
+
     return Center(
       child: ToggleButtons(
         isSelected: _isSelectedMultipleAndNotRequired,
         selectedColor: Colors.white,
         borderWidth: 2.0,
-        borderColor: Colors.lightBlue,
+        textStyle: themeData.textTheme.button,
+        borderColor: COLOR_BLUE,
         selectedBorderColor: Colors.red.shade400,
         color: Colors.black,
         fillColor: Colors.lightBlue.shade900,
         onPressed: (int index) {
-          setState(
-            () {
-              _isSelectedMultipleAndNotRequired[index] = !_isSelectedMultipleAndNotRequired[index];
-            },
-          );
+          setState(() {
+            _isSelectedMultipleAndNotRequired[index] = !_isSelectedMultipleAndNotRequired[index];
+          });
         },
-        // ignore: prefer_const_literals_to_create_immutables
-        children: [
-          const Padding(
+        children: const <Widget>[
+          Padding(
             padding: EdgeInsets.symmetric(horizontal: 24),
-            child: Text('Java', style: TextStyle(fontSize: 18)),
+            child: Text('Java'),
           ),
-          const Padding(
+          Padding(
             padding: EdgeInsets.symmetric(horizontal: 24),
-            child: Text('Dart', style: TextStyle(fontSize: 18)),
+            child: Text('Dart'),
           ),
-          const Padding(
+          Padding(
             padding: EdgeInsets.symmetric(horizontal: 24),
-            child: Text('Kotlin', style: TextStyle(fontSize: 18)),
+            child: Text('Kotlin'),
           ),
-          const Padding(
+          Padding(
             padding: EdgeInsets.symmetric(horizontal: 24),
-            child: Text('PHP', style: TextStyle(fontSize: 18)),
+            child: Text('PHP'),
           ),
         ],
       ),
     );
   }
-  /*------------------Multiple+NotRequired ToggleButton : End------------------*/
+/*------------------Multiple+NotRequired ToggleButton : End------------------*/
 }

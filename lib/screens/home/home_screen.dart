@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_a2z/common_widgets/common_widgets.dart';
 import 'package:flutter_a2z/models/home_card_item.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
 import 'package:flutter_a2z/screens/home/navation_drawer.dart';
@@ -16,72 +17,75 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   List<HomeCardItem> cardItemList = [];
 
-  //MyPopupMenu _selectedMenus = myPopupMenu[0];
-
   @override
   void initState() {
     super.initState();
     cardItemList = HomeCardItem.fetchAll();
   }
 
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-        actions: [
-          PopupMenuButton(itemBuilder: (BuildContext context) {
-            return myPopupMenu.map((MyPopupMenu popupMenu) {
-              return PopupMenuItem(
-                value: popupMenu,
-                child: ListTile(
-                  leading: popupMenu.icon,
-                  title: Text(popupMenu.title),
-                  onTap: () {
-                    selectedPopUpMenu(popupMenu);
-                    Navigator.of(context).pop();
-                  },
-                ),
-              );
-            }).toList();
-          })
-        ],
-      ),
-      drawer: myDrawer(context),
-      body: GridView(
-        padding: const EdgeInsets.all(5),
-        physics: const BouncingScrollPhysics(),
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
-        children: cardItemList.map((card) {
-          return Card(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(5.0),
-            ),
-            elevation: 5,
-            child: InkWell(
-              onTap: () {
-                gotoCorrespondScreen(card.title);
-              },
-              child: Padding(
-                padding: const EdgeInsets.all(5.0),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.all(10),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(100),
-                        border: Border.all(width: 2.0, color: Colors.blue),
+    final ThemeData themeData = Theme.of(context);
+
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text(widget.title),
+          actions: [
+            PopupMenuButton(itemBuilder: (BuildContext context) {
+              return myPopupMenu.map((MyPopupMenu popupMenu) {
+                return PopupMenuItem(
+                  value: popupMenu,
+                  child: ListTile(
+                    leading: popupMenu.icon,
+                    title: Text(popupMenu.title, style: themeData.textTheme.headline4,),
+                    onTap: () {
+                      selectedPopUpMenu(popupMenu);
+                      Navigator.of(context).pop();
+                    },
+                  ),
+                );
+              }).toList();
+            })
+          ],
+        ),
+        drawer: myDrawer(context),
+        body: GridView(
+          padding: const EdgeInsets.all(5),
+          physics: const BouncingScrollPhysics(),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+          children: cardItemList.map((card) {
+            return Card(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5.0),
+              ),
+              elevation: 5,
+              child: InkWell(
+                onTap: () {
+                  gotoCorrespondScreen(card.title);
+                },
+                child: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(100),
+                          border: Border.all(width: 2.0, color: Colors.blue),
+                        ),
+                        child: Icon(card.icon, color: Colors.blue),
                       ),
-                      child: Icon(card.icon, color: Colors.blue),
-                    ),
-                    const SizedBox(height: 10),
-                    Text(card.title, style: const TextStyle(fontWeight: FontWeight.bold)),
-                  ],
+                      CommonWidgets.addVerticalSpace(10.0),
+                      Text(card.title, style: themeData.textTheme.bodyText1),
+                    ],
+                  ),
                 ),
               ),
-            ),
-          );
-        }).toList(),
+            );
+          }).toList(),
+        ),
       ),
     );
   }

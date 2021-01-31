@@ -20,6 +20,8 @@ class _FlutterButtonState extends State<FlutterButton> {
 
   @override
   Widget build(BuildContext context) {
+    final ThemeData themeData = Theme.of(context);
+
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -70,18 +72,26 @@ class _FlutterButtonState extends State<FlutterButton> {
   }
 
   Widget textButton() {
+    final ThemeData themeData = Theme.of(context);
     return TextButton(
-      child: const Text('Text Button'),
       onPressed: () {
         CommonWidgets.showToast(context, 'Text Button');
       },
+      child: Text(
+        'Text Button',
+        style: themeData.textTheme.bodyText1,
+      ),
     );
   }
 
   Widget textButtonWithIcon() {
+    final ThemeData themeData = Theme.of(context);
     return TextButton.icon(
       icon: const Icon(Icons.android_sharp, size: 18),
-      label: const Text('Text Button With Icon'),
+      label: Text(
+        'Text Button With Icon',
+        style: themeData.textTheme.bodyText1,
+      ),
       onPressed: () {
         CommonWidgets.showToast(context, 'Text Button With Icon');
       },
@@ -89,36 +99,52 @@ class _FlutterButtonState extends State<FlutterButton> {
   }
 
   Widget outlineButton() {
+    final ThemeData themeData = Theme.of(context);
     return OutlineButton(
       onPressed: () {
         CommonWidgets.showToast(context, 'Text Button With Icon');
       },
-      child: const Text('Outline Button'),
+      child: Text(
+        'Outline Button',
+        style: themeData.textTheme.bodyText1,
+      ),
     );
   }
 
   Widget outlineButtonWithIcon() {
+    final ThemeData themeData = Theme.of(context);
     return OutlinedButton.icon(
       onPressed: () {
         CommonWidgets.showToast(context, 'Outline Button With Icon');
       },
       icon: const Icon(Icons.android_sharp, size: 18),
-      label: const Text('Outline Button With Icon'),
+      label: Text(
+        'Outline Button With Icon',
+        style: themeData.textTheme.bodyText1,
+      ),
     );
   }
 
   Widget elevatedButton() {
+    final ThemeData themeData = Theme.of(context);
     return ElevatedButton(
       onPressed: () {
         CommonWidgets.showToast(context, 'Contained Button');
       },
-      child: const Text('Contained Button'),
+      child: Text(
+        'Contained Button',
+        style: themeData.textTheme.button,
+      ),
     );
   }
 
   Widget elevatedButtonWithIcon() {
+    final ThemeData themeData = Theme.of(context);
     return ElevatedButton.icon(
-      label: const Text('Contained Button With Icon'),
+      label: Text(
+        'Contained Button With Icon',
+        style: themeData.textTheme.button,
+      ),
       icon: const Icon(Icons.android_sharp),
       onPressed: () {
         CommonWidgets.showToast(context, 'Contained Button With Icon');
@@ -138,39 +164,52 @@ class _FlutterButtonState extends State<FlutterButton> {
   }
 
   Widget flatButton() {
+    final ThemeData themeData = Theme.of(context);
     return FlatButton(
       color: Colors.blue,
       onPressed: () {
         CommonWidgets.showToast(context, 'FlatButton');
       },
-      child: const Text(
+      child: Text(
         'FlatButton',
-        style: TextStyle(color: Colors.white),
+        style: themeData.textTheme.button,
       ),
     );
   }
 
   Widget flatButtonWithIcon() {
+    final ThemeData themeData = Theme.of(context);
     return FlatButton.icon(
       color: Colors.blue,
       onPressed: () {
         CommonWidgets.showToast(context, 'FlatButton With Icon');
       },
-      icon: const Icon(Icons.add_road_sharp, color: Colors.white),
-      label: const Text('FlatButton With Icon', style: TextStyle(color: Colors.white)),
+      icon: const Icon(
+        Icons.add_road_sharp,
+        color: COLOR_WHITE,
+      ),
+      label: Text(
+        'FlatButton With Icon',
+        style: themeData.textTheme.button,
+      ),
     );
   }
 
   Widget raisedButton() {
+    final ThemeData themeData = Theme.of(context);
     return RaisedButton(
       onPressed: () {
         CommonWidgets.showToast(context, 'RaisedButton');
       },
-      child: const Text('RaisedButton'),
+      child: Text(
+        'RaisedButton',
+        style: themeData.textTheme.button,
+      ),
     );
   }
 
   Widget raisedButtonWithIcon() {
+    final ThemeData themeData = Theme.of(context);
     return RaisedButton.icon(
       onPressed: () {
         CommonWidgets.showToast(context, 'RaisedButton With Icon');
@@ -178,9 +217,9 @@ class _FlutterButtonState extends State<FlutterButton> {
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.all(Radius.circular(5.0)),
       ),
-      label: const Text(
+      label: Text(
         'RaisedButton With Icon',
-        style: TextStyle(color: Colors.white),
+        style: themeData.textTheme.button,
       ),
       icon: const Icon(
         Icons.android_sharp,
@@ -209,57 +248,107 @@ class _FlutterButtonState extends State<FlutterButton> {
   }
 
   Widget flutterToggleButton() {
+    final ThemeData themeData = Theme.of(context);
     return FlatButton.icon(
       color: Colors.blue,
       onPressed: () {
-        Navigator.pushNamed(context, FLUTTER_TOGGLE_BUTTON_SCREEN_ROUTE);
+        Navigator.pushNamed(
+          context,
+          FLUTTER_TOGGLE_BUTTON_SCREEN_ROUTE,
+        );
       },
-      icon: const Icon(Icons.toggle_on, color: Colors.white),
-      label: const Text('Toggle Button', style: TextStyle(color: Colors.white)),
+      icon: const Icon(
+        Icons.toggle_on,
+        color: COLOR_WHITE,
+      ),
+      label: Text(
+        'Toggle Button',
+        style: themeData.textTheme.button,
+      ),
     );
   }
 
-  Widget flutterRadioButton(){
+  Widget flutterRadioButton() {
+    final ThemeData themeData = Theme.of(context);
     return FlatButton.icon(
       color: Colors.blue,
       onPressed: () {
-        Navigator.pushNamed(context, FLUTTER_RADIOBUTTON_SCREEN_ROUTE);
+        Navigator.pushNamed(
+          context,
+          FLUTTER_RADIOBUTTON_SCREEN_ROUTE,
+        );
       },
-      icon: const Icon(Icons.radio_button_on, color: Colors.white),
-      label: const Text('Radio Button', style: TextStyle(color: Colors.white)),
+      icon: const Icon(
+        Icons.radio_button_on,
+        color: COLOR_WHITE,
+      ),
+      label: Text(
+        'Radio Button',
+        style: themeData.textTheme.button,
+      ),
     );
   }
 
-  Widget flutterDropdownButton(){
+  Widget flutterDropdownButton() {
+    final ThemeData themeData = Theme.of(context);
     return FlatButton.icon(
       color: Colors.blue,
       onPressed: () {
-        Navigator.pushNamed(context, FLUTTER_DROPDOWN_BUTTON_SCREEN_ROUTE);
+        Navigator.pushNamed(
+          context,
+          FLUTTER_DROPDOWN_BUTTON_SCREEN_ROUTE,
+        );
       },
-      icon: const Icon(Icons.arrow_drop_down_circle_outlined, color: Colors.white),
-      label: const Text('Dropdown Button', style: TextStyle(color: Colors.white)),
+      icon: const Icon(
+        Icons.arrow_drop_down_circle_outlined,
+        color: COLOR_WHITE,
+      ),
+      label: Text(
+        'Dropdown Button',
+        style: themeData.textTheme.button,
+      ),
     );
   }
 
-  Widget flutterCheckBox(){
+  Widget flutterCheckBox() {
+    final ThemeData themeData = Theme.of(context);
     return FlatButton.icon(
       color: Colors.blue,
       onPressed: () {
-        Navigator.pushNamed(context, FLUTTER_CHECKBOX_SCREEN_ROUTE);
+        Navigator.pushNamed(
+          context,
+          FLUTTER_CHECKBOX_SCREEN_ROUTE,
+        );
       },
-      icon: const Icon(Icons.check_box, color: Colors.white),
-      label: const Text('Flutter Checkbox', style: TextStyle(color: Colors.white)),
+      icon: const Icon(
+        Icons.check_box,
+        color: COLOR_WHITE,
+      ),
+      label: Text(
+        'Flutter Checkbox',
+        style: themeData.textTheme.button,
+      ),
     );
   }
 
-  Widget flutterPopupButton(){
+  Widget flutterPopupButton() {
+    final ThemeData themeData = Theme.of(context);
     return FlatButton.icon(
       color: Colors.blue,
       onPressed: () {
-        Navigator.pushNamed(context, FLUTTER_POPUP_MENU_BUTTON_SCREEN_ROUTE);
+        Navigator.pushNamed(
+          context,
+          FLUTTER_POPUP_MENU_BUTTON_SCREEN_ROUTE,
+        );
       },
-      icon: const Icon(Icons.more_vert_outlined, color: Colors.white),
-      label: const Text('PopupMenuButton', style: TextStyle(color: Colors.white)),
+      icon: const Icon(
+        Icons.more_vert_outlined,
+        color: COLOR_WHITE,
+      ),
+      label: Text(
+        'PopupMenuButton',
+        style: themeData.textTheme.button,
+      ),
     );
   }
 //ToDo: https://morioh.com/p/bb72b518ae60

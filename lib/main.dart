@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_a2z/my_app_style/my_app_style.dart';
 import 'package:flutter_a2z/routing/router.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
@@ -16,14 +17,15 @@ class MyApp extends StatelessWidget {
   //this widget is the root of our application
   @override
   Widget build(BuildContext context) {
-    // SystemChrome.setSystemUIOverlayStyle(
-    //   const SystemUiOverlayStyle(
-    //     statusBarColor: Colors.lightBlue,
-    //     statusBarIconBrightness: Brightness.light,
-    //     systemNavigationBarColor: Colors.lightBlue,
-    //     systemNavigationBarIconBrightness: Brightness.light,
-    //   ),
-    // );
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: Colors.lightBlue,
+        systemNavigationBarDividerColor: Colors.lightBlue,
+        statusBarIconBrightness: Brightness.light,
+        systemNavigationBarColor: Colors.lightBlue,
+        systemNavigationBarIconBrightness: Brightness.light,
+      ),
+    );
     final double screenWidth = window.physicalSize.width;
     return MaterialApp(
       title: 'Flutter a2z',

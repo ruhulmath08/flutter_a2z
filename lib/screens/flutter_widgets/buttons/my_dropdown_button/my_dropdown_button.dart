@@ -15,8 +15,16 @@ class _MyDropdownButtonState extends State<MyDropdownButton> {
     return Scaffold(
       appBar: AppBar(title: Text(widget.title)),
       body: Center(
-        child: Text(widget.title),
-      ),
+        child: Text(widget.title)),
     );
   }
 }
+
+//TODO: https://www.youtube.com/watch?app=desktop&v=gOqQeK_bBQk (Flutter Multi Level Dropdown)
+/*
+* Default dropdown
+* Dropdown from API
+* Dropdown from SQLite
+* Multi-Level dropdown
+*
+* */

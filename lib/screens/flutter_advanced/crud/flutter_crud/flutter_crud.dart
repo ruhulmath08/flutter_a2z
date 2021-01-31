@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
-import 'package:flutter_a2z/screens/crud/flutter_crud_add/flutter_crud_add.dart';
+import 'package:flutter_a2z/screens/flutter_advanced/crud/flutter_crud_add/flutter_crud_add.dart';
 
 class FlutterCrud extends StatefulWidget {
   final String title;

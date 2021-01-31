@@ -89,8 +89,8 @@ const String DEFAULT_DIALOG_SCREEN_ROUTE = '/default_dialog';
 const String DEFAULT_DIALOG_SCREEN_TITLE = 'Default Dialog';
 
 //flutter dialog with top_circle_image
-const String TOP_CIRCEL_IMAGE_DIALOG_SCREEN_ROUTE = '/top_circle_image_dialog';
-const String TOP_CIRCEL_IMAGE_DIALOG_SCREEN_TITLE = 'Top Circle Image Dialog';
+const String TOP_CIRCLE_IMAGE_DIALOG_SCREEN_ROUTE = '/top_circle_image_dialog';
+const String TOP_CIRCLE_IMAGE_DIALOG_SCREEN_TITLE = 'Top Circle Image Dialog';
 
 //dialog with InputField
 const String DIALOG_WITH_INPUT_FIELD_SCREEN_ROUTE = '/dialog_with_input_field';
@@ -99,4 +99,24 @@ const String DIALOG_WITH_INPUT_FIELD_SCREEN_TITLE = 'Dialog With Input Field';
 //dialog for get location
 const String DIALOG_FOR_LOCATION_SCREEN_ROUTE = '/dialog_for_location';
 const String DIALOG_FOR_LOCATION_SCREEN_TITLE = 'Dialog For Location';
+
+//dialog with full image
+const String DIALOG_WITH_FULL_IMAGE_SCREEN_ROUTE = '/dialog_with_full_image';
+const String DIALOG_WITH_FULL_IMAGE_SCREEN_TITLE = 'Dialog With Full Image';
 /*--------------------------------- Flutter AlertDialog : End---------------------------------*/
+
+/*--------------------------------- Flutter Advanced : Start---------------------------------*/
+//flutter advanced
+const String FLUTTER_ADVANCED_SCREEN_ROUTE = '/flutter_advanced';
+const String FLUTTER_ADVANCED_SCREEN_TITLE = 'Flutter Advanced';
+/*--------------------------------- Flutter Advanced : End---------------------------------*/
+
+/*--------------------------------- Flutter Lifecycle : Start---------------------------------*/
+//flutter lifecycle
+const String FLUTTER_LIFECYCLE_SCREEN_ROUTE = '/flutter_lifecycle';
+const String FLUTTER_LIFECYCLE_SCREEN_TITLE = 'Flutter Lifecycle';
+
+//flutter Stateful Widget Lifecycle
+const String STATEFUL_WIDGET_LIFECYCLE_SCREEN_ROUTE = '/stateful_widget_lifecycle';
+const String STATEFUL_WIDGET_LIFECYCLE_SCREEN_TITLE = 'Stateful Widget Lifecycle';
+/*--------------------------------- Flutter Lifecycle : End---------------------------------*/

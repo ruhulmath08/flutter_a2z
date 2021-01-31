@@ -20,6 +20,7 @@ dependencies:
   flutter_syntax_view: ^2.2.2 #17-01-2021
   flutter_speed_dial: ^1.2.5 #18-01-2021
   intl: ^0.16.1 #24-01-2021
+  giffy_dialog: ^1.8.0 #24-01-2021
 
 dev_dependencies:
   flutter_test:
@@ -31,9 +32,9 @@ flutter:
 
   assets:
     - assets/images/
-    - lib/screens/buttons/
-    - lib/screens/buttons/my_toggle_button/
-    - lib/screens/buttons/my_radio_button/
+    - lib/screens/flutter_widgets/buttons/
+    - lib/screens/flutter_widgets/buttons/my_toggle_button/
+    - lib/screens/flutter_widgets/buttons/my_radio_button/
 
   fonts:
     - family: Montserrat

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 //SpeedDialChild(display_code_screen) label style
 const TextStyle speedDialLabelStyle = TextStyle(fontWeight: FontWeight.bold, fontSize: 17);
-const TextStyle buttonTitleStyle = TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
 
 // ignore: constant_identifier_names
 const COLOR_BLACK = Color.fromRGBO(48, 47, 48, 1.0);
@@ -23,7 +22,7 @@ const TextTheme TEXT_THEME_DEFAULT = TextTheme(
   bodyText2: TextStyle(color: COLOR_GREY, fontSize: 14, fontWeight: FontWeight.w500, height: 1.5),
   subtitle1: TextStyle(color: COLOR_BLACK, fontSize: 12, fontWeight: FontWeight.w400),
   subtitle2: TextStyle(color: COLOR_GREY, fontSize: 12, fontWeight: FontWeight.w400),
-  button: TextStyle(color: COLOR_WHITE, fontWeight: FontWeight.w700, fontSize: 20),
+  button: TextStyle(color: COLOR_WHITE, fontWeight: FontWeight.w700, fontSize: 17),
   caption: TextStyle(color: COLOR_WHITE, fontSize: 18, fontWeight: FontWeight.w400),
 );
 

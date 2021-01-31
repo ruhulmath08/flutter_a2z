@@ -1,24 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
-import 'package:flutter_a2z/screens/alert_dialog/default_dialog/default_dialog.dart';
-import 'package:flutter_a2z/screens/alert_dialog/dialog_with_input_field/dialog_with_input_field.dart';
-import 'package:flutter_a2z/screens/alert_dialog/my_alert_dialog.dart';
-import 'package:flutter_a2z/screens/alert_dialog/top_circle_image_dialog/top_circle_image_dialog.dart';
-import 'package:flutter_a2z/screens/bottom_navigaion/my_bottom_navigation.dart';
-import 'package:flutter_a2z/screens/buttons/flutter_buttons.dart';
-import 'package:flutter_a2z/screens/buttons/my_checkbox/my_check_box.dart';
-import 'package:flutter_a2z/screens/buttons/my_dropdown_button/my_dropdown_button.dart';
-import 'package:flutter_a2z/screens/buttons/my_popup_menu_button/my_popup_menu_button.dart';
-import 'package:flutter_a2z/screens/buttons/my_radio_button/my_radio_button.dart';
-import 'package:flutter_a2z/screens/buttons/my_toggle_button/my_toggle_button.dart';
-import 'package:flutter_a2z/screens/cards/flutter_card.dart';
-import 'package:flutter_a2z/screens/cards/flutter_flip_card/flutter_flip_card.dart';
-import 'package:flutter_a2z/screens/crud/flutter_crud/flutter_crud.dart';
-import 'package:flutter_a2z/screens/crud/flutter_crud_add/flutter_crud_add.dart';
+import 'package:flutter_a2z/screens/flutter_advanced/crud/flutter_crud/flutter_crud.dart';
+import 'package:flutter_a2z/screens/flutter_advanced/crud/flutter_crud_add/flutter_crud_add.dart';
+import 'package:flutter_a2z/screens/flutter_lifecycle/flutter_lifecycle.dart';
+import 'package:flutter_a2z/screens/flutter_lifecycle/stateful_widget/stateful_widget_lifecycle.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/alert_dialog/default_dialog/default_dialog.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/alert_dialog/dialog_with_full_image/dialog_with_full_image.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/alert_dialog/dialog_with_input_field/dialog_with_input_field.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/alert_dialog/my_alert_dialog.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/alert_dialog/top_circle_image_dialog/top_circle_image_dialog.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/bottom_navigaion/my_bottom_navigation.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/buttons/flutter_buttons.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/buttons/my_checkbox/my_check_box.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/buttons/my_dropdown_button/my_dropdown_button.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/buttons/my_popup_menu_button/my_popup_menu_button.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/buttons/my_radio_button/my_radio_button.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/buttons/my_toggle_button/my_toggle_button.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/cards/flutter_card.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/cards/flutter_flip_card/flutter_flip_card.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/tab_view_layout/tab_view_layout.dart';
 import 'package:flutter_a2z/screens/home/home_screen.dart';
 import 'package:flutter_a2z/screens/login/login_screen.dart';
 import 'package:flutter_a2z/screens/sign_up/sign_up_screen.dart';
-import 'package:flutter_a2z/screens/tab_view_layout/tab_view_layout.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
@@ -189,10 +192,10 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       break;
 
     //flutter dialog with top_circle_image
-    case TOP_CIRCEL_IMAGE_DIALOG_SCREEN_ROUTE:
+    case TOP_CIRCLE_IMAGE_DIALOG_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const TopCircleImageDialog(
-          title: TOP_CIRCEL_IMAGE_DIALOG_SCREEN_TITLE,
+          title: TOP_CIRCLE_IMAGE_DIALOG_SCREEN_TITLE,
         ),
       );
       break;
@@ -205,7 +208,34 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
       break;
+
+    //dialog with full image
+    case DIALOG_WITH_FULL_IMAGE_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const DialogWithFullImage(
+          title: DIALOG_WITH_FULL_IMAGE_SCREEN_TITLE,
+        ),
+      );
+      break;
     /*--------------------------------- Flutter AlertDialog : End---------------------------------*/
+
+    /*--------------------------------- Flutter Lifecycle : Start---------------------------------*/
+    //flutter lifecycle
+    case FLUTTER_LIFECYCLE_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterLifecycle(
+          title: FLUTTER_LIFECYCLE_SCREEN_TITLE,
+        ),
+      );
+
+      //flutter stateful_widgets_lifecycle
+    case STATEFUL_WIDGET_LIFECYCLE_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const StatefulWidgetLifecycle(
+          title: STATEFUL_WIDGET_LIFECYCLE_SCREEN_TITLE,
+        ),
+      );
+    /*--------------------------------- Flutter Lifecycle : End---------------------------------*/
 
     default:
       return null;

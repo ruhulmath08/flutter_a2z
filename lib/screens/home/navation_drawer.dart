@@ -32,6 +32,27 @@ Widget myDrawer(BuildContext context) {
           title: const Text('Flutter Basic'),
           onTap: () {
             CommonWidgets.showToast(context, 'Flutter Basic');
+            Navigator.of(context).pop();
+          },
+        ),
+        const Divider(color: Colors.blue, thickness: 1),
+        ListTile(
+          visualDensity: const VisualDensity(vertical: -4), //reduce padding
+          trailing: const Icon(Icons.widgets),
+          title: const Text('Flutter Widgets'),
+          onTap: () {
+            CommonWidgets.showToast(context, 'Flutter Basic');
+            Navigator.of(context).pop();
+          },
+        ),
+        const Divider(color: Colors.blue, thickness: 1),
+        ListTile(
+          visualDensity: const VisualDensity(vertical: -4), //reduce padding
+          trailing: const Icon(Icons.all_inclusive_rounded),
+          title: const Text('Flutter Lifecycle Details'),
+          onTap: () {
+            CommonWidgets.showToast(context, 'Flutter Basic');
+            Navigator.of(context).pop();
           },
         ),
         const Divider(color: Colors.blue, thickness: 1),
@@ -41,6 +62,7 @@ Widget myDrawer(BuildContext context) {
           title: const Text('Flutter Intermediate'),
           onTap: () {
             CommonWidgets.showToast(context, 'Flutter Basic');
+            Navigator.of(context).pop();
           },
         ),
         const Divider(color: Colors.blue, thickness: 1),
@@ -50,6 +72,7 @@ Widget myDrawer(BuildContext context) {
           title: const Text('Flutter Advanced'),
           onTap: () {
             CommonWidgets.showToast(context, 'Flutter Advanced');
+            Navigator.of(context).pop();
           },
         ),
         const Divider(color: Colors.blue, thickness: 1),
@@ -59,6 +82,7 @@ Widget myDrawer(BuildContext context) {
           title: const Text('Flutter And Firebase'),
           onTap: () {
             CommonWidgets.showToast(context, 'Flutter Advanced');
+            Navigator.of(context).pop();
           },
         ),
         const Divider(color: Colors.blue, thickness: 1),
@@ -68,6 +92,7 @@ Widget myDrawer(BuildContext context) {
           title: const Text('Flutter With Map'),
           onTap: () {
             CommonWidgets.showToast(context, 'Flutter Advanced');
+            Navigator.of(context).pop();
           },
         ),
         const Divider(color: Colors.blue, thickness: 1),
@@ -84,6 +109,7 @@ Widget myDrawer(BuildContext context) {
                   title: const Text('Setting'),
                   onTap: () {
                     CommonWidgets.showToast(context, 'Setting');
+                    Navigator.of(context).pop();
                   },
                 ),
               ],

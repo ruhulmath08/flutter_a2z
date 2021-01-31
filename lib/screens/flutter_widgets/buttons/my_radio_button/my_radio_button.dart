@@ -21,14 +21,15 @@ class _MyRadioButtonState extends State<MyRadioButton> {
 
   @override
   Widget build(BuildContext context) {
+    final ThemeData themeData = Theme.of(context);
     return Scaffold(
       appBar: AppBar(title: Text(widget.title)),
       body: ListView(
         padding: const EdgeInsets.all(Constants.PAGE_DEFAULT_PADDING),
         children: [
-          const Text(
+          Text(
             'Flutter Radiobutton With ListTitle',
-            style: buttonTitleStyle
+              style: themeData.textTheme.headline5
           ),
           const SizedBox(height: 20),
           ListTile(
@@ -58,6 +59,7 @@ class _MyRadioButtonState extends State<MyRadioButton> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: COLOR_BLUE,
         heroTag: 'display_code_add_button',
         onPressed: () {
           Navigator.push(
