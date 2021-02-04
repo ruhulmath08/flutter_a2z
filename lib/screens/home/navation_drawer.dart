@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_a2z/common_widgets/common_widgets.dart';
 import 'package:flutter_a2z/my_app_style/my_app_style.dart';
+import 'package:flutter_a2z/routing/routing_constants.dart';
 
 Widget myDrawer(BuildContext context) {
   return Drawer(
@@ -51,8 +52,8 @@ Widget myDrawer(BuildContext context) {
           trailing: const Icon(Icons.all_inclusive_rounded),
           title: const Text('Flutter Lifecycle Details'),
           onTap: () {
-            CommonWidgets.showToast(context, 'Flutter Basic');
-            Navigator.of(context).pop();
+            Navigator.pushNamed(context, FLUTTER_LIFECYCLE_SCREEN_ROUTE);
+            //Navigator.of(context).pop();
           },
         ),
         const Divider(color: Colors.blue, thickness: 1),

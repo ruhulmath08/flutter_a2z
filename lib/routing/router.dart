@@ -231,7 +231,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       //flutter stateful_widgets_lifecycle
     case STATEFUL_WIDGET_LIFECYCLE_SCREEN_ROUTE:
       return MaterialPageRoute(
-        builder: (context) => const StatefulWidgetLifecycle(
+        builder: (context) => StatefulWidgetLifecycle(
           title: STATEFUL_WIDGET_LIFECYCLE_SCREEN_TITLE,
         ),
       );

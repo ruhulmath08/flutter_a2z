@@ -20,7 +20,7 @@ class _FlutterButtonState extends State<FlutterButton> {
 
   @override
   Widget build(BuildContext context) {
-    final ThemeData themeData = Theme.of(context);
+    //final ThemeData themeData = Theme.of(context);
 
     return Scaffold(
       appBar: AppBar(
@@ -50,7 +50,7 @@ class _FlutterButtonState extends State<FlutterButton> {
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: COLOR_BLUE,
-        heroTag: 'display_code_add_button',
+        heroTag: 'display_code_button',
         onPressed: () {
           Navigator.push(
             context,

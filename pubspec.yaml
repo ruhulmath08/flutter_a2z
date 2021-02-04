@@ -35,10 +35,11 @@ flutter:
     - lib/screens/flutter_widgets/buttons/
     - lib/screens/flutter_widgets/buttons/my_toggle_button/
     - lib/screens/flutter_widgets/buttons/my_radio_button/
+    - lib/screens/flutter_lifecycle/
 
   fonts:
-    - family: Montserrat
+    - family: Roboto
       fonts:
-        - asset: assets/fonts/Montserrat-Bold.ttf
-        - asset: assets/fonts/Montserrat-Medium.ttf
-        - asset: assets/fonts/Montserrat-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+        - asset: assets/fonts/Roboto-Medium.ttf
+        - asset: assets/fonts/Roboto-Regular.ttf

@@ -18,7 +18,7 @@ linter:
     prefer_const_constructors: true
     avoid_unnecessary_containers: true
     constant_identifier_names: false
-    avoid_print: true
+    avoid_print: false
     unnecessary_new: true
     avoid_redundant_argument_values: true
     avoid_escaping_inner_quotes: false

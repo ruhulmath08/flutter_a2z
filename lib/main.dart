@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         primaryColor: COLOR_BLUE,
         accentColor: COLOR_DARK_BLUE,
         textTheme: screenWidth < 500 ? TEXT_THEME_SMALL : TEXT_THEME_DEFAULT,
-        fontFamily: 'Montserrat',
+        fontFamily: 'Roboto',
         buttonColor: COLOR_BLUE,
       ),
       onGenerateRoute: generateRoute,
