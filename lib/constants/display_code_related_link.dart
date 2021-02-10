@@ -28,7 +28,7 @@ const String POPUP_MENU_BUTTON_GIT =
 
 /*--------------------------------- Flutter Lifecycle : Start---------------------------------*/
 //flutter lifecycle
-const String FLUTTER_LIFECYCLE_FILE_PATH = 'lib/screens/flutter_lifecycle/flutter_lifecycle.dart';
+const String FLUTTER_LIFECYCLE_FILE_PATH = 'lib/screens/flutter_lifecycle/flutter_lifecycle_details.dart';
 const String FLUTTER_LIFECYCLE_GIT = 'https://github.com/ruhulmath08/flutter_a2z/blob/master/lib/screens/flutter_lifecycle/stateful_widget/stateful_widget_lifecycle.dart';
 const String FLUTTER_LIFECYCLE_WEB = '';
 const String FLUTTER_LIFECYCLE_YOUTUBE = '';

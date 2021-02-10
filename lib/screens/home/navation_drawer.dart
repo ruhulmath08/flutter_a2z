@@ -6,7 +6,7 @@ import 'package:flutter_a2z/routing/routing_constants.dart';
 
 Widget myDrawer(BuildContext context) {
   return Drawer(
-    child: Column(
+    child: ListView(
       children: [
         UserAccountsDrawerHeader(
           arrowColor: COLOR_BLUE,
@@ -97,6 +97,16 @@ Widget myDrawer(BuildContext context) {
           },
         ),
         const Divider(color: Colors.blue, thickness: 1),
+        ListTile(
+          visualDensity: const VisualDensity(vertical: -4), //reduce padding
+          trailing: const Icon(Icons.location_pin),
+          title: const Text('Flutter Package'),
+          onTap: () {
+            CommonWidgets.showToast(context, 'Flutter Package');
+            Navigator.of(context).pop();
+          },
+        ),
+        //const Divider(color: Colors.blue, thickness: 1),
         Expanded(
           child: Align(
             alignment: Alignment.bottomLeft,
