@@ -28,21 +28,23 @@ class _MyBottomNavigationState extends State<MyBottomNavigation> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectPage,
         selectedFontSize: 16,
+        backgroundColor: Colors.blue,
+        selectedItemColor: Colors.red,
         onTap: (int index) {
           setState(() {
             _selectPage = index;
           });
         },
-        items: [
-          const BottomNavigationBarItem(
+        items: const [
+          BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.dashboard),
             label: 'Daily',
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.landscape),
             label: 'Landscape',
           ),

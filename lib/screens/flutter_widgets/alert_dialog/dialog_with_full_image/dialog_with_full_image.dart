@@ -79,7 +79,7 @@ class _DialogWithFullImageState extends State<DialogWithFullImage> {
                 builder: (_) => AssetGiffyDialog(
                   key: keys[5],
                   image: Image.asset(
-                    'assets/images/ok_gif.gif',
+                    'assets/images/success_gif.gif',
                     fit: BoxFit.cover,
                   ),
                   title: const Text(
@@ -89,14 +89,12 @@ class _DialogWithFullImageState extends State<DialogWithFullImage> {
                   ),
                   entryAnimation: EntryAnimation.BOTTOM_RIGHT,
                   description: const Text(
-                    'This operation is completed successfully. Press "Ok", or "Cancel" button for dismiss this dialog.',
+                    'This operation is completed successfully. Press "Ok", button for dismiss this dialog.',
                     textAlign: TextAlign.center,
                     style: TextStyle(),
                   ),
+                  onlyOkButton: true,
                   onOkButtonPressed: () {
-                    Navigator.pop(context);
-                  },
-                  onCancelButtonPressed: () {
                     Navigator.pop(context);
                   },
                 ),

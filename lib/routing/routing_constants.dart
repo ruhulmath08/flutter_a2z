@@ -77,12 +77,36 @@ const String FLUTTER_CARD_SCREEN_TITLE = 'Flutter Card';
 //flutter flip_card
 const String FLUTTER_FLIP_CARD_SCREEN_ROUTE = '/flutter_flip_card';
 const String FLUTTER_FLIP_CARD_SCREEN_TITLE = 'Flutter Flip Card';
+
+//card_with_banner
+const String CARD_WITH_BANNER_ROUTE = '/card_with_banner';
+const String CARD_WITH_BANNER_SCREEN = 'Card With Banner';
+
+//card_with_stack
+const String CARD_WITH_STACK_ROUTE = '/card_with_stack';
+const String CARD_WITH_STACK_SCREEN = 'Card With Stack';
+
+//card_with_folder_effect
+const String CARD_WITH_FOLDER_EFFECT_ROUTE = '/card_with_folder_effect';
+const String CARD_WITH_FOLDER_EFFECT_SCREEN = 'Card With Folder Effect';
+
+//card_with_rounded_corner
+const String CARD_WITH_ROUNDED_CORNER_ROUTE = '/card_with_rounded_corner';
+const String CARD_WITH_ROUNDED_CORNER_SCREEN = 'Card With Rounded Corner';
+
+//card_with_top_circle
+const String CARD_WITH_TOP_CIRCLE_ROUTE = '/card_with_top_circle';
+const String CARD_WITH_TOP_CIRCLE_SCREEN = 'Card With Top Circle';
 /*--------------------------------- Flutter CARD : End---------------------------------*/
 
 /*--------------------------------- Flutter AlertDialog : Start---------------------------------*/
 //flutter dialog
 const String FLUTTER_DIALOG_SCREEN_ROUTE = '/flutter_dialog';
 const String FLUTTER_DIALOG_SCREEN_TITLE = 'Alert Dialog';
+
+//FullScreen Dialog
+const String FULL_SCREEN_DIALOG_SCREEN_ROUTE = '/fullscreen_dialog';
+const String FULL_SCREEN_DIALOG_SCREEN_TITLE = 'Fullscreen Dialog';
 
 //flutter Default Dialog
 const String DEFAULT_DIALOG_SCREEN_ROUTE = '/default_dialog';
@@ -120,3 +144,55 @@ const String FLUTTER_LIFECYCLE_SCREEN_TITLE = 'Flutter Lifecycle';
 const String STATEFUL_WIDGET_LIFECYCLE_SCREEN_ROUTE = '/stateful_widget_lifecycle';
 const String STATEFUL_WIDGET_LIFECYCLE_SCREEN_TITLE = 'Stateful Widget Lifecycle';
 /*--------------------------------- Flutter Lifecycle : End---------------------------------*/
+
+/*--------------------------------- Flutter Chip : Start---------------------------------*/
+//Chip
+const String FLUTTER_CHIP_SCREEN_ROUTE = '/flutter_chip';
+const String FLUTTER_CHIP_SCREEN_TITLE = 'Flutter Chip';
+/*--------------------------------- Flutter Chip : End---------------------------------*/
+
+/*--------------------------------- Flutter BiometricAuth : Start---------------------------------*/
+const String FLUTTER_BIOMETRIC_AUTH_SCREEN_ROUTE = '/biometric_auth';
+const String FLUTTER_BIOMETRIC_AUTH_SCREEN_TITLE = 'Biometric Auth';
+/*--------------------------------- Flutter BiometricAuth : End---------------------------------*/
+
+/*----------------------------------- FlutterPackages : Start-----------------------------------*/
+//flutter_packages
+const String FLUTTER_PACKAGES_SCREEN_ROUTE = '/flutter_packages';
+const String FLUTTER_PACKAGES_SCREEN_TITLE = 'Flutter Packages';
+
+//flutter_reaction_button
+const String FLUTTER_REACTION_SCREEN_ROUTE = '/flutter_reaction_button';
+const String FLUTTER_REACTION_SCREEN_TITLE = 'Flutter Reaction Button';
+/*------------------------------------ FlutterPackages : End------------------------------------*/
+
+/*---------------------------------- ExpandableElement : Start ---------------------------------*/
+//expandable element
+const String EXPANDABLE_ELEMENT_SCREEN_ROUTE = '/expandable_element';
+const String EXPANDABLE_ELEMENT_SCREEN_TITLE = 'Expandable Element';
+
+//ExpandableList
+const String EXPANDABLE_LIST_SCREEN_ROUTE = '/expandable_list';
+const String EXPANDABLE_LIST_SCREEN_TITLE = 'Expandable List';
+
+//ExpansionTile
+const String EXPANSION_TILE__SCREEN_ROUTE = '/expansion_tile';
+const String EXPANSION_TILE__SCREEN_TITLE = 'Expansion Tile';
+
+//ListTile
+/*----------------------------------- ExpandableElement : End ----------------------------------*/
+
+/*----------------------------------- FlutterTable : Start ----------------------------------*/
+//FlutterTable
+const String FLUTTER_TABLE_SCREEN_ROUTE = '/flutter_table';
+const String FLUTTER_TABLE_SCREEN_TITLE = 'Flutter Table';
+
+//FlutterDataTable
+const String FLUTTER_DATA_TABLE_SCREEN_ROUTE = '/flutter_data_table';
+const String FLUTTER_DATA_TABLE_SCREEN_TITLE = 'Flutter Data Table';
+
+//TableWithPagination
+const String TABLE_WITH_PAGINATION_SCREEN_ROUTE = '/table_with_pagination';
+const String TABLE_WITH_PAGINATION_SCREEN_TITLE = 'Table With Pagination';
+/*------------------------------------ FlutterTable : End -----------------------------------*/
+

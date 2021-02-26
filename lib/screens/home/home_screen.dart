@@ -38,7 +38,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   value: popupMenu,
                   child: ListTile(
                     leading: popupMenu.icon,
-                    title: Text(popupMenu.title, style: themeData.textTheme.headline4,),
+                    title: Text(
+                      popupMenu.title,
+                      style: themeData.textTheme.headline4,
+                    ),
                     onTap: () {
                       selectedPopUpMenu(popupMenu);
                       Navigator.of(context).pop();
@@ -53,7 +56,9 @@ class _HomeScreenState extends State<HomeScreen> {
         body: GridView(
           padding: const EdgeInsets.all(5),
           physics: const BouncingScrollPhysics(),
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 3,
+          ),
           children: cardItemList.map((card) {
             return Card(
               shape: RoundedRectangleBorder(
@@ -70,15 +75,19 @@ class _HomeScreenState extends State<HomeScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
-                        padding: const EdgeInsets.all(10),
+                        padding: const EdgeInsets.all(5),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
-                          border: Border.all(width: 2.0, color: Colors.blue),
+                          border: Border.all(width: 2.0, color: Colors.blue[200]),
                         ),
-                        child: Icon(card.icon, color: Colors.blue),
+                        child: Icon(card.icon, color: Colors.blue[300]),
                       ),
                       CommonWidgets.addVerticalSpace(10.0),
-                      Text(card.title, style: themeData.textTheme.bodyText1),
+                      Text(
+                        card.title,
+                        style: themeData.textTheme.bodyText1,
+                        textAlign: TextAlign.center,
+                      ),
                     ],
                   ),
                 ),
@@ -115,6 +124,26 @@ class _HomeScreenState extends State<HomeScreen> {
 
       case FLUTTER_CARD_SCREEN_TITLE:
         Navigator.pushNamed(context, FLUTTER_CARD_SCREEN_ROUTE);
+        break;
+
+      case FLUTTER_CHIP_SCREEN_TITLE:
+        Navigator.pushNamed(context, FLUTTER_CHIP_SCREEN_ROUTE);
+        break;
+
+      case FLUTTER_BIOMETRIC_AUTH_SCREEN_TITLE:
+        Navigator.pushNamed(context, FLUTTER_BIOMETRIC_AUTH_SCREEN_ROUTE);
+        break;
+
+      case FLUTTER_PACKAGES_SCREEN_TITLE:
+        Navigator.pushNamed(context, FLUTTER_PACKAGES_SCREEN_ROUTE);
+        break;
+
+      case EXPANDABLE_ELEMENT_SCREEN_TITLE:
+        Navigator.pushNamed(context, EXPANDABLE_ELEMENT_SCREEN_ROUTE);
+        break;
+
+        case FLUTTER_TABLE_SCREEN_TITLE:
+        Navigator.pushNamed(context, FLUTTER_TABLE_SCREEN_ROUTE);
         break;
     }
   }

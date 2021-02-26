@@ -86,7 +86,7 @@ class HomeCardItem {
       ),
       HomeCardItem(
         15,
-        'Table',
+        FLUTTER_TABLE_SCREEN_TITLE,
         Icons.table_chart,
       ),
       HomeCardItem(
@@ -105,9 +105,29 @@ class HomeCardItem {
         Icons.navigation,
       ),
       HomeCardItem(
-        18,
+        19,
         'Flutter CRUD',
         Icons.add_to_photos_rounded,
+      ),
+      HomeCardItem(
+        20,
+        'Flutter Chip',
+        Icons.check_circle,
+      ),
+      HomeCardItem(
+        21,
+        'Biometric Auth',
+        Icons.fingerprint_outlined,
+      ),
+      HomeCardItem(
+        22,
+        FLUTTER_PACKAGES_SCREEN_TITLE,
+        Icons.waves,
+      ),
+      HomeCardItem(
+        23,
+        EXPANDABLE_ELEMENT_SCREEN_TITLE,
+        Icons.expand,
       ),
     ];
   }
