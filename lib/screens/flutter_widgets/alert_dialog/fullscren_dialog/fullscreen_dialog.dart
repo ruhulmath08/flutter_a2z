@@ -49,3 +49,4 @@ class FullScreenDialog extends StatelessWidget {
     );
   }
 }
+//https://material.io/components/dialogs/flutter#full-screen-dialog

@@ -28,8 +28,8 @@ class _MyBottomNavigationState extends State<MyBottomNavigation> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectPage,
         selectedFontSize: 16,
-        backgroundColor: Colors.blue,
-        selectedItemColor: Colors.red,
+        // backgroundColor: Colors.blue,
+        // selectedItemColor: Colors.red,
         onTap: (int index) {
           setState(() {
             _selectPage = index;

@@ -30,13 +30,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter a2z',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primaryColor: COLOR_BLUE,
-        accentColor: COLOR_DARK_BLUE,
-        textTheme: screenWidth < 500 ? TEXT_THEME_SMALL : TEXT_THEME_DEFAULT,
-        fontFamily: 'Roboto',
-        buttonColor: COLOR_BLUE,
-      ),
+      // theme: ThemeData(
+      //   primaryColor: COLOR_BLUE,
+      //   accentColor: COLOR_DARK_BLUE,
+      //   textTheme: screenWidth < 500 ? TEXT_THEME_SMALL : TEXT_THEME_DEFAULT,
+      //   fontFamily: 'Roboto',
+      //   buttonColor: COLOR_BLUE,
+      //   //backgroundColor: Colors.red
+      //   //bottomAppBarColor: Colors.red
+      //
+      // ),
       onGenerateRoute: generateRoute,
       initialRoute: LOGIN_SCREEN_ROUTE,
       onUnknownRoute: (settings) => MaterialPageRoute(
