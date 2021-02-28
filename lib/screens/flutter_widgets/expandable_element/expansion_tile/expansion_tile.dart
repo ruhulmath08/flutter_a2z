@@ -43,6 +43,7 @@ class _MyExpansionTileState extends State<MyExpansionTile> {
       ),
       body: ListView(
         padding: const EdgeInsets.all(Constants.PAGE_DEFAULT_PADDING),
+        physics: const BouncingScrollPhysics(),
         children: [
           Card(
             elevation: 3,

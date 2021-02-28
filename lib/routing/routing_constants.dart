@@ -171,18 +171,20 @@ const String FLUTTER_REACTION_SCREEN_TITLE = 'Flutter Reaction Button';
 const String EXPANDABLE_ELEMENT_SCREEN_ROUTE = '/expandable_element';
 const String EXPANDABLE_ELEMENT_SCREEN_TITLE = 'Expandable Element';
 
-//ExpandableList
-const String EXPANDABLE_LIST_SCREEN_ROUTE = '/expandable_list';
-const String EXPANDABLE_LIST_SCREEN_TITLE = 'Expandable List';
-
 //ExpansionTile
 const String EXPANSION_TILE__SCREEN_ROUTE = '/expansion_tile';
 const String EXPANSION_TILE__SCREEN_TITLE = 'Expansion Tile';
 
-//ListTile
+//ExpandablePanelWidget
+const String EXPANDABLE_PANEL_WIDGET_SCREEN_ROUTE = '/expandable_panel_widget';
+const String EXPANDABLE_PANEL_WIDGET_SCREEN_TITLE = 'Expandable Panel Widget';
+
+//ExpandableWidget
+const String EXPANDABLE_WIDGET_SCREEN_ROUTE = '/expandable_panel';
+const String EXPANDABLE_WIDGET_SCREEN_TITLE = 'Expandable Panel';
 /*----------------------------------- ExpandableElement : End ----------------------------------*/
 
-/*----------------------------------- FlutterTable : Start ----------------------------------*/
+/*------------------------------------- FlutterTable : Start -----------------------------------*/
 //FlutterTable
 const String FLUTTER_TABLE_SCREEN_ROUTE = '/flutter_table';
 const String FLUTTER_TABLE_SCREEN_TITLE = 'Flutter Table';
@@ -194,7 +196,7 @@ const String FLUTTER_DATA_TABLE_SCREEN_TITLE = 'Flutter Data Table';
 //TableWithPagination
 const String TABLE_WITH_PAGINATION_SCREEN_ROUTE = '/table_with_pagination';
 const String TABLE_WITH_PAGINATION_SCREEN_TITLE = 'Table With Pagination';
-/*------------------------------------ FlutterTable : End -----------------------------------*/
+/*------------------------------------ FlutterTable : End -------------------------------------*/
 
 /*----------------------------------- DateTimePicker : Start ----------------------------------*/
 //myDateTime picker
@@ -217,4 +219,3 @@ const String DATETIME_PICKER_SCREEN_TITLE = 'DateTime Picker';
 const String DATE_RANGE_PICKER_SCREEN_ROUTE = '/date_range_picker';
 const String DATE_RANGE_PICKER_SCREEN_TITLE = 'DateRange Picker';
 /*------------------------------------ DateTimePicker : End -----------------------------------*/
-

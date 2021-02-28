@@ -118,7 +118,7 @@ class CommonWidgets {
       context,
       gravity: Toast.CENTER,
       backgroundColor: Colors.grey,
-      duration: Toast.LENGTH_LONG,
+      duration: Toast.LENGTH_SHORT,
     );
   }
 

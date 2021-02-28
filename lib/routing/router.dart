@@ -33,6 +33,8 @@ import 'package:flutter_a2z/screens/flutter_widgets/datetime_picker/date_time_pi
 import 'package:flutter_a2z/screens/flutter_widgets/datetime_picker/flutter_date_time_picker.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/datetime_picker/time_picker/time_picker.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/expandable_element/expandable_element.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/expandable_element/expandable_panel_widget/expandable_panel_widget.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/expandable_element/expandable_widget/expandable_widget.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/expandable_element/expansion_tile/expansion_tile.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/flutter_chip_all/flutter_chip_all.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/tab_view_layout/tab_view_layout.dart';
@@ -355,17 +357,30 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
 
-    //ExpandableList
-
     //ExpansionTile
-
-    //ListTile
     case EXPANSION_TILE__SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const MyExpansionTile(
           title: EXPANSION_TILE__SCREEN_TITLE,
         ),
       );
+
+    //ExpandablePanelWidget
+    case EXPANDABLE_PANEL_WIDGET_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const MyExpandablePanelWidget(
+          title: EXPANDABLE_PANEL_WIDGET_SCREEN_TITLE,
+        ),
+      );
+
+    //ExpandableWidget
+    case EXPANDABLE_WIDGET_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const MyExpandableWidget(
+          title: EXPANDABLE_WIDGET_SCREEN_TITLE,
+        ),
+      );
+
     /*----------------------------------- ExpandableElement : End ----------------------------------*/
 
     /*----------------------------------- FlutterTable : Start ----------------------------------*/

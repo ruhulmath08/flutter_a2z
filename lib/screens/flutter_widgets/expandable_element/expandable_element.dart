@@ -28,7 +28,25 @@ class _ExpandableElementState extends State<ExpandableElement> {
               Navigator.pushNamed(context, EXPANSION_TILE__SCREEN_ROUTE);
             },
             child: Text(
-              'ExpansionTile',
+              EXPANSION_TILE__SCREEN_TITLE,
+              style: themeData.textTheme.button,
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, EXPANDABLE_PANEL_WIDGET_SCREEN_ROUTE);
+            },
+            child: Text(
+              EXPANDABLE_PANEL_WIDGET_SCREEN_TITLE,
+              style: themeData.textTheme.button,
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, EXPANDABLE_WIDGET_SCREEN_ROUTE);
+            },
+            child: Text(
+              EXPANDABLE_WIDGET_SCREEN_TITLE,
               style: themeData.textTheme.button,
             ),
           ),
