@@ -145,6 +145,10 @@ class _HomeScreenState extends State<HomeScreen> {
         case FLUTTER_TABLE_SCREEN_TITLE:
         Navigator.pushNamed(context, FLUTTER_TABLE_SCREEN_ROUTE);
         break;
+
+      case FLUTTER_DATETIME_PICKER_SCREEN_TITLE:
+        Navigator.pushNamed(context, FLUTTER_DATETIME_PICKER_SCREEN_ROUTE);
+        break;
     }
   }
 }

@@ -27,6 +27,11 @@ import 'package:flutter_a2z/screens/flutter_widgets/cards/card_with_stack/card_w
 import 'package:flutter_a2z/screens/flutter_widgets/cards/card_with_top_circle/card_with_top_circle.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/cards/flutter_card.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/cards/flutter_flip_card/flutter_flip_card.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/datetime_picker/date_picker/date_picker.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/datetime_picker/date_range_picker/date_range_picker.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/datetime_picker/date_time_picker/date_time_picker.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/datetime_picker/flutter_date_time_picker.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/datetime_picker/time_picker/time_picker.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/expandable_element/expandable_element.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/expandable_element/expansion_tile/expansion_tile.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/flutter_chip_all/flutter_chip_all.dart';
@@ -362,9 +367,9 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
     /*----------------------------------- ExpandableElement : End ----------------------------------*/
-  
+
     /*----------------------------------- FlutterTable : Start ----------------------------------*/
-  //FlutterTable
+    //FlutterTable
     case FLUTTER_TABLE_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const FlutterTable(
@@ -372,7 +377,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
 
-  //FlutterDataTable'
+    //FlutterDataTable'
     case FLUTTER_DATA_TABLE_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const MyDataTable(
@@ -380,14 +385,57 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
 
-  //TableWithPagination
+    //TableWithPagination
     case TABLE_WITH_PAGINATION_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const TableWithPagination(
           title: TABLE_WITH_PAGINATION_SCREEN_TITLE,
         ),
       );
-   /*------------------------------------ FlutterTable : End -----------------------------------*/
+    /*------------------------------------ FlutterTable : End -----------------------------------*/
+
+    /*----------------------------------- DateTimePicker : Start ----------------------------------*/
+    //flutterDateTime picker
+    case FLUTTER_DATETIME_PICKER_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterDateTimePicker(
+          title: FLUTTER_DATETIME_PICKER_SCREEN_TITLE,
+        ),
+      );
+
+    //datePicker
+    case MY_DATE_PICKER_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const MyDatePicker(
+          title: MY_DATE_PICKER_SCREEN_TITLE,
+        ),
+      );
+
+    //timePicker
+    case MY_TIME_PICKER_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const MyTimePicker(
+          title: MY_TIME_PICKER_SCREEN_TITLE,
+        ),
+      );
+
+    //dateTimePicker
+    case DATETIME_PICKER_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const MyDateTimePicker(
+          title: DATETIME_PICKER_SCREEN_TITLE,
+        ),
+      );
+
+    //dateRangePicker
+    case DATE_RANGE_PICKER_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const MyDateRangePicker(
+          title: DATE_RANGE_PICKER_SCREEN_TITLE,
+        ),
+      );
+    /*------------------------------------ DateTimePicker : End -----------------------------------*/
+
     default:
       return null;
       break;

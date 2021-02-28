@@ -129,6 +129,11 @@ class HomeCardItem {
         EXPANDABLE_ELEMENT_SCREEN_TITLE,
         Icons.expand,
       ),
+      HomeCardItem(
+        24,
+        FLUTTER_DATETIME_PICKER_SCREEN_TITLE,
+        Icons.date_range,
+      ),
     ];
   }
 }

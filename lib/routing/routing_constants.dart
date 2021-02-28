@@ -196,3 +196,25 @@ const String TABLE_WITH_PAGINATION_SCREEN_ROUTE = '/table_with_pagination';
 const String TABLE_WITH_PAGINATION_SCREEN_TITLE = 'Table With Pagination';
 /*------------------------------------ FlutterTable : End -----------------------------------*/
 
+/*----------------------------------- DateTimePicker : Start ----------------------------------*/
+//myDateTime picker
+const String FLUTTER_DATETIME_PICKER_SCREEN_ROUTE = '/flutter_datetime_picker';
+const String FLUTTER_DATETIME_PICKER_SCREEN_TITLE = 'Flutter DateTime Picker';
+
+//datePicker
+const String MY_DATE_PICKER_SCREEN_ROUTE = '/my_datetime_picker';
+const String MY_DATE_PICKER_SCREEN_TITLE = 'DateTime Picker';
+
+//timePicker
+const String MY_TIME_PICKER_SCREEN_ROUTE = '/my_time_picker';
+const String MY_TIME_PICKER_SCREEN_TITLE = 'Time Picker';
+
+//dateTimePicker
+const String DATETIME_PICKER_SCREEN_ROUTE = '/datetime_picker';
+const String DATETIME_PICKER_SCREEN_TITLE = 'DateTime Picker';
+
+//dateRangePicker
+const String DATE_RANGE_PICKER_SCREEN_ROUTE = '/date_range_picker';
+const String DATE_RANGE_PICKER_SCREEN_TITLE = 'DateRange Picker';
+/*------------------------------------ DateTimePicker : End -----------------------------------*/
+
