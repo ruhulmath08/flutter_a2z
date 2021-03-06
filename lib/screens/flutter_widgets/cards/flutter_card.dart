@@ -16,47 +16,47 @@ class FlutterCard extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(Constants.PAGE_DEFAULT_PADDING),
         children: [
-          ElevatedButton.icon(
+          ElevatedButton(
             onPressed: () {
               Navigator.pushNamed(context, FLUTTER_FLIP_CARD_SCREEN_ROUTE);
             },
-            icon: const Icon(Icons.wifi_protected_setup),
-            label: const Text('Flutter Flip Card'),
+            child: const Text(FLUTTER_FLIP_CARD_SCREEN_TITLE),
           ),
-          ElevatedButton.icon(
+          ElevatedButton(
             onPressed: () {
-              Navigator.pushNamed(context, CARD_WITH_BANNER_ROUTE);
+              Navigator.pushNamed(context, CARD_WITH_BANNER_SCREEN_ROUTE);
             },
-            icon: const Icon(Icons.credit_card_rounded),
-            label: const Text('Card With Banner'),
+            child: const Text(CARD_WITH_BANNER_SCREEN_TITLE),
           ),
-          ElevatedButton.icon(
+          ElevatedButton(
             onPressed: () {
-              Navigator.pushNamed(context, CARD_WITH_STACK_ROUTE);
+              Navigator.pushNamed(context, CARD_WITH_STACK_SCREEN_ROUTE);
             },
-            icon: const Icon(Icons.sd_card_alert_rounded),
-            label: const Text('Card With Stack'),
+            child: const Text(CARD_WITH_STACK_SCREEN_TITLE),
           ),
-          ElevatedButton.icon(
+          ElevatedButton(
             onPressed: () {
-              Navigator.pushNamed(context, CARD_WITH_FOLDER_EFFECT_ROUTE);
+              Navigator.pushNamed(context, CARD_WITH_FOLDER_EFFECT_SCREEN_ROUTE);
             },
-            icon: const Icon(Icons.folder),
-            label: const Text('Card With Folder Effect'),
+            child: const Text(CARD_WITH_FOLDER_EFFECT_SCREEN_TITLE),
           ),
-          ElevatedButton.icon(
+          ElevatedButton(
             onPressed: () {
-              Navigator.pushNamed(context, CARD_WITH_ROUNDED_CORNER_ROUTE);
+              Navigator.pushNamed(context, CARD_WITH_ROUNDED_CORNER_SCREEN_ROUTE);
             },
-            icon: const Icon(Icons.rounded_corner_sharp),
-            label: const Text('Rounded Corner Card'),
+            child: const Text(CARD_WITH_ROUNDED_CORNER_SCREEN_TITLE),
           ),
-          ElevatedButton.icon(
+          ElevatedButton(
             onPressed: () {
-              Navigator.pushNamed(context, CARD_WITH_TOP_CIRCLE_ROUTE);
+              Navigator.pushNamed(context, CARD_WITH_TOP_CIRCLE_SCREEN_ROUTE);
             },
-            icon: const Icon(Icons.rounded_corner_sharp),
-            label: const Text('Card With Top Circle'),
+            child: const Text(CARD_WITH_TOP_CIRCLE_SCREEN_TITLE),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, CARD_WITH_IMAGE_AND_TEXT_SCREEN_ROUTE);
+            },
+            child: const Text(CARD_WITH_IMAGE_AND_TEXT_SCREEN_TITLE),
           )
         ],
       ),

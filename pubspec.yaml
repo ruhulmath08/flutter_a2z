@@ -22,6 +22,7 @@ dependencies:
   rotated_corner_decoration: ^1.0.2 #13-02-2021
   local_auth: ^0.6.3+4 #15-02-2021
   flutter_reaction_button: ^1.0.7+3 #25-02-2021
+  grouped_list: ^3.7.1 #01-03-2021
 
 dev_dependencies:
   flutter_test:

@@ -19,6 +19,7 @@ class _CardWithRoundedCornerState extends State<CardWithRoundedCorner> {
       ),
       body: ListView(
         padding: const EdgeInsets.all(10.0),
+        physics: const BouncingScrollPhysics(),
         children: [
           Card(
             child: Container(

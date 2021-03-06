@@ -72,8 +72,7 @@ Widget myDrawer(BuildContext context) {
           trailing: const Icon(Icons.text_rotation_none),
           title: const Text('Flutter Advanced'),
           onTap: () {
-            CommonWidgets.showToast(context, 'Flutter Advanced');
-            Navigator.of(context).pop();
+            Navigator.popAndPushNamed(context, FLUTTER_ADVANCED_SCREEN_ROUTE);
           },
         ),
         const Divider(color: Colors.blue, thickness: 1),
@@ -107,25 +106,15 @@ Widget myDrawer(BuildContext context) {
           },
         ),
         //const Divider(color: Colors.blue, thickness: 1),
-        Expanded(
-          child: Align(
-            alignment: Alignment.bottomLeft,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                const Divider(color: Colors.blue, thickness: 1),
-                ListTile(
-                  visualDensity: const VisualDensity(vertical: -4), //reduce padding
-                  trailing: const Icon(Icons.settings),
-                  title: const Text('Setting'),
-                  onTap: () {
-                    CommonWidgets.showToast(context, 'Setting');
-                    Navigator.of(context).pop();
-                  },
-                ),
-              ],
-            ),
-          ),
+        const Divider(color: Colors.blue, thickness: 1),
+        ListTile(
+          visualDensity: const VisualDensity(vertical: -4), //reduce padding
+          trailing: const Icon(Icons.settings),
+          title: const Text('Setting'),
+          onTap: () {
+            CommonWidgets.showToast(context, 'Setting');
+            Navigator.of(context).pop();
+          },
         )
       ],
     ),

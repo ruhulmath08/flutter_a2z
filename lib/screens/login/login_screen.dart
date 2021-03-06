@@ -87,9 +87,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 onPressed: () {
                   Navigator.pushNamed(context, HOME_SCREEN_ROUTE);
                 },
-                child: Text(
+                child: const Text(
                   'Login',
-                  style: themeData.textTheme.button,
+                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
                 ),
               ),
             ),
@@ -112,8 +112,8 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget _divider() {
     final ThemeData themeData = Theme.of(context);
     return Row(
-      children:  <Widget>[
-        const Expanded(
+      children: const [
+        Expanded(
           child: Padding(
             padding: EdgeInsets.only(right: 5),
             child: Divider(
@@ -123,9 +123,8 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
         Text(
           'Social Login',
-          style: themeData.textTheme.headline4,
         ),
-        const Expanded(
+        Expanded(
           child: Padding(
             padding: EdgeInsets.only(left: 5),
             child: Divider(
@@ -138,7 +137,6 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Widget _facebookButton() {
-    final ThemeData themeData = Theme.of(context);
     return Container(
       height: 50,
       //margin: EdgeInsets.symmetric(vertical: 20),
@@ -151,10 +149,20 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Container(
               decoration: const BoxDecoration(
                 color: Color(0xff1959a9),
-                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), topLeft: Radius.circular(5)),
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(5),
+                  topLeft: Radius.circular(5),
+                ),
               ),
               alignment: Alignment.center,
-              child: Text('f', style: themeData.textTheme.button),
+              child: const Text(
+                'f',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
           ),
           Expanded(
@@ -162,10 +170,13 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Container(
               decoration: const BoxDecoration(
                 color: Colors.blue,
-                borderRadius: BorderRadius.only(bottomRight: Radius.circular(5), topRight: Radius.circular(5)),
+                borderRadius: BorderRadius.only(
+                  bottomRight: Radius.circular(5),
+                  topRight: Radius.circular(5),
+                ),
               ),
               alignment: Alignment.center,
-              child: Text('Log in with Facebook', style: themeData.textTheme.caption),
+              child: const Text('Log in with Facebook', style: TextStyle(color: Colors.white)),
             ),
           ),
         ],
@@ -190,7 +201,14 @@ class _LoginScreenState extends State<LoginScreen> {
                 borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), topLeft: Radius.circular(5)),
               ),
               alignment: Alignment.center,
-              child:  Text('G', style: themeData.textTheme.button),
+              child: const Text(
+                'G',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
           ),
           Expanded(
@@ -198,10 +216,16 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Container(
               decoration: const BoxDecoration(
                 color: Colors.blue,
-                borderRadius: BorderRadius.only(bottomRight: Radius.circular(5), topRight: Radius.circular(5)),
+                borderRadius: BorderRadius.only(
+                  bottomRight: Radius.circular(5),
+                  topRight: Radius.circular(5),
+                ),
               ),
               alignment: Alignment.center,
-              child: Text('Log in with Google', style: themeData.textTheme.caption),
+              child: const Text(
+                'Log in with Google',
+                style: TextStyle(color: Colors.white),
+              ),
             ),
           ),
         ],
@@ -217,7 +241,7 @@ class _LoginScreenState extends State<LoginScreen> {
       },
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
-        children:  <Widget>[
+        children: <Widget>[
           Text(
             'Don\'t have an account?',
             style: themeData.textTheme.bodyText1,

@@ -26,7 +26,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final ThemeData themeData = Theme.of(context);
-
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -40,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     leading: popupMenu.icon,
                     title: Text(
                       popupMenu.title,
-                      style: themeData.textTheme.headline4,
+                      style: themeData.textTheme.headline6,
                     ),
                     onTap: () {
                       selectedPopUpMenu(popupMenu);
@@ -152,3 +151,5 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 }
+
+//ToDo home screen card have to re-design

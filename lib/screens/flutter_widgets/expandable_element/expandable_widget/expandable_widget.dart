@@ -20,22 +20,26 @@ class _MyExpandableWidgetState extends State<MyExpandableWidget> {
         title: Text(widget.title),
       ),
       body: SingleChildScrollView(
-        child: ExpansionPanelList.radio( //ExpansionPanelList.radio is for expanded only one element at a time
+        physics: const BouncingScrollPhysics(),
+        //ExpansionPanelList.radio is for expanded only one element at a time
+        child: ExpansionPanelList.radio(
           expansionCallback: (index, isExpanded) {
             final tile = advancedTiles[index];
             setState(() => tile.isExpanded = isExpanded);
 
-            CommonWidgets.showToast(context, tile.title);
+            //CommonWidgets.showToast(context, tile.title);
           },
           children: advancedTiles
-              .map((tile) => ExpansionPanelRadio(
-            value: tile.title,
-            canTapOnHeader: true,
-            headerBuilder: (context, isExpanded) => buildTile(tile),
-            body: Column(
-              children: tile.tiles.map(buildTile).toList(),
-            ),
-          ))
+              .map(
+                (tile) => ExpansionPanelRadio(
+                  value: tile.title,
+                  canTapOnHeader: true,
+                  headerBuilder: (context, isExpanded) => buildTile(tile),
+                  body: Column(
+                    children: tile.tiles.map(buildTile).toList(),
+                  ),
+                ),
+              )
               .toList(),
         ),
       ),
@@ -43,9 +47,20 @@ class _MyExpandableWidgetState extends State<MyExpandableWidget> {
   }
 
   Widget buildTile(AdvancedTile tile) => ListTile(
-    leading: tile.icon != null ? Icon(tile.icon, color: Colors.blue, size: 25,) : null,
-    title: Text(tile.title, style: const TextStyle(color: Colors.black, fontSize: 17),),
-    onTap: tile.tiles.isEmpty
-        ? () => CommonWidgets.showToast(context, tile.title) : null,
-  );
+        leading: tile.icon != null
+            ? Icon(
+                tile.icon,
+                color: Colors.blue,
+                size: 25,
+              )
+            : null,
+        title: Text(
+          tile.title,
+          style: const TextStyle(
+            color: Colors.black,
+            fontSize: 17,
+          ),
+        ),
+        onTap: tile.tiles.isEmpty ? () => CommonWidgets.showToast(context, tile.title) : null,
+      );
 }

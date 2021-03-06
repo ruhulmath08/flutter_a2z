@@ -3,14 +3,17 @@ import 'package:flutter_a2z/routing/routing_constants.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/biometric_auth/biometric_auth.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/crud/flutter_crud/flutter_crud.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/crud/flutter_crud_add/flutter_crud_add.dart';
+import 'package:flutter_a2z/screens/flutter_advanced/expandable_drawer/expandable_drawer.dart';
+import 'package:flutter_a2z/screens/flutter_advanced/flutter_advanced.dart';
 import 'package:flutter_a2z/screens/flutter_lifecycle/flutter_lifecycle.dart';
 import 'package:flutter_a2z/screens/flutter_lifecycle/stateful_widget/stateful_widget_lifecycle.dart';
+import 'package:flutter_a2z/screens/flutter_packages/flutter_grouped_list/flutter_grouped_list.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_packages.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_reaction_button/flutter_reaction_button.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/alert_dialog/default_dialog/default_dialog.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/alert_dialog/dialog_with_full_image/dialog_with_full_image.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/alert_dialog/dialog_with_input_field/dialog_with_input_field.dart';
-import 'package:flutter_a2z/screens/flutter_widgets/alert_dialog/fullscren_dialog/fullscreen_dialog.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/alert_dialog/fullscren_dialog/fullscreen_dialog_page.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/alert_dialog/my_alert_dialog.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/alert_dialog/top_circle_image_dialog/top_circle_image_dialog.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/bottom_navigaion/my_bottom_navigation.dart';
@@ -22,6 +25,7 @@ import 'package:flutter_a2z/screens/flutter_widgets/buttons/my_radio_button/my_r
 import 'package:flutter_a2z/screens/flutter_widgets/buttons/my_toggle_button/my_toggle_button.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/cards/card_with_banner/card_with_banner.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/cards/card_with_folder_effect/card_with_folder_effect.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/cards/card_with_image_and_text/card_with_image_and_text.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/cards/card_with_rounded_corner/card_with_rounded_corner.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/cards/card_with_stack/card_with_stack.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/cards/card_with_top_circle/card_with_top_circle.dart';
@@ -33,6 +37,7 @@ import 'package:flutter_a2z/screens/flutter_widgets/datetime_picker/date_time_pi
 import 'package:flutter_a2z/screens/flutter_widgets/datetime_picker/flutter_date_time_picker.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/datetime_picker/time_picker/time_picker.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/expandable_element/expandable_element.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/expandable_element/expandable_listview/expandable_listview.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/expandable_element/expandable_panel_widget/expandable_panel_widget.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/expandable_element/expandable_widget/expandable_widget.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/expandable_element/expansion_tile/expansion_tile.dart';
@@ -60,13 +65,13 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     /*--------------------------------- SignUp : Start---------------------------------*/
     case SIGN_UP_SCREEN_ROUTE:
       return MaterialPageRoute(
-        builder: (context) => SignUpScreen(
+        builder: (context) => const SignUpScreen(
           title: SIGN_UP_SCREEN__TITLE,
         ),
       );
     /*--------------------------------- SignUp : End---------------------------------*/
 
-    /*--------------------------------- HomeScreen : Start---------------------------------*/
+    /*--------------------------------- HomeScreen : Start------------------------------------*/
     case HOME_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const HomeScreen(
@@ -74,7 +79,34 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
       break;
-    /*--------------------------------- HomeScreen : End---------------------------------*/
+    /*--------------------------------- HomeScreen : End---------------------------------------*/
+
+    //----------------------------------FlutterAdvanced: Start----------------------------------
+    //FlutterAdvanced
+    case FLUTTER_ADVANCED_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterAdvanced(
+          title: FLUTTER_ADVANCED_SCREEN_TITLE,
+        ),
+      );
+      break;
+
+    //BiometricAuth
+    case FLUTTER_BIOMETRIC_AUTH_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const BiometricAuth(
+          title: FLUTTER_BIOMETRIC_AUTH_SCREEN_TITLE,
+        ),
+      );
+
+    //drawer_with_expandable_list_view
+    case EXPANDABLE_DRAWER_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const ExpandableDrawer(
+          title: EXPANDABLE_DRAWER_SCREEN_TITLE,
+        ),
+      );
+    //----------------------------------FlutterAdvanced: End-----------------------------------
 
     /*--------------------------------- Flutter Button : Start---------------------------------*/
     //button
@@ -194,46 +226,55 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       break;
 
     //Card With Banner
-    case CARD_WITH_BANNER_ROUTE:
+    case CARD_WITH_BANNER_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const CardWithBanner(
-          title: CARD_WITH_BANNER_SCREEN,
+          title: CARD_WITH_BANNER_SCREEN_TITLE,
         ),
       );
       break;
 
     //Card With Banner
-    case CARD_WITH_STACK_ROUTE:
+    case CARD_WITH_STACK_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const CardWithStack(
-          title: CARD_WITH_STACK_SCREEN,
+          title: CARD_WITH_STACK_SCREEN_TITLE,
         ),
       );
       break;
 
     //card_with_folder_effect
-    case CARD_WITH_FOLDER_EFFECT_ROUTE:
+    case CARD_WITH_FOLDER_EFFECT_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const CardWithFolderEffect(
-          title: CARD_WITH_FOLDER_EFFECT_SCREEN,
+          title: CARD_WITH_FOLDER_EFFECT_SCREEN_TITLE,
         ),
       );
       break;
 
     //card_with_rounded_corner
-    case CARD_WITH_ROUNDED_CORNER_ROUTE:
+    case CARD_WITH_ROUNDED_CORNER_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const CardWithRoundedCorner(
-          title: CARD_WITH_ROUNDED_CORNER_SCREEN,
+          title: CARD_WITH_ROUNDED_CORNER_SCREEN_TITLE,
         ),
       );
       break;
 
     //card_with_rounded_corner
-    case CARD_WITH_TOP_CIRCLE_ROUTE:
+    case CARD_WITH_TOP_CIRCLE_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const CardWithTopCircle(
-          title: CARD_WITH_TOP_CIRCLE_SCREEN,
+          title: CARD_WITH_TOP_CIRCLE_SCREEN_TITLE,
+        ),
+      );
+      break;
+
+      //card_with_image_and_text
+    case CARD_WITH_IMAGE_AND_TEXT_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const CardWithImageAndText(
+          title: CARD_WITH_IMAGE_AND_TEXT_SCREEN_TITLE,
         ),
       );
       break;
@@ -322,15 +363,6 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       );
     /*--------------------------------- Flutter Chip : End---------------------------------*/
 
-    /*--------------------------------- Flutter BiometricAuth : Start---------------------------------*/
-    case FLUTTER_BIOMETRIC_AUTH_SCREEN_ROUTE:
-      return MaterialPageRoute(
-        builder: (context) => const BiometricAuth(
-          title: FLUTTER_BIOMETRIC_AUTH_SCREEN_TITLE,
-        ),
-      );
-    /*--------------------------------- Flutter BiometricAuth : End---------------------------------*/
-
     /*----------------------------------- FlutterPackages : Start-----------------------------------*/
     case FLUTTER_PACKAGES_SCREEN_ROUTE:
       return MaterialPageRoute(
@@ -346,6 +378,14 @@ Route<dynamic> generateRoute(RouteSettings settings) {
           title: FLUTTER_REACTION_SCREEN_TITLE,
         ),
       );
+
+    //flutter_grouped_list
+    case FLUTTER_GROUPED_LIST_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterGroupedList(
+          title: FLUTTER_GROUPED_LIST_SCREEN_TITLE,
+        ),
+      );
     /*------------------------------------ FlutterPackages : End------------------------------------*/
 
     /*---------------------------------- ExpandableElement : Start ---------------------------------*/
@@ -354,6 +394,14 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const ExpandableElement(
           title: EXPANDABLE_ELEMENT_SCREEN_TITLE,
+        ),
+      );
+
+    //expandable listView
+    case EXPANDABLE_LIST_VIEW_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const ExpandableListView(
+          title: EXPANDABLE_LIST_VIEW_SCREEN_TITLE,
         ),
       );
 

@@ -14,7 +14,6 @@ class FlutterPackages extends StatefulWidget {
 class _FlutterPackagesState extends State<FlutterPackages> {
   @override
   Widget build(BuildContext context) {
-    final ThemeData themeData = Theme.of(context);
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -26,9 +25,16 @@ class _FlutterPackagesState extends State<FlutterPackages> {
             onPressed: () {
               Navigator.pushNamed(context, FLUTTER_REACTION_SCREEN_ROUTE);
             },
-            child: Text(
-              'Flutter Reaction Button',
-              style: themeData.textTheme.button,
+            child: const Text(
+              FLUTTER_REACTION_SCREEN_TITLE,
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, FLUTTER_GROUPED_LIST_SCREEN_ROUTE);
+            },
+            child: const Text(
+              FLUTTER_GROUPED_LIST_SCREEN_TITLE,
             ),
           ),
         ],

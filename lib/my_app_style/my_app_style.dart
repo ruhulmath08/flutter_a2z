@@ -24,6 +24,7 @@ const TextTheme TEXT_THEME_DEFAULT = TextTheme(
   subtitle2: TextStyle(color: COLOR_GREY, fontSize: 12, fontWeight: FontWeight.w400),
   button: TextStyle(color: COLOR_WHITE, fontWeight: FontWeight.w700, fontSize: 17),
   caption: TextStyle(color: COLOR_WHITE, fontSize: 18, fontWeight: FontWeight.w400),
+
 );
 
 //for small devices

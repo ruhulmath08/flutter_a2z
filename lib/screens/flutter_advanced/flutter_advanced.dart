@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_a2z/constants/constants.dart';
+import 'package:flutter_a2z/routing/routing_constants.dart';
 
 class FlutterAdvanced extends StatefulWidget {
   final String title;
@@ -16,7 +18,35 @@ class _FlutterAdvancedState extends State<FlutterAdvanced> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(child: Text(widget.title)),
+      body: ListView(
+        padding: const EdgeInsets.all(Constants.PAGE_DEFAULT_PADDING),
+        children: [
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, FLUTTER_BIOMETRIC_AUTH_SCREEN_ROUTE);
+            },
+            child: const Text(
+              FLUTTER_BIOMETRIC_AUTH_SCREEN_TITLE,
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, EXPANDABLE_LIST_VIEW_SCREEN_ROUTE);
+            },
+            child: const Text(
+              EXPANDABLE_LIST_VIEW_SCREEN_TITLE,
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, EXPANDABLE_DRAWER_SCREEN_ROUTE);
+            },
+            child: const Text(
+              EXPANDABLE_DRAWER_SCREEN_TITLE,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

@@ -14,8 +14,6 @@ class ExpandableElement extends StatefulWidget {
 class _ExpandableElementState extends State<ExpandableElement> {
   @override
   Widget build(BuildContext context) {
-    final ThemeData themeData = Theme.of(context);
-
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -27,27 +25,36 @@ class _ExpandableElementState extends State<ExpandableElement> {
             onPressed: () {
               Navigator.pushNamed(context, EXPANSION_TILE__SCREEN_ROUTE);
             },
-            child: Text(
+            child: const Text(
               EXPANSION_TILE__SCREEN_TITLE,
-              style: themeData.textTheme.button,
+              style: TextStyle(color: Colors.white),
             ),
           ),
           ElevatedButton(
             onPressed: () {
               Navigator.pushNamed(context, EXPANDABLE_PANEL_WIDGET_SCREEN_ROUTE);
             },
-            child: Text(
+            child: const Text(
               EXPANDABLE_PANEL_WIDGET_SCREEN_TITLE,
-              style: themeData.textTheme.button,
+              style: TextStyle(color: Colors.white),
             ),
           ),
           ElevatedButton(
             onPressed: () {
               Navigator.pushNamed(context, EXPANDABLE_WIDGET_SCREEN_ROUTE);
             },
-            child: Text(
+            child: const Text(
               EXPANDABLE_WIDGET_SCREEN_TITLE,
-              style: themeData.textTheme.button,
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, EXPANDABLE_LIST_VIEW_SCREEN_ROUTE);
+            },
+            child: const Text(
+              EXPANDABLE_LIST_VIEW_SCREEN_TITLE,
+              style: TextStyle(color: Colors.white),
             ),
           ),
         ],
