@@ -70,17 +70,17 @@ class _MyFullscreenDialogState extends State<MyFullscreenDialog> {
                 ),
                 DataCell(
                   Text(
-                    Utility.isEmptyString(model.assignPersonName) ? '' : model.assignPersonName,
+                    Utility.isEmptyString(model.officerName) ? '' : model.officerName,
                   ),
                 ),
                 DataCell(
                   Text(
-                    Utility.isEmptyString(model.assignPersonName) ? '' : model.assignPersonName,
+                    Utility.isEmptyString(model.officerName) ? '' : model.officerName,
                   ),
                 ),
                 DataCell(
                   Text(
-                    Utility.isEmptyString(model.areaName) ? '' : model.areaName,
+                    Utility.isEmptyString(model.agency) ? '' : model.agency,
                   ),
                 ),
                 DataCell(

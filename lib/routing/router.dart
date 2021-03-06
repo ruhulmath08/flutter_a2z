@@ -5,6 +5,7 @@ import 'package:flutter_a2z/screens/flutter_advanced/crud/flutter_crud/flutter_c
 import 'package:flutter_a2z/screens/flutter_advanced/crud/flutter_crud_add/flutter_crud_add.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/expandable_drawer/expandable_drawer.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/flutter_advanced.dart';
+import 'package:flutter_a2z/screens/flutter_advanced/responsive_text/responsive_text.dart';
 import 'package:flutter_a2z/screens/flutter_lifecycle/flutter_lifecycle.dart';
 import 'package:flutter_a2z/screens/flutter_lifecycle/stateful_widget/stateful_widget_lifecycle.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_grouped_list/flutter_grouped_list.dart';
@@ -104,6 +105,14 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const ExpandableDrawer(
           title: EXPANDABLE_DRAWER_SCREEN_TITLE,
+        ),
+      );
+
+    //responsive_text
+    case RESPONSIVE_TEXT_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const ResponsiveText(
+          title: RESPONSIVE_TEXT_SCREEN_TITLE,
         ),
       );
     //----------------------------------FlutterAdvanced: End-----------------------------------
@@ -270,7 +279,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       );
       break;
 
-      //card_with_image_and_text
+    //card_with_image_and_text
     case CARD_WITH_IMAGE_AND_TEXT_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const CardWithImageAndText(

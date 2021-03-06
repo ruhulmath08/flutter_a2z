@@ -54,7 +54,7 @@ class _DialogFullScreenState extends State<DialogFullScreen> {
                         topRight: Radius.circular(10),
                       ),
                       child: Image.asset(
-                        Utility.isEmptyString(widget.testDataModel.image) ? 'assets/images/no_image.png' : widget.testDataModel.image,
+                        Utility.isEmptyString(widget.testDataModel.shoutImage) ? 'assets/images/no_image.png' : widget.testDataModel.shoutImage,
                         fit: BoxFit.fill,
                         height: MediaQuery.of(context).size.height / 3,
                         width: double.infinity,
@@ -63,7 +63,7 @@ class _DialogFullScreenState extends State<DialogFullScreen> {
                     const SizedBox(height: 15),
                     createShoutDetailsDataRow(title: 'Date & Time:', correspondingValue: widget.testDataModel.dateTime),
                     createShoutDetailsDataRow(title: 'Coordinates:', correspondingValue: '23.234534, 90.567856'),
-                    createShoutDetailsDataRow(title: 'Probable Addr:', correspondingValue: widget.testDataModel.areaName),
+                    createShoutDetailsDataRow(title: 'Probable Addr:', correspondingValue: widget.testDataModel.agency),
                     createShoutDetailsDataRow(title: 'Submitted By:', correspondingValue: 'Md. xyz'),
                     createShoutDetailsDataRow(title: 'Urgency:', correspondingValue: 'ASAP'),
                     createShoutDetailsDataRow(title: 'Remarks:', correspondingValue: '....................'),
@@ -98,11 +98,11 @@ class _DialogFullScreenState extends State<DialogFullScreen> {
                         Expanded(
                           child: Column(
                             children: [
-                              createShoutDetailsDataRow(title: 'Officer:', correspondingValue: widget.testDataModel.assignPersonName),
-                              createShoutDetailsDataRow(title: 'Agency:', correspondingValue: widget.testDataModel.areaName),
+                              createShoutDetailsDataRow(title: 'Officer:', correspondingValue: widget.testDataModel.officerName),
+                              createShoutDetailsDataRow(title: 'Agency:', correspondingValue: widget.testDataModel.agency),
                               createShoutDetailsDataRow(title: 'Unit:', correspondingValue: widget.testDataModel.unit),
-                              createShoutDetailsDataRow(title: 'Phone:', correspondingValue: widget.testDataModel.assignPersonPhoneNo),
-                              createShoutDetailsDataRow(title: 'Email:', correspondingValue: widget.testDataModel.assignPersonEmail),
+                              createShoutDetailsDataRow(title: 'Phone:', correspondingValue: widget.testDataModel.officerPhoneNo),
+                              createShoutDetailsDataRow(title: 'Email:', correspondingValue: widget.testDataModel.officerEmail),
                             ],
                           ),
                         ),
@@ -116,9 +116,9 @@ class _DialogFullScreenState extends State<DialogFullScreen> {
                               child: Padding(
                                 padding: const EdgeInsets.all(2.0),
                                 child: Image.asset(
-                                  Utility.isEmptyString(widget.testDataModel.assignPersonImage)
+                                  Utility.isEmptyString(widget.testDataModel.officerImage)
                                       ? 'assets/images/profile_avatar.png'
-                                      : widget.testDataModel.assignPersonImage,
+                                      : widget.testDataModel.officerImage,
                                   fit: BoxFit.cover,
                                 ),
                               ),

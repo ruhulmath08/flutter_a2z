@@ -145,6 +145,11 @@ const String FLUTTER_BIOMETRIC_AUTH_SCREEN_TITLE = 'Biometric Auth';
 //expandable_drawer
 const String EXPANDABLE_DRAWER_SCREEN_ROUTE = '/expandable_drawer';
 const String EXPANDABLE_DRAWER_SCREEN_TITLE = 'Expandable Drawer';
+
+//responsive_text
+const String RESPONSIVE_TEXT_SCREEN_ROUTE = 'responsive_text';
+const String RESPONSIVE_TEXT_SCREEN_TITLE = 'Responsive Text';
+const String RESPONSIVE_TEXT_SCREEN_CODE = '';
 //--------------------------------- Flutter Advanced : End------------------------------------
 
 /*--------------------------------- Flutter Lifecycle : Start---------------------------------*/

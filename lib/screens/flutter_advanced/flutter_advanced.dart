@@ -45,6 +45,14 @@ class _FlutterAdvancedState extends State<FlutterAdvanced> {
               EXPANDABLE_DRAWER_SCREEN_TITLE,
             ),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, RESPONSIVE_TEXT_SCREEN_ROUTE);
+            },
+            child: const Text(
+              RESPONSIVE_TEXT_SCREEN_ROUTE,
+            ),
+          ),
         ],
       ),
     );
