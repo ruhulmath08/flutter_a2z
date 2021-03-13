@@ -131,7 +131,7 @@ const String DIALOG_FOR_LOCATION_SCREEN_TITLE = 'Dialog For Location';
 //dialog_with_full_image
 const String DIALOG_WITH_FULL_IMAGE_SCREEN_ROUTE = '/dialog_with_full_image';
 const String DIALOG_WITH_FULL_IMAGE_SCREEN_TITLE = 'Dialog With Full Image';
-/*--------------------------------- Flutter AlertDialog : End---------------------------------*/
+//--------------------------------- Flutter AlertDialog : End---------------------------------
 
 //--------------------------------- Flutter Advanced : Start----------------------------------
 //flutter advanced
@@ -150,6 +150,11 @@ const String EXPANDABLE_DRAWER_SCREEN_TITLE = 'Expandable Drawer';
 const String RESPONSIVE_TEXT_SCREEN_ROUTE = 'responsive_text';
 const String RESPONSIVE_TEXT_SCREEN_TITLE = 'Responsive Text';
 const String RESPONSIVE_TEXT_SCREEN_CODE = '';
+
+//flutter_form
+const String FLUTTER_FORM_SCREEN_ROUTE = 'flutter_form';
+const String FLUTTER_FORM_SCREEN_TITLE = 'Flutter Form';
+const String FLUTTER_FORM_SCREEN_CODE = '';
 //--------------------------------- Flutter Advanced : End------------------------------------
 
 /*--------------------------------- Flutter Lifecycle : Start---------------------------------*/

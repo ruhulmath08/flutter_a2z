@@ -1,8 +1,4 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_a2z/my_app_style/my_app_style.dart';
 import 'package:flutter_a2z/routing/router.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
 import 'package:flutter_a2z/screens/undefined/undefined_screen.dart';

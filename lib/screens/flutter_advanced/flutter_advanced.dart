@@ -50,7 +50,15 @@ class _FlutterAdvancedState extends State<FlutterAdvanced> {
               Navigator.pushNamed(context, RESPONSIVE_TEXT_SCREEN_ROUTE);
             },
             child: const Text(
-              RESPONSIVE_TEXT_SCREEN_ROUTE,
+              RESPONSIVE_TEXT_SCREEN_TITLE,
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, FLUTTER_FORM_SCREEN_ROUTE);
+            },
+            child: const Text(
+              FLUTTER_FORM_SCREEN_TITLE,
             ),
           ),
         ],
