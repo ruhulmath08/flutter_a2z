@@ -37,6 +37,14 @@ class _FlutterPackagesState extends State<FlutterPackages> {
               FLUTTER_GROUPED_LIST_SCREEN_TITLE,
             ),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, FLUTTER_CAROUSEL_SLIDER_SCREEN_ROUTE);
+            },
+            child: const Text(
+              FLUTTER_CAROUSEL_SLIDER_SCREEN_TITLE,
+            ),
+          ),
         ],
       ),
     );

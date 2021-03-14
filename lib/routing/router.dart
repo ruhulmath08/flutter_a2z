@@ -6,9 +6,11 @@ import 'package:flutter_a2z/screens/flutter_advanced/crud/flutter_crud_add/flutt
 import 'package:flutter_a2z/screens/flutter_advanced/expandable_drawer/expandable_drawer.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/flutter_advanced.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/flutter_form/flutter_form.dart';
+import 'package:flutter_a2z/screens/flutter_advanced/my_custom_paint/my_custom_paint.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/responsive_text/responsive_text.dart';
 import 'package:flutter_a2z/screens/flutter_lifecycle/flutter_lifecycle.dart';
 import 'package:flutter_a2z/screens/flutter_lifecycle/stateful_widget/stateful_widget_lifecycle.dart';
+import 'package:flutter_a2z/screens/flutter_packages/flutter_carousel_slider/flutter_carousel_slider.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_grouped_list/flutter_grouped_list.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_packages.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_reaction_button/flutter_reaction_button.dart';
@@ -117,11 +119,19 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
 
-      //responsive_text
+    //form_validation
     case FLUTTER_FORM_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const FlutterForm(
           title: FLUTTER_FORM_SCREEN_TITLE,
+        ),
+      );
+
+    //custom_paint
+    case MY_CUSTOM_PAINT_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const MyCustomPaint(
+          title: MY_CUSTOM_PAINT_SCREEN_TITLE,
         ),
       );
     //----------------------------------FlutterAdvanced: End-----------------------------------
@@ -402,6 +412,14 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const FlutterGroupedList(
           title: FLUTTER_GROUPED_LIST_SCREEN_TITLE,
+        ),
+      );
+
+    //carousel_slider
+    case FLUTTER_CAROUSEL_SLIDER_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterCarouselSlider(
+          title: FLUTTER_CAROUSEL_SLIDER_SCREEN_TITLE,
         ),
       );
     /*------------------------------------ FlutterPackages : End------------------------------------*/

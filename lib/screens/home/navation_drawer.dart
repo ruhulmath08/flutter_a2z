@@ -101,8 +101,7 @@ Widget myDrawer(BuildContext context) {
           trailing: const Icon(Icons.location_pin),
           title: const Text('Flutter Package'),
           onTap: () {
-            CommonWidgets.showToast(context, 'Flutter Package');
-            Navigator.of(context).pop();
+            Navigator.popAndPushNamed(context, FLUTTER_PACKAGES_SCREEN_ROUTE);
           },
         ),
         //const Divider(color: Colors.blue, thickness: 1),

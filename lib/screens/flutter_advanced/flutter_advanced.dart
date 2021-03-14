@@ -61,6 +61,14 @@ class _FlutterAdvancedState extends State<FlutterAdvanced> {
               FLUTTER_FORM_SCREEN_TITLE,
             ),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, MY_CUSTOM_PAINT_SCREEN_ROUTE);
+            },
+            child: const Text(
+              MY_CUSTOM_PAINT_SCREEN_TITLE,
+            ),
+          ),
         ],
       ),
     );

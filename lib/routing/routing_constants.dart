@@ -155,6 +155,11 @@ const String RESPONSIVE_TEXT_SCREEN_CODE = '';
 const String FLUTTER_FORM_SCREEN_ROUTE = 'flutter_form';
 const String FLUTTER_FORM_SCREEN_TITLE = 'Flutter Form';
 const String FLUTTER_FORM_SCREEN_CODE = '';
+
+//custom_paint
+const String MY_CUSTOM_PAINT_SCREEN_ROUTE = 'custom_paint';
+const String MY_CUSTOM_PAINT_SCREEN_TITLE = 'Custom Paint';
+const String MY_CUSTOM_PAINT_SCREEN_CODE = '';
 //--------------------------------- Flutter Advanced : End------------------------------------
 
 /*--------------------------------- Flutter Lifecycle : Start---------------------------------*/
@@ -185,6 +190,10 @@ const String FLUTTER_REACTION_SCREEN_TITLE = 'Flutter Reaction Button';
 //flutter_grouped_list
 const String FLUTTER_GROUPED_LIST_SCREEN_ROUTE = '/flutter_grouped_list';
 const String FLUTTER_GROUPED_LIST_SCREEN_TITLE = 'Flutter Grouped List';
+
+//carousel_slider
+const String FLUTTER_CAROUSEL_SLIDER_SCREEN_ROUTE = '/flutter_carousel_slider';
+const String FLUTTER_CAROUSEL_SLIDER_SCREEN_TITLE = 'Flutter Carousel Slider';
 /*------------------------------------ FlutterPackages : End------------------------------------*/
 
 /*---------------------------------- ExpandableElement : Start ---------------------------------*/
