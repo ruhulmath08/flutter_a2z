@@ -12,11 +12,16 @@ class MyCustomPaint extends StatefulWidget {
 class _MyCustomPaintState extends State<MyCustomPaint> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
+    return DefaultTabController(
+      length: 3,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text(widget.title),
+        ),
+        body: TabBar(
+          
+        ),
       ),
-      body: Center(child: Text(widget.title)),
     );
   }
 }

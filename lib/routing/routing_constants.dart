@@ -1,22 +1,22 @@
-/*--------------------------------- Undefined : Start---------------------------------*/
+//---------------------------------Undefined: Start----------------------------------
 const String UNDEFINED_SCREEN_TITLE = 'Undefined Screen';
 
-/*--------------------------------- Login : Start---------------------------------*/
+//---------------------------------Login: Start--------------------------------------
 const String LOGIN_SCREEN_ROUTE = '/';
 const String LOGIN_SCREEN_TITLE = 'Login';
-/*--------------------------------- Login : End---------------------------------*/
+//---------------------------------Login: End----------------------------------------
 
-/*--------------------------------- Login : Start---------------------------------*/
+//---------------------------------SignUp: End---------------------------------------
 const String SIGN_UP_SCREEN_ROUTE = '/sign_up';
 const String SIGN_UP_SCREEN__TITLE = 'SignUp';
-/*--------------------------------- Login : End---------------------------------*/
+//---------------------------------SignUp: Start-------------------------------------
 
-/*--------------------------------- Home : Start---------------------------------*/
+//---------------------------------Home: Start---------------------------------------
 const String HOME_SCREEN_ROUTE = '/home';
 const String HOME_SCREEN_TITLE = 'Home';
-/*--------------------------------- Home : End---------------------------------*/
+//---------------------------------Home: End-----------------------------------------
 
-/*--------------------------------- Button : Start---------------------------------*/
+//---------------------------------Button : Start------------------------------------
 const String FLUTTER_BUTTON_SCREEN_ROUTE = '/flutter_button';
 const String FLUTTER_BUTTON_SCREEN_TITLE = 'Buttons';
 
@@ -39,19 +39,19 @@ const String FLUTTER_DROPDOWN_BUTTON_SCREEN_TITLE = 'Flutter Dropdown Button';
 //popup button
 const String FLUTTER_POPUP_MENU_BUTTON_SCREEN_ROUTE = '/flutter_popup_button';
 const String FLUTTER_POPUP_MENU_BUTTON_SCREEN_TITLE = 'Popup Menu Button';
-/*--------------------------------- Button : End---------------------------------*/
+//---------------------------------Button : End--------------------------------------
 
-/*--------------------------------- Button : Start---------------------------------*/
+//---------------------------------BottomNavigation: Start---------------------------
 const String FLUTTER_BOTTOM_NAVIGATION_VIEW_SCREEN_ROUTE = '/flutter_bottom_navigation';
 const String FLUTTER_BOTTOM_NAVIGATION_VIEW_SCREEN_TITLE = 'BottomNavigation';
-/*--------------------------------- Button : End---------------------------------*/
+//---------------------------------BottomNavigation: End-----------------------------
 
-/*--------------------------------- TabViewLayout : Start---------------------------------*/
+//---------------------------------TabViewLayout: Start------------------------------
 const String FLUTTER_TAB_VIEW_SCREEN_ROUTE = '/flutter_tab_view';
 const String FLUTTER_TAB_VIEW_SCREEN_TITLE = 'TabView';
-/*--------------------------------- TabViewLayout : End---------------------------------*/
+//---------------------------------TabViewLayout: End--------------------------------
 
-/*--------------------------------- Flutter CRUD : Start---------------------------------*/
+//---------------------------------FlutterCRUD: Start--------------------------------
 //flutter CRUD
 const String FLUTTER_CRUD_SCREEN_ROUTE = '/flutter_crud';
 const String FLUTTER_CRUD_SCREEN_TITLE = 'Flutter CRUD';
@@ -67,9 +67,9 @@ const String FLUTTER_CRUD_UPDATE_SCREEN_TITLE = 'Flutter CRUD Update';
 //delete data
 const String FLUTTER_CRUD_DELETE_SCREEN_ROUTE = '/flutter_crud_delete';
 const String FLUTTER_CRUD_DELETE_SCREEN_TITLE = 'Flutter CRUD Delete';
-/*--------------------------------- Flutter CRUD : End---------------------------------*/
+//---------------------------------FlutterCRUD: End----------------------------------
 
-/*--------------------------------- Flutter CARD : Start---------------------------------*/
+//---------------------------------FlutterCARD: Start--------------------------------
 //flutter card
 const String FLUTTER_CARD_SCREEN_ROUTE = '/flutter_card';
 const String FLUTTER_CARD_SCREEN_TITLE = 'Flutter Card';
@@ -101,9 +101,9 @@ const String CARD_WITH_TOP_CIRCLE_SCREEN_TITLE = 'Card With Top Circle';
 //card_with_image_and_text
 const String CARD_WITH_IMAGE_AND_TEXT_SCREEN_ROUTE = '/card_with_image_and_text';
 const String CARD_WITH_IMAGE_AND_TEXT_SCREEN_TITLE = 'Card With Image And Text';
-/*--------------------------------- Flutter CARD : End---------------------------------*/
+//---------------------------------FlutterCARD: End----------------------------------
 
-/*--------------------------------- Flutter AlertDialog : Start---------------------------------*/
+//---------------------------------FlutterAlertDialog: Start-------------------------
 //flutter dialog
 const String FLUTTER_DIALOG_SCREEN_ROUTE = '/flutter_dialog';
 const String FLUTTER_DIALOG_SCREEN_TITLE = 'Alert Dialog';
@@ -131,9 +131,9 @@ const String DIALOG_FOR_LOCATION_SCREEN_TITLE = 'Dialog For Location';
 //dialog_with_full_image
 const String DIALOG_WITH_FULL_IMAGE_SCREEN_ROUTE = '/dialog_with_full_image';
 const String DIALOG_WITH_FULL_IMAGE_SCREEN_TITLE = 'Dialog With Full Image';
-//--------------------------------- Flutter AlertDialog : End---------------------------------
+//---------------------------------FlutterAlertDialog: End---------------------------
 
-//--------------------------------- Flutter Advanced : Start----------------------------------
+//---------------------------------FlutterAdvanced: Start----------------------------
 //flutter advanced
 const String FLUTTER_ADVANCED_SCREEN_ROUTE = '/flutter_advanced';
 const String FLUTTER_ADVANCED_SCREEN_TITLE = 'Flutter Advanced';
@@ -160,9 +160,17 @@ const String FLUTTER_FORM_SCREEN_CODE = '';
 const String MY_CUSTOM_PAINT_SCREEN_ROUTE = 'custom_paint';
 const String MY_CUSTOM_PAINT_SCREEN_TITLE = 'Custom Paint';
 const String MY_CUSTOM_PAINT_SCREEN_CODE = '';
-//--------------------------------- Flutter Advanced : End------------------------------------
 
-/*--------------------------------- Flutter Lifecycle : Start---------------------------------*/
+//flutter_key_details
+const String FLUTTER_KEY_DETAILS_SCREEN_ROUTE = '/flutter_key_details';
+const String FLUTTER_KEY_DETAILS_SCREEN_TITLE = 'Flutter Key Details';
+const String FLUTTER_KEY_DETAILS_SCREEN_CODE = '';
+//---------------------------------Flutter Advanced: End-----------------------------
+
+//---------------------------------FlutterKeyDetails: Start--------------------------
+//---------------------------------FlutterKeyDetails: End----------------------------
+
+//---------------------------------Flutter Lifecycle: Start--------------------------
 //flutter lifecycle
 const String FLUTTER_LIFECYCLE_SCREEN_ROUTE = '/flutter_lifecycle';
 const String FLUTTER_LIFECYCLE_SCREEN_TITLE = 'Flutter Lifecycle';
@@ -170,15 +178,15 @@ const String FLUTTER_LIFECYCLE_SCREEN_TITLE = 'Flutter Lifecycle';
 //flutter Stateful Widget Lifecycle
 const String STATEFUL_WIDGET_LIFECYCLE_SCREEN_ROUTE = '/stateful_widget_lifecycle';
 const String STATEFUL_WIDGET_LIFECYCLE_SCREEN_TITLE = 'Stateful Widget Lifecycle';
-/*--------------------------------- Flutter Lifecycle : End---------------------------------*/
+//---------------------------------Flutter Lifecycle: End----------------------------
 
-/*--------------------------------- Flutter Chip : Start---------------------------------*/
+//---------------------------------Flutter Chip: Start-------------------------------
 //Chip
 const String FLUTTER_CHIP_SCREEN_ROUTE = '/flutter_chip';
 const String FLUTTER_CHIP_SCREEN_TITLE = 'Flutter Chip';
-/*--------------------------------- Flutter Chip : End---------------------------------*/
+//---------------------------------Flutter Chip: End---------------------------------
 
-/*----------------------------------- FlutterPackages : Start-----------------------------------*/
+//---------------------------------FlutterPackages: Start----------------------------
 //flutter_packages
 const String FLUTTER_PACKAGES_SCREEN_ROUTE = '/flutter_packages';
 const String FLUTTER_PACKAGES_SCREEN_TITLE = 'Flutter Packages';
@@ -194,9 +202,9 @@ const String FLUTTER_GROUPED_LIST_SCREEN_TITLE = 'Flutter Grouped List';
 //carousel_slider
 const String FLUTTER_CAROUSEL_SLIDER_SCREEN_ROUTE = '/flutter_carousel_slider';
 const String FLUTTER_CAROUSEL_SLIDER_SCREEN_TITLE = 'Flutter Carousel Slider';
-/*------------------------------------ FlutterPackages : End------------------------------------*/
+//---------------------------------FlutterPackages: End------------------------------
 
-/*---------------------------------- ExpandableElement : Start ---------------------------------*/
+//---------------------------------ExpandableElement: Start -------------------------
 //expandable element
 const String EXPANDABLE_ELEMENT_SCREEN_ROUTE = '/expandable_element';
 const String EXPANDABLE_ELEMENT_SCREEN_TITLE = 'Expandable Element';
@@ -216,9 +224,9 @@ const String EXPANDABLE_PANEL_WIDGET_SCREEN_TITLE = 'Expandable Panel Widget';
 //ExpandableWidget
 const String EXPANDABLE_WIDGET_SCREEN_ROUTE = '/expandable_panel';
 const String EXPANDABLE_WIDGET_SCREEN_TITLE = 'Expandable Panel';
-/*----------------------------------- ExpandableElement : End ----------------------------------*/
+//---------------------------------ExpandableElement: End ---------------------------
 
-/*------------------------------------- FlutterTable : Start -----------------------------------*/
+//---------------------------------FlutterTable: Start ------------------------------
 //FlutterTable
 const String FLUTTER_TABLE_SCREEN_ROUTE = '/flutter_table';
 const String FLUTTER_TABLE_SCREEN_TITLE = 'Flutter Table';
@@ -230,9 +238,9 @@ const String FLUTTER_DATA_TABLE_SCREEN_TITLE = 'Flutter Data Table';
 //TableWithPagination
 const String TABLE_WITH_PAGINATION_SCREEN_ROUTE = '/table_with_pagination';
 const String TABLE_WITH_PAGINATION_SCREEN_TITLE = 'Table With Pagination';
-/*------------------------------------ FlutterTable : End -------------------------------------*/
+//---------------------------------FlutterTable: End --------------------------------
 
-/*----------------------------------- DateTimePicker : Start ----------------------------------*/
+//---------------------------------DateTimePicker: Start ----------------------------
 //myDateTime picker
 const String FLUTTER_DATETIME_PICKER_SCREEN_ROUTE = '/flutter_datetime_picker';
 const String FLUTTER_DATETIME_PICKER_SCREEN_TITLE = 'Flutter DateTime Picker';
@@ -252,4 +260,4 @@ const String DATETIME_PICKER_SCREEN_TITLE = 'DateTime Picker';
 //dateRangePicker
 const String DATE_RANGE_PICKER_SCREEN_ROUTE = '/date_range_picker';
 const String DATE_RANGE_PICKER_SCREEN_TITLE = 'DateRange Picker';
-/*------------------------------------ DateTimePicker : End -----------------------------------*/
+//---------------------------------DateTimePicker: End ------------------------------

@@ -20,6 +20,7 @@ class _FlutterAdvancedState extends State<FlutterAdvanced> {
       ),
       body: ListView(
         padding: const EdgeInsets.all(Constants.PAGE_DEFAULT_PADDING),
+        physics: const BouncingScrollPhysics(),
         children: [
           ElevatedButton(
             onPressed: () {
@@ -67,6 +68,14 @@ class _FlutterAdvancedState extends State<FlutterAdvanced> {
             },
             child: const Text(
               MY_CUSTOM_PAINT_SCREEN_TITLE,
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, FLUTTER_KEY_DETAILS_SCREEN_ROUTE);
+            },
+            child: const Text(
+              FLUTTER_KEY_DETAILS_SCREEN_TITLE
             ),
           ),
         ],

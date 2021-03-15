@@ -6,6 +6,7 @@ import 'package:flutter_a2z/screens/flutter_advanced/crud/flutter_crud_add/flutt
 import 'package:flutter_a2z/screens/flutter_advanced/expandable_drawer/expandable_drawer.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/flutter_advanced.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/flutter_form/flutter_form.dart';
+import 'package:flutter_a2z/screens/flutter_advanced/flutter_key_details/flutter_key_details.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/my_custom_paint/my_custom_paint.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/responsive_text/responsive_text.dart';
 import 'package:flutter_a2z/screens/flutter_lifecycle/flutter_lifecycle.dart';
@@ -56,7 +57,7 @@ import 'package:flutter_a2z/screens/sign_up/sign_up_screen.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
-    /*--------------------------------- Login : Start---------------------------------*/
+    //---------------------------------Login: Start--------------------------------------------
     case LOGIN_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const LoginScreen(
@@ -64,18 +65,18 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
       break;
-    /*--------------------------------- Login : End---------------------------------*/
+    //---------------------------------Login: End----------------------------------------------
 
-    /*--------------------------------- SignUp : Start---------------------------------*/
+    //---------------------------------SignUp: Start-------------------------------------------
     case SIGN_UP_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const SignUpScreen(
           title: SIGN_UP_SCREEN__TITLE,
         ),
       );
-    /*--------------------------------- SignUp : End---------------------------------*/
+    //---------------------------------SignUp: End---------------------------------------------
 
-    /*--------------------------------- HomeScreen : Start------------------------------------*/
+    //---------------------------------HomeScreen: Start---------------------------------------
     case HOME_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const HomeScreen(
@@ -83,9 +84,9 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
       break;
-    /*--------------------------------- HomeScreen : End---------------------------------------*/
+    //---------------------------------HomeScreen: End-----------------------------------------
 
-    //----------------------------------FlutterAdvanced: Start----------------------------------
+    //---------------------------------FlutterAdvanced: Start----------------------------------
     //FlutterAdvanced
     case FLUTTER_ADVANCED_SCREEN_ROUTE:
       return MaterialPageRoute(
@@ -134,9 +135,17 @@ Route<dynamic> generateRoute(RouteSettings settings) {
           title: MY_CUSTOM_PAINT_SCREEN_TITLE,
         ),
       );
-    //----------------------------------FlutterAdvanced: End-----------------------------------
 
-    /*--------------------------------- Flutter Button : Start---------------------------------*/
+    //flutter_key_details
+    case FLUTTER_KEY_DETAILS_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterKeyDetails(
+          title: FLUTTER_KEY_DETAILS_SCREEN_TITLE,
+        ),
+      );
+    //---------------------------------FlutterAdvanced: End------------------------------------
+
+    //---------------------------------FlutterButton: Start------------------------------------
     //button
     case FLUTTER_BUTTON_SCREEN_ROUTE:
       return MaterialPageRoute(
@@ -190,18 +199,18 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
       break;
-    /*--------------------------------- Flutter Button : End---------------------------------*/
+    //---------------------------------FlutterButton: End--------------------------------------
 
-    /*--------------------------------- Flutter BottomNavigationView : Start---------------------------------*/
+    //---------------------------------FlutterBottomNavigationView: Start----------------------
     case FLUTTER_BOTTOM_NAVIGATION_VIEW_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const MyBottomNavigation(
           title: FLUTTER_BOTTOM_NAVIGATION_VIEW_SCREEN_TITLE,
         ),
       );
-    /*--------------------------------- Flutter BottomNavigationView : End---------------------------------*/
+    //---------------------------------FlutterBottomNavigationView: End------------------------
 
-    /*--------------------------------- TabViewLayout : Start ---------------------------------*/
+    //---------------------------------TabViewLayout: Start -----------------------------------
     case FLUTTER_TAB_VIEW_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const TabViewLayout(
@@ -209,9 +218,9 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
       break;
-    /*--------------------------------- TabViewLayout : End ---------------------------------*/
+    //---------------------------------TabViewLayout: End -------------------------------------
 
-    /*--------------------------------- Flutter CRUD : Start---------------------------------*/
+    //---------------------------------FlutterCRUD: Start--------------------------------------
     //flutter CRUD
     case FLUTTER_CRUD_SCREEN_ROUTE:
       return MaterialPageRoute(
@@ -232,9 +241,9 @@ Route<dynamic> generateRoute(RouteSettings settings) {
 
     //flutter CRUD UPDATE
     //flutter CRUD
-    /*--------------------------------- Flutter CRUD : End---------------------------------*/
+    //---------------------------------FlutterCRUD: End----------------------------------------
 
-    /*--------------------------------- Flutter CARD : Start---------------------------------*/
+    //---------------------------------FlutterCARD: Start--------------------------------------
     //flutter card
     case FLUTTER_CARD_SCREEN_ROUTE:
       return MaterialPageRoute(
@@ -306,9 +315,9 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
       break;
-    /*--------------------------------- Flutter CARD : End---------------------------------*/
+    //---------------------------------FlutterCARD: End----------------------------------------
 
-    /*--------------------------------- Flutter AlertDialog : Start---------------------------------*/
+    //---------------------------------FlutterAlertDialog: Start-------------------------------
     //flutter dialog
     case FLUTTER_DIALOG_SCREEN_ROUTE:
       return MaterialPageRoute(
@@ -362,9 +371,9 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
       break;
-    /*--------------------------------- Flutter AlertDialog : End---------------------------------*/
+    //---------------------------------FlutterAlertDialog: End---------------------------------
 
-    /*--------------------------------- Flutter Lifecycle : Start---------------------------------*/
+    //---------------------------------FlutterLifecycle: Start---------------------------------
     //flutter lifecycle
     case FLUTTER_LIFECYCLE_SCREEN_ROUTE:
       return MaterialPageRoute(
@@ -380,18 +389,18 @@ Route<dynamic> generateRoute(RouteSettings settings) {
           title: STATEFUL_WIDGET_LIFECYCLE_SCREEN_TITLE,
         ),
       );
-    /*--------------------------------- Flutter Lifecycle : End---------------------------------*/
+    //---------------------------------FlutterLifecycle: End-----------------------------------
 
-    /*--------------------------------- Flutter Chip : Start---------------------------------*/
+    //---------------------------------FlutterChip: Start--------------------------------------
     case FLUTTER_CHIP_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const FlutterChipAll(
           title: FLUTTER_CHIP_SCREEN_TITLE,
         ),
       );
-    /*--------------------------------- Flutter Chip : End---------------------------------*/
+    //---------------------------------FlutterChip: End----------------------------------------
 
-    /*----------------------------------- FlutterPackages : Start-----------------------------------*/
+    //---------------------------------FlutterPackages: Start----------------------------------
     case FLUTTER_PACKAGES_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const FlutterPackages(
@@ -422,9 +431,9 @@ Route<dynamic> generateRoute(RouteSettings settings) {
           title: FLUTTER_CAROUSEL_SLIDER_SCREEN_TITLE,
         ),
       );
-    /*------------------------------------ FlutterPackages : End------------------------------------*/
+    //---------------------------------FlutterPackages: End------------------------------------
 
-    /*---------------------------------- ExpandableElement : Start ---------------------------------*/
+    //---------------------------------ExpandableElement: Start--------------------------------
     //expandable element
     case EXPANDABLE_ELEMENT_SCREEN_ROUTE:
       return MaterialPageRoute(
@@ -465,9 +474,9 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
 
-    /*----------------------------------- ExpandableElement : End ----------------------------------*/
+    //-----------------------------------ExpandableElement: End--------------------------------
 
-    /*----------------------------------- FlutterTable : Start ----------------------------------*/
+    //-----------------------------------FlutterTable: Start-----------------------------------
     //FlutterTable
     case FLUTTER_TABLE_SCREEN_ROUTE:
       return MaterialPageRoute(
@@ -491,9 +500,9 @@ Route<dynamic> generateRoute(RouteSettings settings) {
           title: TABLE_WITH_PAGINATION_SCREEN_TITLE,
         ),
       );
-    /*------------------------------------ FlutterTable : End -----------------------------------*/
+    //------------------------------------FlutterTable: End------------------------------------
 
-    /*----------------------------------- DateTimePicker : Start ----------------------------------*/
+    //------------------------------------DateTimePicker: Start--------------------------------
     //flutterDateTime picker
     case FLUTTER_DATETIME_PICKER_SCREEN_ROUTE:
       return MaterialPageRoute(
@@ -533,7 +542,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
           title: DATE_RANGE_PICKER_SCREEN_TITLE,
         ),
       );
-    /*------------------------------------ DateTimePicker : End -----------------------------------*/
+    //---------------------------------DateTimePicker: End-------------------------------------
 
     default:
       return null;
