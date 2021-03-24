@@ -25,6 +25,9 @@ dependencies:
   grouped_list: ^3.7.1 #01-03-2021
   auto_size_text: ^2.1.0 #07-03-2021
   carousel_slider: ^3.0.0 #14-03-2021
+  reorderables: #21-03-2021
+  webview_flutter: any #22-03-2021
+  flutter_html: any #22-03-2021
 
 dev_dependencies:
   flutter_test:

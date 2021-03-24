@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_a2z/constants/constants.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
 
-class FlutterPackages extends StatefulWidget {
+class FlutterReOrderAbles extends StatefulWidget {
   final String title;
 
-  const FlutterPackages({Key key, this.title}) : super(key: key);
+  const FlutterReOrderAbles({Key key, this.title}) : super(key: key);
 
   @override
-  _FlutterPackagesState createState() => _FlutterPackagesState();
+  _FlutterFlutterReOrderAblesState createState() => _FlutterFlutterReOrderAblesState();
 }
 
-class _FlutterPackagesState extends State<FlutterPackages> {
+class _FlutterFlutterReOrderAblesState extends State<FlutterReOrderAbles> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,46 +23,46 @@ class _FlutterPackagesState extends State<FlutterPackages> {
         children: [
           ElevatedButton(
             onPressed: () {
-              Navigator.pushNamed(context, FLUTTER_REACTION_SCREEN_ROUTE);
+              Navigator.pushNamed(context, FLUTTER_REORDERABLES_SILVERLIST_ROUTE);
             },
             child: const Text(
-              FLUTTER_REACTION_SCREEN_TITLE,
+              FLUTTER_REORDERABLES_SILVERLIST_TITLE,
             ),
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.pushNamed(context, FLUTTER_GROUPED_LIST_SCREEN_ROUTE);
+              Navigator.pushNamed(context, FLUTTER_REORDERABLES_TABLE_ROUTE);
             },
             child: const Text(
-              FLUTTER_GROUPED_LIST_SCREEN_TITLE,
+              FLUTTER_REORDERABLES_TABLE_TITLE,
             ),
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.pushNamed(context, FLUTTER_CAROUSEL_SLIDER_SCREEN_ROUTE);
+              Navigator.pushNamed(context, FLUTTER_REORDERABLES_WRAP_ROUTE);
             },
             child: const Text(
-              FLUTTER_CAROUSEL_SLIDER_SCREEN_TITLE,
+              FLUTTER_REORDERABLES_WRAP_TITLE,
             ),
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.pushNamed(context, FLUTTER_REORDERABLES_SCREEN_ROUTE);
+              Navigator.pushNamed(context, FLUTTER_NESTED_REORDERABLES_WRAP_ROUTE);
             },
             child: const Text(
-              FLUTTER_REORDERABLES_SCREEN_TITLE,
+              FLUTTER_NESTED_REORDERABLES_WRAP_TITLE,
             ),
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.pushNamed(context, FLUTTER_WEB_VIEW_SCREEN_ROUTE);
+              Navigator.pushNamed(context, FLUTTER_REORDERABLES_COLUMN_ROUTE);
             },
             child: const Text(
-              FLUTTER_WEB_VIEW_SCREEN_TITLE,
+              FLUTTER_REORDERABLES_COLUMN_TITLE,
             ),
           ),
         ],
-      ),
+      )
     );
   }
 }

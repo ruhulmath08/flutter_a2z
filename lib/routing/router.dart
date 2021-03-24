@@ -7,6 +7,7 @@ import 'package:flutter_a2z/screens/flutter_advanced/expandable_drawer/expandabl
 import 'package:flutter_a2z/screens/flutter_advanced/flutter_advanced.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/flutter_form/flutter_form.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/flutter_key_details/flutter_key_details.dart';
+import 'package:flutter_a2z/screens/flutter_advanced/flutter_progressbar/flutter_progressbar.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/my_custom_paint/my_custom_paint.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/responsive_text/responsive_text.dart';
 import 'package:flutter_a2z/screens/flutter_lifecycle/flutter_lifecycle.dart';
@@ -15,6 +16,16 @@ import 'package:flutter_a2z/screens/flutter_packages/flutter_carousel_slider/flu
 import 'package:flutter_a2z/screens/flutter_packages/flutter_grouped_list/flutter_grouped_list.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_packages.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_reaction_button/flutter_reaction_button.dart';
+import 'package:flutter_a2z/screens/flutter_packages/flutter_reorderables/flutter_nested_reorderable_wrap/flutter_nested_reorderable_wrap.dart';
+import 'package:flutter_a2z/screens/flutter_packages/flutter_reorderables/flutter_reorderable_column/flutter_reorderable_column.dart';
+import 'package:flutter_a2z/screens/flutter_packages/flutter_reorderables/flutter_reorderable_row/flutter_reorderable_row.dart';
+import 'package:flutter_a2z/screens/flutter_packages/flutter_reorderables/flutter_reorderable_sliverList/flutter_reorderable_sliver_list.dart';
+import 'package:flutter_a2z/screens/flutter_packages/flutter_reorderables/flutter_reorderable_table/flutter_reorderable_table.dart';
+import 'package:flutter_a2z/screens/flutter_packages/flutter_reorderables/flutter_reorderable_wrap/flutter_reorderable_wrap.dart';
+import 'package:flutter_a2z/screens/flutter_packages/flutter_reorderables/flutter_reorderables.dart';
+import 'package:flutter_a2z/screens/flutter_packages/flutter_web_view/flutter_web_view.dart';
+import 'package:flutter_a2z/screens/flutter_packages/flutter_web_view/flutter_webview_plugin/flutter_webview_plugin.dart';
+import 'package:flutter_a2z/screens/flutter_packages/flutter_web_view/webview_flutter/webview_flutter.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/alert_dialog/default_dialog/default_dialog.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/alert_dialog/dialog_with_full_image/dialog_with_full_image.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/alert_dialog/dialog_with_input_field/dialog_with_input_field.dart';
@@ -143,7 +154,16 @@ Route<dynamic> generateRoute(RouteSettings settings) {
           title: FLUTTER_KEY_DETAILS_SCREEN_TITLE,
         ),
       );
-    //---------------------------------FlutterAdvanced: End------------------------------------
+    //---------------------------------FlutterProgressbar: Start-------------------------------
+    //flutter_progressbar
+    case FLUTTER_PROGRESSBAR_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterProgressbar(
+          title: FLUTTER_PROGRESSBAR_SCREEN_TITLE,
+        ),
+      );
+    //---------------------------------FlutterProgressbar: End---------------------------------
+    //=================================FlutterAdvanced: End====================================
 
     //---------------------------------FlutterButton: Start------------------------------------
     //button
@@ -400,7 +420,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       );
     //---------------------------------FlutterChip: End----------------------------------------
 
-    //---------------------------------FlutterPackages: Start----------------------------------
+    //=================================FlutterPackages: Start==================================
     case FLUTTER_PACKAGES_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const FlutterPackages(
@@ -431,9 +451,95 @@ Route<dynamic> generateRoute(RouteSettings settings) {
           title: FLUTTER_CAROUSEL_SLIDER_SCREEN_TITLE,
         ),
       );
-    //---------------------------------FlutterPackages: End------------------------------------
 
-    //---------------------------------ExpandableElement: Start--------------------------------
+    //---------------------------------ReOrderAbles: Start-------------------------------------
+    //reorderables
+    case FLUTTER_REORDERABLES_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterReOrderAbles(
+          title: FLUTTER_REORDERABLES_SCREEN_TITLE,
+        ),
+      );
+
+    //flutter_reorderable_sliverList
+    case FLUTTER_REORDERABLES_SILVERLIST_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterReorderableSliverList(
+          title: FLUTTER_REORDERABLES_SILVERLIST_TITLE,
+        ),
+      );
+
+    //flutter_reorderable_table
+    case FLUTTER_REORDERABLES_TABLE_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterReorderableTable(
+          title: FLUTTER_REORDERABLES_TABLE_TITLE,
+        ),
+      );
+
+    //flutter_reorderable_wrap
+    case FLUTTER_REORDERABLES_WRAP_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterReorderableWrap(
+          title: FLUTTER_REORDERABLES_WRAP_TITLE,
+        ),
+      );
+
+    //flutter_nested_eorderable_wrap
+    case FLUTTER_NESTED_REORDERABLES_WRAP_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterNestedReorderableWrap(
+          title: FLUTTER_NESTED_REORDERABLES_WRAP_TITLE,
+        ),
+      );
+
+    //flutter_reorderable_column
+    case FLUTTER_REORDERABLES_COLUMN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterReorderablColumn(
+          title: FLUTTER_REORDERABLES_COLUMN_TITLE,
+        ),
+      );
+
+    //flutter_reorderable_row
+    case FLUTTER_REORDERABLES_ROW_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterReorderableRow(
+          title: FLUTTER_REORDERABLES_ROW_TITLE,
+        ),
+      );
+    //---------------------------------ReOrderAbles: End---------------------------------------
+
+    //---------------------------------flutter_web_view: Start---------------------------------
+    //flutter_webview
+    case FLUTTER_WEB_VIEW_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterWebView(
+          title: FLUTTER_WEB_VIEW_SCREEN_TITLE,
+        ),
+      );
+
+    //webview_flutter
+    case WEB_VIEW_FLUTTER_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const WebViewFlutter(
+          title: WEB_VIEW_FLUTTER_SCREEN_TITLE,
+        ),
+      );
+
+    //flutter_webview_plugin
+    case FLUTTER_WEBVIEW_PLUGIN_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterWebViewPlugin(
+          title: FLUTTER_WEBVIEW_PLUGIN_SCREEN_TITLE,
+        ),
+      );
+
+    //---------------------------------flutter_web_view: End-----------------------------------
+    //=================================FlutterPackages: End====================================
+
+    //--------------
+    // -------------------ExpandableElement: Start--------------------------------
     //expandable element
     case EXPANDABLE_ELEMENT_SCREEN_ROUTE:
       return MaterialPageRoute(

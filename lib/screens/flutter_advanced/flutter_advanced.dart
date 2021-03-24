@@ -78,6 +78,14 @@ class _FlutterAdvancedState extends State<FlutterAdvanced> {
               FLUTTER_KEY_DETAILS_SCREEN_TITLE
             ),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, FLUTTER_PROGRESSBAR_SCREEN_ROUTE);
+            },
+            child: const Text(
+                FLUTTER_PROGRESSBAR_SCREEN_TITLE
+            ),
+          ),
         ],
       ),
     );
