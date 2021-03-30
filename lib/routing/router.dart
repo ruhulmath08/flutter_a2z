@@ -4,6 +4,7 @@ import 'package:flutter_a2z/screens/flutter_advanced/biometric_auth/biometric_au
 import 'package:flutter_a2z/screens/flutter_advanced/capture_picture_display_list/capture_picture_display_list.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/crud/flutter_crud/flutter_crud.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/crud/flutter_crud_add/flutter_crud_add.dart';
+import 'package:flutter_a2z/screens/flutter_advanced/email_validation/email_validation.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/expandable_drawer/expandable_drawer.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/flutter_advanced.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/flutter_form/flutter_form.dart';
@@ -171,6 +172,14 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const CapturePictureDisplayList(
           title: CAPTURE_PICTURE_DISPLAY_LIST_TITLE,
+        ),
+      );
+
+  //email_validation
+    case EMAIL_VALIDATION_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const MyEmailValidation(
+          title: EMAIL_VALIDATION_SCREEN_TITLE,
         ),
       );
     //=================================FlutterAdvanced: End====================================

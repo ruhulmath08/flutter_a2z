@@ -94,6 +94,14 @@ class _FlutterAdvancedState extends State<FlutterAdvanced> {
                 CAPTURE_PICTURE_DISPLAY_LIST_TITLE
             ),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, EMAIL_VALIDATION_SCREEN_ROUTE);
+            },
+            child: const Text(
+                EMAIL_VALIDATION_SCREEN_TITLE
+            ),
+          ),
         ],
       ),
     );

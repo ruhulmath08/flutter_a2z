@@ -43,7 +43,10 @@ class _MyTimePickerState extends State<MyTimePicker> {
               onPressed: () {
                 timePickerFunction(context);
               },
-              style: ElevatedButton.styleFrom(minimumSize: const Size.fromHeight(40), primary: Colors.blue),
+              style: ElevatedButton.styleFrom(
+                minimumSize: const Size.fromHeight(40),
+                primary: Colors.blue,
+              ),
               child: FittedBox(
                 child: Text(
                   getTime(),
@@ -56,7 +59,6 @@ class _MyTimePickerState extends State<MyTimePicker> {
       ),
     );
   }
-
 
   Future<TimeOfDay> timePickerFunction(BuildContext context) async {
     const initialTime = TimeOfDay(hour: 9, minute: 0);

@@ -30,6 +30,7 @@ dependencies:
   flutter_html: any #22-03-2021
   image_picker: any #29-03-2021
   faker: any #30-03-2021
+  email_validator: any #31-03-2021
 
 dev_dependencies:
   flutter_test:
