@@ -41,7 +41,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             CommonWidgets.addVerticalSpace(20.0),
             TextFormField(
-              keyboardType: TextInputType.emailAddress,
+              keyboardType: TextInputType.text,
               decoration: InputDecoration(
                 hintText: 'Username',
                 hintStyle: themeData.textTheme.bodyText1,
@@ -55,7 +55,8 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             CommonWidgets.addVerticalSpace(20.0),
             TextFormField(
-              keyboardType: TextInputType.emailAddress,
+              keyboardType: TextInputType.text,
+              autofillHints: const [AutofillHints.password],
               obscureText: _obscureText,
               decoration: InputDecoration(
                 hintText: 'Password',

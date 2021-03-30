@@ -134,6 +134,11 @@ class HomeCardItem {
         FLUTTER_DATETIME_PICKER_SCREEN_TITLE,
         Icons.date_range,
       ),
+      HomeCardItem(
+        25,
+        FLUTTER_REORDERABLES_LIST_TITLE,
+        Icons.list_alt_rounded,
+      ),
     ];
   }
 }

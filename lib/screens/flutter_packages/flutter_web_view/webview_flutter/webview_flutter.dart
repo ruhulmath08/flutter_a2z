@@ -184,9 +184,6 @@ class _WebViewFlutterState extends State<WebViewFlutter> {
               _controller.complete(webViewController);
 
             },
-            onProgress: (int progress) {
-              print('WebView is loading (progress : $progress%)');
-            },
             javascriptChannels: <JavascriptChannel>{
               _toasterJavascriptChannel(context),
             },

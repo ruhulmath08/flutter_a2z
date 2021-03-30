@@ -133,6 +133,11 @@ const String DIALOG_WITH_FULL_IMAGE_SCREEN_ROUTE = '/dialog_with_full_image';
 const String DIALOG_WITH_FULL_IMAGE_SCREEN_TITLE = 'Dialog With Full Image';
 //---------------------------------FlutterAlertDialog: End---------------------------
 
+//
+//flutter_reorderable_list
+const String FLUTTER_REORDERABLES_LIST_ROUTE = '/flutter_reorderable_list';
+const String FLUTTER_REORDERABLES_LIST_TITLE = 'Flutter Reorderable List';
+
 //---------------------------------FlutterAdvanced: Start----------------------------
 //flutter advanced
 const String FLUTTER_ADVANCED_SCREEN_ROUTE = '/flutter_advanced';
@@ -165,6 +170,14 @@ const String FLUTTER_KEY_DETAILS_SCREEN_TITLE = 'Flutter Key Details';
 //flutter_progressbar
 const String FLUTTER_PROGRESSBAR_SCREEN_ROUTE = '/flutter_progressbar';
 const String FLUTTER_PROGRESSBAR_SCREEN_TITLE = 'Flutter Progressbar';
+
+//capture_picture_display_list
+const String CAPTURE_PICTURE_DISPLAY_LIST_ROUTE = '/capture_picture_display_list';
+const String CAPTURE_PICTURE_DISPLAY_LIST_TITLE = 'Capture Picture Display List';
+
+//email_validation
+const String EMAIL_VALIDATION_SCREEN_ROUTE = 'email_validation';
+const String EMAIL_VALIDATION_SCREEN_TITLE = 'Email Validation';
 //---------------------------------Flutter Advanced: End-----------------------------
 
 //---------------------------------FlutterKeyDetails: Start--------------------------
@@ -220,8 +233,8 @@ const String FLUTTER_REORDERABLES_TABLE_TITLE = 'Flutter Reorderable Table';
 const String FLUTTER_REORDERABLES_WRAP_ROUTE = '/flutter_reorderable_wrap';
 const String FLUTTER_REORDERABLES_WRAP_TITLE = 'Flutter Reorderable Wrap';
 
-//flutter_nested_eorderable_wrap
-const String FLUTTER_NESTED_REORDERABLES_WRAP_ROUTE = '/flutter_nested_eorderable_wrap';
+//flutter_nested_reorderable_wrap
+const String FLUTTER_NESTED_REORDERABLES_WRAP_ROUTE = '/flutter_nested_reorderable_wrap';
 const String FLUTTER_NESTED_REORDERABLES_WRAP_TITLE = 'Flutter Nested Reorderable Wrap';
 
 //flutter_reorderable_column

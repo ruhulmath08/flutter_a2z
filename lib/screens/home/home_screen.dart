@@ -148,6 +148,10 @@ class _HomeScreenState extends State<HomeScreen> {
       case FLUTTER_DATETIME_PICKER_SCREEN_TITLE:
         Navigator.pushNamed(context, FLUTTER_DATETIME_PICKER_SCREEN_ROUTE);
         break;
+
+        case FLUTTER_REORDERABLES_LIST_TITLE:
+        Navigator.pushNamed(context, FLUTTER_REORDERABLES_LIST_ROUTE);
+        break;
     }
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/biometric_auth/biometric_auth.dart';
+import 'package:flutter_a2z/screens/flutter_advanced/capture_picture_display_list/capture_picture_display_list.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/crud/flutter_crud/flutter_crud.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/crud/flutter_crud_add/flutter_crud_add.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/expandable_drawer/expandable_drawer.dart';
@@ -58,6 +59,7 @@ import 'package:flutter_a2z/screens/flutter_widgets/expandable_element/expandabl
 import 'package:flutter_a2z/screens/flutter_widgets/expandable_element/expandable_widget/expandable_widget.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/expandable_element/expansion_tile/expansion_tile.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/flutter_chip_all/flutter_chip_all.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/flutter_reorderable_list/flutter_reorderable_list.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/tab_view_layout/tab_view_layout.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/tables/flutter_data_table/flutter_data_table.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/tables/flutter_table.dart';
@@ -163,6 +165,14 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
     //---------------------------------FlutterProgressbar: End---------------------------------
+
+    //capture_picture_display_list
+    case CAPTURE_PICTURE_DISPLAY_LIST_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const CapturePictureDisplayList(
+          title: CAPTURE_PICTURE_DISPLAY_LIST_TITLE,
+        ),
+      );
     //=================================FlutterAdvanced: End====================================
 
     //---------------------------------FlutterButton: Start------------------------------------
@@ -506,6 +516,14 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const FlutterReorderableRow(
           title: FLUTTER_REORDERABLES_ROW_TITLE,
+        ),
+      );
+
+    //flutter_reorderable_list
+    case FLUTTER_REORDERABLES_LIST_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterReorderableList(
+          title: FLUTTER_REORDERABLES_LIST_TITLE,
         ),
       );
     //---------------------------------ReOrderAbles: End---------------------------------------
