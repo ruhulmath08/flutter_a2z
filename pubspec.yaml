@@ -31,6 +31,7 @@ dependencies:
   image_picker: any #29-03-2021
   faker: any #30-03-2021
   email_validator: any #31-03-2021
+  chips_input: any #02-04-2021
 
 dev_dependencies:
   flutter_test:

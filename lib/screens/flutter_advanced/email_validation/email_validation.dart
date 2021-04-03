@@ -38,44 +38,44 @@ class _MyEmailValidationState extends State<MyEmailValidation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text(widget.title),
-        ),
-        body: Form(
-          key: _formKey,
-          child: Center(
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.all(Constants.PAGE_DEFAULT_PADDING),
-              child: AutofillGroup(
-                child: Column(
-                  children: [
-                    TextFormField(
-                      controller: _emailController,
-                      keyboardType: TextInputType.emailAddress,
-                      autofillHints: const [AutofillHints.email],
-                      decoration: InputDecoration(
-                        prefixIcon: const Icon(Icons.email),
-                        suffixIcon: _emailController.text.isEmpty
-                            ? const SizedBox()
-                            : IconButton(
-                                onPressed: () {
-                                  _emailController.clear();
-                                },
-                                icon: const Icon(Icons.close),
-                              ),
-                        hintText: 'user@email.com',
-                        labelText: 'Email',
-                        border: const OutlineInputBorder(),
-                      ),
-                      validator: (email) => email != null && !EmailValidator.validate(email) ? 'Enter a valid email' : null,
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: Form(
+        key: _formKey,
+        child: Center(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.all(Constants.PAGE_DEFAULT_PADDING),
+            child: AutofillGroup(
+              child: Column(
+                children: [
+                  TextFormField(
+                    controller: _emailController,
+                    keyboardType: TextInputType.emailAddress,
+                    autofillHints: const [AutofillHints.email],
+                    decoration: InputDecoration(
+                      prefixIcon: const Icon(Icons.email),
+                      suffixIcon: _emailController.text.isEmpty
+                          ? const SizedBox()
+                          : IconButton(
+                              onPressed: () {
+                                _emailController.clear();
+                              },
+                              icon: const Icon(Icons.close),
+                            ),
+                      hintText: 'user@email.com',
+                      labelText: 'Email',
+                      border: const OutlineInputBorder(),
                     ),
-                    const SizedBox(height: 10),
-                    TextFormField(
+                    validator: (email) => email != null && !EmailValidator.validate(email) ? 'Enter a valid email' : null,
+                  ),
+                  const SizedBox(height: 10),
+                  TextFormField(
                       controller: _passwordController,
                       obscureText: isHiddenPassword,
                       keyboardType: TextInputType.visiblePassword,
-                        autofillHints: const [AutofillHints.password],
-                      onEditingComplete:() => TextInput.finishAutofillContext(),
+                      autofillHints: const [AutofillHints.password],
+                      onEditingComplete: () => TextInput.finishAutofillContext(),
                       decoration: InputDecoration(
                         prefixIcon: const Icon(Icons.lock),
                         suffixIcon: IconButton(
@@ -96,34 +96,34 @@ class _MyEmailValidationState extends State<MyEmailValidation> {
                         labelText: 'Password',
                         border: const OutlineInputBorder(),
                       ),
-                      validator: (password){
-                        if(password.isEmpty){
+                      validator: (password) {
+                        if (password.isEmpty) {
                           return 'Password cannot be empty';
-                        } else if(password.length<6){
+                        } else if (password.length < 6) {
                           return 'Password must be greater than or equal 6 character';
-                        }else{
+                        } else {
                           return null;
                         }
+                      }),
+                  const SizedBox(height: 10),
+                  ElevatedButton(
+                    onPressed: () {
+                      if (_formKey.currentState.validate()) {
+                        TextInput.finishAutofillContext();
+                        Toast.show('${_emailController.text} \n ${_passwordController.text}', context, gravity: Toast.CENTER);
                       }
+                    },
+                    style: ElevatedButton.styleFrom(
+                      minimumSize: const Size.fromHeight(45),
                     ),
-                    const SizedBox(height: 10),
-                    ElevatedButton(
-                      onPressed: () {
-                        if (_formKey.currentState.validate()) {
-                          TextInput.finishAutofillContext();
-                          Toast.show('${_emailController.text} \n ${_passwordController.text}' , context, gravity: Toast.CENTER);
-                        }
-                      },
-                      style: ElevatedButton.styleFrom(
-                        minimumSize: const Size.fromHeight(45),
-                      ),
-                      child: const Text('Login'),
-                    ),
-                  ],
-                ),
+                    child: const Text('Login'),
+                  ),
+                ],
               ),
             ),
           ),
-        ));
+        ),
+      ),
+    );
   }
 }

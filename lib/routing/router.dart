@@ -14,6 +14,7 @@ import 'package:flutter_a2z/screens/flutter_advanced/my_custom_paint/my_custom_p
 import 'package:flutter_a2z/screens/flutter_advanced/responsive_text/responsive_text.dart';
 import 'package:flutter_a2z/screens/flutter_lifecycle/flutter_lifecycle.dart';
 import 'package:flutter_a2z/screens/flutter_lifecycle/stateful_widget/stateful_widget_lifecycle.dart';
+import 'package:flutter_a2z/screens/flutter_packages/chips_input/flutter_chips_input.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_carousel_slider/flutter_carousel_slider.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_grouped_list/flutter_grouped_list.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_packages.dart';
@@ -563,7 +564,15 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       );
 
     //---------------------------------flutter_web_view: End-----------------------------------
-    //=================================FlutterPackages: End====================================
+
+  //chips_input
+    case FLUTTER_CHIPS_INPUT_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterChipsInput(
+          title: FLUTTER_CHIPS_INPUT_TITLE,
+        ),
+      );
+  //=================================FlutterPackages: End====================================
 
     //--------------
     // -------------------ExpandableElement: Start--------------------------------

@@ -261,6 +261,9 @@ const String FLUTTER_WEBVIEW_PLUGIN_SCREEN_TITLE = 'Flutter WebView Plugin';
 
 //---------------------------------flutter_web_view: End-----------------------------
 
+//chips_input
+const String FLUTTER_CHIPS_INPUT_ROUTE = 'chips_input';
+const String FLUTTER_CHIPS_INPUT_TITLE = 'Chips Input';
 //---------------------------------FlutterPackages: End------------------------------
 
 //---------------------------------ExpandableElement: Start -------------------------

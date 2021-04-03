@@ -61,6 +61,14 @@ class _FlutterPackagesState extends State<FlutterPackages> {
               FLUTTER_WEB_VIEW_SCREEN_TITLE,
             ),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, FLUTTER_CHIPS_INPUT_ROUTE);
+            },
+            child: const Text(
+              FLUTTER_CHIPS_INPUT_TITLE,
+            ),
+          ),
         ],
       ),
     );
