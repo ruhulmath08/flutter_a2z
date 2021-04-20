@@ -74,33 +74,31 @@ class _FlutterAdvancedState extends State<FlutterAdvanced> {
             onPressed: () {
               Navigator.pushNamed(context, FLUTTER_KEY_DETAILS_SCREEN_ROUTE);
             },
-            child: const Text(
-              FLUTTER_KEY_DETAILS_SCREEN_TITLE
-            ),
+            child: const Text(FLUTTER_KEY_DETAILS_SCREEN_TITLE),
           ),
           ElevatedButton(
             onPressed: () {
               Navigator.pushNamed(context, FLUTTER_PROGRESSBAR_SCREEN_ROUTE);
             },
-            child: const Text(
-                FLUTTER_PROGRESSBAR_SCREEN_TITLE
-            ),
+            child: const Text(FLUTTER_PROGRESSBAR_SCREEN_TITLE),
           ),
           ElevatedButton(
             onPressed: () {
               Navigator.pushNamed(context, CAPTURE_PICTURE_DISPLAY_LIST_ROUTE);
             },
-            child: const Text(
-                CAPTURE_PICTURE_DISPLAY_LIST_TITLE
-            ),
+            child: const Text(CAPTURE_PICTURE_DISPLAY_LIST_TITLE),
           ),
           ElevatedButton(
             onPressed: () {
               Navigator.pushNamed(context, EMAIL_VALIDATION_SCREEN_ROUTE);
             },
-            child: const Text(
-                EMAIL_VALIDATION_SCREEN_TITLE
-            ),
+            child: const Text(EMAIL_VALIDATION_SCREEN_TITLE),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, FLUTTER_SEARCH_SCREEN_ROUTE);
+            },
+            child: const Text(FLUTTER_SEARCH_SCREEN_TITLE),
           ),
         ],
       ),

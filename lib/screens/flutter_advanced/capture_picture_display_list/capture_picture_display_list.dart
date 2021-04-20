@@ -16,15 +16,6 @@ class CapturePictureDisplayList extends StatefulWidget {
 }
 
 class _CapturePictureDisplayListState extends State<CapturePictureDisplayList> {
-  List<String> imageList = [
-    'assets/images/man_circle_img.png',
-    'assets/images/no_image.png',
-    'assets/images/flutter_a2z.png',
-    'assets/images/card_image.jpg',
-    'assets/images/apache_rr310.png',
-    'assets/images/apache_rtr_160_4V.png',
-  ];
-
   final List<File> _images = [];
   File _image;
   final picker = ImagePicker();
@@ -47,22 +38,12 @@ class _CapturePictureDisplayListState extends State<CapturePictureDisplayList> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.camera_alt_rounded),
-            onPressed: () {
-              //list index starts from 0, here 2 means 0, 1, 3 => 3
-              _images.length <= 2
-                  ? getImage()
-                  : Toast.show('You Cannot capture more than 3 image', context,
-                      duration: Toast.LENGTH_LONG, backgroundColor: Colors.black54);
-            },
-          ),
-        ],
       ),
       body: Column(
         children: [
-          Expanded(
+          SizedBox(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height/2,
             child: _images.isNotEmpty
                 ? ListView.builder(
                     padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
@@ -153,9 +134,6 @@ class _CapturePictureDisplayListState extends State<CapturePictureDisplayList> {
                 ),
               ],
             ),
-          ),
-          const Expanded(
-            child: Center(child: Text('Camera')),
           ),
         ],
       ),

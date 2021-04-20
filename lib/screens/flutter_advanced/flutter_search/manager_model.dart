@@ -1,0 +1,190 @@
+import 'package:flutter/cupertino.dart';
+
+class ManagerModel {
+  final String officerName;
+  final String img;
+  final String agency;
+  final String unit;
+  final String phone;
+  final String email;
+
+  ManagerModel({
+    @required this.officerName,
+    @required this.img,
+    @required this.agency,
+    @required this.unit,
+    @required this.phone,
+    @required this.email,
+  });
+
+  static final officers = [
+    ManagerModel(
+      officerName: 'Ruhul Amin',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-1',
+      unit: 'Unit-1',
+      phone: '01745077789',
+      email: 'example-1@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Rezaul Karim',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-2',
+      unit: 'Unit-2',
+      phone: '01745077789',
+      email: 'example-2@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Kapil Dev Datto',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-3',
+      unit: 'Unit-3',
+      phone: '01745077789',
+      email: 'example-3@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Osman Goni',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-4',
+      unit: 'Unit-4',
+      phone: '01745077789',
+      email: 'example-4@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Mezbaul Haque',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-5',
+      unit: 'Unit-5',
+      phone: '01745077789',
+      email: 'example-5@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Zahidul Islam',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-5',
+      unit: 'Unit-5',
+      phone: '01745077789',
+      email: 'example-5@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Mohammed Jewel',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-6',
+      unit: 'Unit-6',
+      phone: '01745077789',
+      email: 'example-6@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Alangir Kabir',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-7',
+      unit: 'Unit-7',
+      phone: '01745077789',
+      email: 'example-7@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Mohammed Emon',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-8',
+      unit: 'Unit-8',
+      phone: '01745077789',
+      email: 'example-8@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Repon Sarker',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-9',
+      unit: 'Unit-9',
+      phone: '01745077789',
+      email: 'example-9@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Zakaria Islam',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-10',
+      unit: 'Unit-10',
+      phone: '01745077789',
+      email: 'example-10@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Ariful Islam',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-11',
+      unit: 'Unit-11',
+      phone: '01745077789',
+      email: 'example-11@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Shariful Islam',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-12',
+      unit: 'Unit-12',
+      phone: '01745077789',
+      email: 'example-12@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Farid Ahamed',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-13',
+      unit: 'Unit-13',
+      phone: '01745077789',
+      email: 'example-13@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Abu Rahan',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-14',
+      unit: 'Unit-14',
+      phone: '01745077789',
+      email: 'example-14@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Masud Rana',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-15',
+      unit: 'Unit-15',
+      phone: '01745077789',
+      email: 'example-15@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Jahangir Alom',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-16',
+      unit: 'Unit-16',
+      phone: '01745077789',
+      email: 'example-16@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Israfil Alam',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-17',
+      unit: 'Unit-17',
+      phone: '01745077789',
+      email: 'example-17@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Zafor Sadik',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-18',
+      unit: 'Unit-18',
+      phone: '01745077789',
+      email: 'example-18@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Tuhin',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-19',
+      unit: 'Unit-19',
+      phone: '01745077789',
+      email: 'example-19@gmail.com',
+    ),
+    ManagerModel(
+      officerName: 'Sanawer Kabir',
+      img: 'https://picsum.photos/60/60',
+      agency: 'Agency-20',
+      unit: 'Unit-20',
+      phone: '01745077789',
+      email: 'example-20@gmail.com',
+    ),
+  ];
+}

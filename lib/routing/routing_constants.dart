@@ -56,17 +56,13 @@ const String FLUTTER_TAB_VIEW_SCREEN_TITLE = 'TabView';
 const String FLUTTER_CRUD_SCREEN_ROUTE = '/flutter_crud';
 const String FLUTTER_CRUD_SCREEN_TITLE = 'Flutter CRUD';
 
-//add data
-const String FLUTTER_CRUD_ADD_SCREEN_ROUTE = '/flutter_crud_add';
-const String FLUTTER_CRUD_ADD_SCREEN_TITLE = 'Flutter CRUD ADD';
+//flutter_rest_api_crud
+const String FLUTTER_REST_API_CRUD_SCREEN_ROUTE = '/flutter_rest_api_crud';
+const String FLUTTER_REST_API_CRUD_SCREEN_TITLE = 'Flutter REST API CRUD';
 
-//update data
-const String FLUTTER_CRUD_UPDATE_SCREEN_ROUTE = '/flutter_crud_update';
-const String FLUTTER_CRUD_UPDATE_SCREEN_TITLE = 'Flutter CRUD Update';
-
-//delete data
-const String FLUTTER_CRUD_DELETE_SCREEN_ROUTE = '/flutter_crud_delete';
-const String FLUTTER_CRUD_DELETE_SCREEN_TITLE = 'Flutter CRUD Delete';
+//flutter_sqlite_crud
+const String FLUTTER_SQLITE_CRUD_SCREEN_ROUTE = '/flutter_sqlite_crud';
+const String FLUTTER_SQLITE_CRUD_SCREEN_TITLE = 'Flutter SQLIte CRUD';
 //---------------------------------FlutterCRUD: End----------------------------------
 
 //---------------------------------FlutterCARD: Start--------------------------------
@@ -178,6 +174,10 @@ const String CAPTURE_PICTURE_DISPLAY_LIST_TITLE = 'Capture Picture Display List'
 //email_validation
 const String EMAIL_VALIDATION_SCREEN_ROUTE = 'email_validation';
 const String EMAIL_VALIDATION_SCREEN_TITLE = 'Email Validation';
+
+//flutter_search
+const String FLUTTER_SEARCH_SCREEN_ROUTE = 'flutter_search';
+const String FLUTTER_SEARCH_SCREEN_TITLE = 'Flutter Search';
 //---------------------------------Flutter Advanced: End-----------------------------
 
 //---------------------------------FlutterKeyDetails: Start--------------------------

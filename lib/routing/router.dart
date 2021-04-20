@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/biometric_auth/biometric_auth.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/capture_picture_display_list/capture_picture_display_list.dart';
-import 'package:flutter_a2z/screens/flutter_advanced/crud/flutter_crud/flutter_crud.dart';
-import 'package:flutter_a2z/screens/flutter_advanced/crud/flutter_crud_add/flutter_crud_add.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/email_validation/email_validation.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/expandable_drawer/expandable_drawer.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/flutter_advanced.dart';
+import 'package:flutter_a2z/screens/flutter_advanced/flutter_crud/flutter_crud.dart';
+import 'package:flutter_a2z/screens/flutter_advanced/flutter_crud/flutter_rest_api_crud/flutter_rest_api_crud.dart';
+import 'package:flutter_a2z/screens/flutter_advanced/flutter_crud/flutter_sqlite_crud/flutter_sqlite_crud.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/flutter_form/flutter_form.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/flutter_key_details/flutter_key_details.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/flutter_progressbar/flutter_progressbar.dart';
+import 'package:flutter_a2z/screens/flutter_advanced/flutter_search/flutter_search.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/my_custom_paint/my_custom_paint.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/responsive_text/responsive_text.dart';
 import 'package:flutter_a2z/screens/flutter_lifecycle/flutter_lifecycle.dart';
@@ -176,11 +178,19 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
 
-  //email_validation
+    //email_validation
     case EMAIL_VALIDATION_SCREEN_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const MyEmailValidation(
           title: EMAIL_VALIDATION_SCREEN_TITLE,
+        ),
+      );
+
+    //flutter_search
+    case FLUTTER_SEARCH_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterSearch(
+          title: FLUTTER_SEARCH_SCREEN_TITLE,
         ),
       );
     //=================================FlutterAdvanced: End====================================
@@ -270,17 +280,24 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       );
       break;
 
-    //flutter CRUD ADD
-    case FLUTTER_CRUD_ADD_SCREEN_ROUTE:
+    //flutter_rest_api_crud
+    case FLUTTER_REST_API_CRUD_SCREEN_ROUTE:
       return MaterialPageRoute(
-        builder: (context) => FlutterCrudAdd(
-          title: FLUTTER_CRUD_ADD_SCREEN_TITLE,
+        builder: (context) => const FlutterRestApiCrud(
+          title: FLUTTER_REST_API_CRUD_SCREEN_TITLE,
         ),
       );
       break;
 
-    //flutter CRUD UPDATE
-    //flutter CRUD
+    //flutter_sqlite_crud
+    case FLUTTER_SQLITE_CRUD_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterSQLiteCrud(
+          title: FLUTTER_SQLITE_CRUD_SCREEN_TITLE,
+        ),
+      );
+      break;
+
     //---------------------------------FlutterCRUD: End----------------------------------------
 
     //---------------------------------FlutterCARD: Start--------------------------------------
@@ -565,14 +582,14 @@ Route<dynamic> generateRoute(RouteSettings settings) {
 
     //---------------------------------flutter_web_view: End-----------------------------------
 
-  //chips_input
+    //chips_input
     case FLUTTER_CHIPS_INPUT_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const FlutterChipsInput(
           title: FLUTTER_CHIPS_INPUT_TITLE,
         ),
       );
-  //=================================FlutterPackages: End====================================
+    //=================================FlutterPackages: End====================================
 
     //--------------
     // -------------------ExpandableElement: Start--------------------------------
