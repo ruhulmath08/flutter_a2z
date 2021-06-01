@@ -78,65 +78,59 @@ class _FlutterChipsInputState extends State<FlutterChipsInput> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: ChipsInput(
-          minLines: 1,
-          maxLines: 4,
-          decoration: const InputDecoration(
-            border: OutlineInputBorder()
-          ),
-          maxChips: 6, // remove, if you like infinity number of chips
-          initialValue: [mockResults[1]],
-          findSuggestions: (String query) {
-            if (query.isNotEmpty) {
-              var lowercaseQuery = query.toLowerCase();
-              final results = mockResults.where((profile) {
-                return profile.name
-                    .toLowerCase()
-                    .contains(query.toLowerCase()) ||
-                    profile.email
-                        .toLowerCase()
-                        .contains(query.toLowerCase());
-              }).toList(growable: false)
-                ..sort((a, b) => a.name
-                    .toLowerCase()
-                    .indexOf(lowercaseQuery)
-                    .compareTo(
-                    b.name.toLowerCase().indexOf(lowercaseQuery)));
-              return results;
-            }
-            return mockResults;
-          },
-          onChanged: (data) {
-            print(data);
-          },
-          chipBuilder: (context, state, ChipsInputModel profile) {
-            return InputChip(
-              key: ObjectKey(profile),
-              label: Text(profile.name),
-              avatar: CircleAvatar(
-                backgroundImage: NetworkImage(profile.imageUrl),
-              ),
-              onDeleted: () => state.deleteChip(profile),
-              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-            );
-          },
-          suggestionBuilder: (context, ChipsInputModel profile) {
-            return ListTile(
-              key: ObjectKey(profile),
-              leading: CircleAvatar(
-                backgroundImage: NetworkImage(profile.imageUrl),
-              ),
-              title: Text(profile.name),
-              subtitle: Text(profile.email),
-            );
-          },
+        appBar: AppBar(
+          title: Text(widget.title),
         ),
-      )
-    );
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: ChipsInput(
+            minLines: 1,
+            maxLines: 4,
+            decoration: const InputDecoration(border: OutlineInputBorder()),
+            maxChips: 6,
+            // remove, if you like infinity number of chips
+            initialValue: [mockResults[1]],
+            findSuggestions: (String query) {
+              if (query.isNotEmpty) {
+                var lowercaseQuery = query.toLowerCase();
+                final results = mockResults.where((profile) {
+                  return profile.name.toLowerCase().contains(query.toLowerCase()) ||
+                      profile.email.toLowerCase().contains(query.toLowerCase());
+                }).toList(growable: false)
+                  ..sort(
+                    (a, b) => a.name.toLowerCase().indexOf(lowercaseQuery).compareTo(
+                          b.name.toLowerCase().indexOf(lowercaseQuery),
+                        ),
+                  );
+                return results;
+              }
+              return mockResults;
+            },
+            onChanged: (data) {
+              print(data);
+            },
+            chipBuilder: (context, state, ChipsInputModel profile) {
+              return InputChip(
+                key: ObjectKey(profile),
+                label: Text(profile.name),
+                avatar: CircleAvatar(
+                  backgroundImage: NetworkImage(profile.imageUrl),
+                ),
+                onDeleted: () => state.deleteChip(profile),
+                materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              );
+            },
+            suggestionBuilder: (context, ChipsInputModel profile) {
+              return ListTile(
+                key: ObjectKey(profile),
+                leading: CircleAvatar(
+                  backgroundImage: NetworkImage(profile.imageUrl),
+                ),
+                title: Text(profile.name),
+                subtitle: Text(profile.email),
+              );
+            },
+          ),
+        ));
   }
 }
