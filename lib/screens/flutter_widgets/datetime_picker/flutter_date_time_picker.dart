@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_a2z/constants/constants.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
-import 'package:intl/intl.dart';
 
 class FlutterDateTimePicker extends StatefulWidget {
   final String title;
@@ -20,7 +19,6 @@ class _FlutterDateTimePickerState extends State<FlutterDateTimePicker> {
         title: Text(widget.title),
       ),
       body: ListView(
-        shrinkWrap: true,
         padding: const EdgeInsets.all(Constants.PAGE_DEFAULT_PADDING),
         children: [
           ElevatedButton(

@@ -34,9 +34,14 @@ class _FlutterTableState extends State<FlutterTable> {
             },
             child: const Text(TABLE_WITH_PAGINATION_SCREEN_TITLE),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, FLUTTER_FIXED_HEADER_TABLE_ROUTE);
+            },
+            child: const Text(FLUTTER_FIXED_HEADER_TABLE_TITLE),
+          ),
         ],
       ),
     );
   }
 }
-

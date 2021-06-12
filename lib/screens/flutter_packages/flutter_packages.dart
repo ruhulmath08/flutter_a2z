@@ -69,6 +69,14 @@ class _FlutterPackagesState extends State<FlutterPackages> {
               FLUTTER_CHIPS_INPUT_TITLE,
             ),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, ANIMATED_TEXT_KIT_ROUTE);
+            },
+            child: const Text(
+              ANIMATED_TEXT_KIT_TITLE,
+            ),
+          ),
         ],
       ),
     );

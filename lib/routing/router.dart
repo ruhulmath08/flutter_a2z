@@ -16,6 +16,7 @@ import 'package:flutter_a2z/screens/flutter_advanced/my_custom_paint/my_custom_p
 import 'package:flutter_a2z/screens/flutter_advanced/responsive_text/responsive_text.dart';
 import 'package:flutter_a2z/screens/flutter_lifecycle/flutter_lifecycle.dart';
 import 'package:flutter_a2z/screens/flutter_lifecycle/stateful_widget/stateful_widget_lifecycle.dart';
+import 'package:flutter_a2z/screens/flutter_packages/animated_text_kit/animated_text_kit.dart';
 import 'package:flutter_a2z/screens/flutter_packages/chips_input/flutter_chips_input.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_carousel_slider/flutter_carousel_slider.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_grouped_list/flutter_grouped_list.dart';
@@ -64,7 +65,9 @@ import 'package:flutter_a2z/screens/flutter_widgets/expandable_element/expandabl
 import 'package:flutter_a2z/screens/flutter_widgets/expandable_element/expansion_tile/expansion_tile.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/flutter_chip_all/flutter_chip_all.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/flutter_reorderable_list/flutter_reorderable_list.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/flutter_scaffold_messenger/flutter_scaffold_messenger.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/tab_view_layout/tab_view_layout.dart';
+import 'package:flutter_a2z/screens/flutter_widgets/tables/fixed_header_table/fixed_header_table.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/tables/flutter_data_table/flutter_data_table.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/tables/flutter_table.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/tables/table_with_pagination/table_with_pagination.dart';
@@ -589,6 +592,15 @@ Route<dynamic> generateRoute(RouteSettings settings) {
           title: FLUTTER_CHIPS_INPUT_TITLE,
         ),
       );
+
+    //animated_text_kit
+    case ANIMATED_TEXT_KIT_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const MyAnimatedTextKit(
+          title: ANIMATED_TEXT_KIT_TITLE,
+        ),
+      );
+
     //=================================FlutterPackages: End====================================
 
     //--------------
@@ -659,7 +671,24 @@ Route<dynamic> generateRoute(RouteSettings settings) {
           title: TABLE_WITH_PAGINATION_SCREEN_TITLE,
         ),
       );
+
+    //FlutterFixedHeaderTable
+    case FLUTTER_FIXED_HEADER_TABLE_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FixedHeaderTable(
+          title: FLUTTER_FIXED_HEADER_TABLE_TITLE,
+        ),
+      );
     //------------------------------------FlutterTable: End------------------------------------
+
+    //------------------------------------ScaffoldMessenger: Start-----------------------------
+    case FLUTTER_SCAFFOLD_MESSAGE_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterScaffoldMessenger(
+          title: FLUTTER_SCAFFOLD_MESSAGE_TITLE,
+        ),
+      );
+    //------------------------------------ScaffoldMessenger: End-------------------------------
 
     //------------------------------------DateTimePicker: Start--------------------------------
     //flutterDateTime picker

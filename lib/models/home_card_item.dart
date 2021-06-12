@@ -139,6 +139,11 @@ class HomeCardItem {
         FLUTTER_REORDERABLES_LIST_TITLE,
         Icons.list_alt_rounded,
       ),
+      HomeCardItem(
+        25,
+        FLUTTER_SCAFFOLD_MESSAGE_TITLE,
+        Icons.message,
+      ),
     ];
   }
 }

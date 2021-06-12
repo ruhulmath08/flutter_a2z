@@ -141,7 +141,7 @@ class _HomeScreenState extends State<HomeScreen> {
         Navigator.pushNamed(context, EXPANDABLE_ELEMENT_SCREEN_ROUTE);
         break;
 
-        case FLUTTER_TABLE_SCREEN_TITLE:
+      case FLUTTER_TABLE_SCREEN_TITLE:
         Navigator.pushNamed(context, FLUTTER_TABLE_SCREEN_ROUTE);
         break;
 
@@ -149,8 +149,12 @@ class _HomeScreenState extends State<HomeScreen> {
         Navigator.pushNamed(context, FLUTTER_DATETIME_PICKER_SCREEN_ROUTE);
         break;
 
-        case FLUTTER_REORDERABLES_LIST_TITLE:
+      case FLUTTER_REORDERABLES_LIST_TITLE:
         Navigator.pushNamed(context, FLUTTER_REORDERABLES_LIST_ROUTE);
+        break;
+
+      case FLUTTER_SCAFFOLD_MESSAGE_TITLE:
+        Navigator.pushNamed(context, FLUTTER_SCAFFOLD_MESSAGE_ROUTE);
         break;
     }
   }

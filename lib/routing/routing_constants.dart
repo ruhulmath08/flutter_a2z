@@ -134,6 +134,13 @@ const String DIALOG_WITH_FULL_IMAGE_SCREEN_TITLE = 'Dialog With Full Image';
 const String FLUTTER_REORDERABLES_LIST_ROUTE = '/flutter_reorderable_list';
 const String FLUTTER_REORDERABLES_LIST_TITLE = 'Flutter Reorderable List';
 
+//---------------------------------ScaffoldMessenger: Start--------------------------
+//flutter_scaffold_messenger
+const String FLUTTER_SCAFFOLD_MESSAGE_ROUTE = 'flutter_scaffold_messenger';
+const String FLUTTER_SCAFFOLD_MESSAGE_TITLE = 'Flutter Scaffold Messenger';
+const String FLUTTER_SCAFFOLD_MESSAGE_CODE = '';
+//---------------------------------ScaffoldMessenger: End----------------------------
+
 //---------------------------------FlutterAdvanced: Start----------------------------
 //flutter advanced
 const String FLUTTER_ADVANCED_SCREEN_ROUTE = '/flutter_advanced';
@@ -262,8 +269,13 @@ const String FLUTTER_WEBVIEW_PLUGIN_SCREEN_TITLE = 'Flutter WebView Plugin';
 //---------------------------------flutter_web_view: End-----------------------------
 
 //chips_input
-const String FLUTTER_CHIPS_INPUT_ROUTE = 'chips_input';
+const String FLUTTER_CHIPS_INPUT_ROUTE = '/chips_input';
 const String FLUTTER_CHIPS_INPUT_TITLE = 'Chips Input';
+
+//animated_text_kit
+const String ANIMATED_TEXT_KIT_ROUTE = '/animated_text_kit';
+const String ANIMATED_TEXT_KIT_TITLE = 'Animated Text Kit';
+const String ANIMATED_TEXT_KIT_CODE = '';
 //---------------------------------FlutterPackages: End------------------------------
 
 //---------------------------------ExpandableElement: Start -------------------------
@@ -300,6 +312,11 @@ const String FLUTTER_DATA_TABLE_SCREEN_TITLE = 'Flutter Data Table';
 //TableWithPagination
 const String TABLE_WITH_PAGINATION_SCREEN_ROUTE = '/table_with_pagination';
 const String TABLE_WITH_PAGINATION_SCREEN_TITLE = 'Table With Pagination';
+
+//fixed_header_table
+const String FLUTTER_FIXED_HEADER_TABLE_ROUTE = '/fixed_header_table';
+const String FLUTTER_FIXED_HEADER_TABLE_TITLE = 'Fixed Header Table';
+const String FLUTTER_FIXED_HEADER_TABLE_CODE = '';
 //---------------------------------FlutterTable: End --------------------------------
 
 //---------------------------------DateTimePicker: Start ----------------------------
