@@ -14,6 +14,7 @@ import 'package:flutter_a2z/screens/flutter_advanced/flutter_progressbar/flutter
 import 'package:flutter_a2z/screens/flutter_advanced/flutter_search/flutter_search.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/my_custom_paint/my_custom_paint.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/responsive_text/responsive_text.dart';
+import 'package:flutter_a2z/screens/flutter_color/flutter_color.dart';
 import 'package:flutter_a2z/screens/flutter_lifecycle/flutter_lifecycle.dart';
 import 'package:flutter_a2z/screens/flutter_lifecycle/stateful_widget/stateful_widget_lifecycle.dart';
 import 'package:flutter_a2z/screens/flutter_packages/animated_text_kit/animated_text_kit.dart';
@@ -731,6 +732,15 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
     //---------------------------------DateTimePicker: End-------------------------------------
+
+    //---------------------------------FlutterColor: Start-------------------------------------
+    case FLUTTER_COLOR_SCREEN_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterColor(
+          title: FLUTTER_COLOR_SCREEN_TITLE,
+        ),
+      );
+    //---------------------------------FlutterColor: End---------------------------------------
 
     default:
       return null;

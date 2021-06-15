@@ -340,3 +340,8 @@ const String DATETIME_PICKER_SCREEN_TITLE = 'DateTime Picker';
 const String DATE_RANGE_PICKER_SCREEN_ROUTE = '/date_range_picker';
 const String DATE_RANGE_PICKER_SCREEN_TITLE = 'DateRange Picker';
 //---------------------------------DateTimePicker: End ------------------------------
+
+//---------------------------------FlutterColor: Start ------------------------------
+const String FLUTTER_COLOR_SCREEN_ROUTE = '/flutter_color_details';
+const String FLUTTER_COLOR_SCREEN_TITLE = 'Flutter Color Details';
+//---------------------------------FlutterColor: End --------------------------------
