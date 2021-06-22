@@ -156,8 +156,14 @@ class _HomeScreenState extends State<HomeScreen> {
       case FLUTTER_SCAFFOLD_MESSAGE_TITLE:
         Navigator.pushNamed(context, FLUTTER_SCAFFOLD_MESSAGE_ROUTE);
         break;
+
       case CONVERT_JSON_TO_OBJECT_TITLE:
         Navigator.pushNamed(context, CONVERT_JSON_TO_OBJECT_ROUTE);
+        break;
+
+      case FLUTTER_COLOR_SCREEN_TITLE:
+        Navigator.pushNamed(context, FLUTTER_COLOR_SCREEN_ROUTE);
+
         break;
     }
   }
