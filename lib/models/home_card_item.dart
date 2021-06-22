@@ -140,9 +140,14 @@ class HomeCardItem {
         Icons.list_alt_rounded,
       ),
       HomeCardItem(
-        25,
+        26,
         FLUTTER_SCAFFOLD_MESSAGE_TITLE,
         Icons.message,
+      ),
+      HomeCardItem(
+        26,
+        CONVERT_JSON_TO_OBJECT_TITLE,
+        Icons.sync_alt_rounded,
       ),
     ];
   }

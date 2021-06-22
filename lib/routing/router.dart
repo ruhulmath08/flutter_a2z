@@ -18,6 +18,7 @@ import 'package:flutter_a2z/screens/flutter_lifecycle/flutter_lifecycle.dart';
 import 'package:flutter_a2z/screens/flutter_lifecycle/stateful_widget/stateful_widget_lifecycle.dart';
 import 'package:flutter_a2z/screens/flutter_packages/animated_text_kit/animated_text_kit.dart';
 import 'package:flutter_a2z/screens/flutter_packages/chips_input/flutter_chips_input.dart';
+import 'package:flutter_a2z/screens/flutter_packages/convert_json_to_object/convert_json_to_object.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_carousel_slider/flutter_carousel_slider.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_grouped_list/flutter_grouped_list.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_packages.dart';
@@ -598,6 +599,12 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const MyAnimatedTextKit(
           title: ANIMATED_TEXT_KIT_TITLE,
+        ),
+      );
+    case CONVERT_JSON_TO_OBJECT_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const ConvertJsonToObject(
+          title: CONVERT_JSON_TO_OBJECT_TITLE,
         ),
       );
 

@@ -276,6 +276,11 @@ const String FLUTTER_CHIPS_INPUT_TITLE = 'Chips Input';
 const String ANIMATED_TEXT_KIT_ROUTE = '/animated_text_kit';
 const String ANIMATED_TEXT_KIT_TITLE = 'Animated Text Kit';
 const String ANIMATED_TEXT_KIT_CODE = '';
+
+//convert_json_to_object
+const String CONVERT_JSON_TO_OBJECT_ROUTE = '/convert_json_to_object';
+const String CONVERT_JSON_TO_OBJECT_TITLE = 'Convert JSON To Object';
+const String CONVERT_JSON_TO_OBJECT_CODE = '';
 //---------------------------------FlutterPackages: End------------------------------
 
 //---------------------------------ExpandableElement: Start -------------------------

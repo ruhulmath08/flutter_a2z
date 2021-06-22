@@ -18,10 +18,9 @@ class CapturePictureDisplayList extends StatefulWidget {
 class _CapturePictureDisplayListState extends State<CapturePictureDisplayList> {
   final List<File> _images = [];
   File _image;
-  final picker = ImagePicker();
 
   Future getImage() async {
-    final pickedFile = await picker.getImage(source: ImageSource.camera);
+    final pickedFile = await ImagePicker.pickImage(source: ImageSource.camera);
 
     setState(() {
       if (pickedFile != null) {
@@ -43,7 +42,7 @@ class _CapturePictureDisplayListState extends State<CapturePictureDisplayList> {
         children: [
           SizedBox(
             width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height/2,
+            height: MediaQuery.of(context).size.height / 2,
             child: _images.isNotEmpty
                 ? ListView.builder(
                     padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
