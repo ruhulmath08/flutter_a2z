@@ -34,6 +34,7 @@ import 'package:flutter_a2z/screens/flutter_packages/flutter_reorderables/flutte
 import 'package:flutter_a2z/screens/flutter_packages/flutter_web_view/flutter_web_view.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_web_view/flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_web_view/webview_flutter/webview_flutter.dart';
+import 'package:flutter_a2z/screens/flutter_packages/my_photo_view/my_photo_view.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/alert_dialog/default_dialog/default_dialog.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/alert_dialog/dialog_with_full_image/dialog_with_full_image.dart';
 import 'package:flutter_a2z/screens/flutter_widgets/alert_dialog/dialog_with_input_field/dialog_with_input_field.dart';
@@ -602,10 +603,20 @@ Route<dynamic> generateRoute(RouteSettings settings) {
           title: ANIMATED_TEXT_KIT_TITLE,
         ),
       );
+
+    //convert_json_to_object
     case CONVERT_JSON_TO_OBJECT_ROUTE:
       return MaterialPageRoute(
         builder: (context) => const ConvertJsonToObject(
           title: CONVERT_JSON_TO_OBJECT_TITLE,
+        ),
+      );
+
+    //convert_json_to_object
+    case MY_PHOTO_VIEW_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const MyPhotoView(
+          title: MY_PHOTO_VIEW_TITLE,
         ),
       );
 

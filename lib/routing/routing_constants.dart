@@ -281,6 +281,11 @@ const String ANIMATED_TEXT_KIT_CODE = '';
 const String CONVERT_JSON_TO_OBJECT_ROUTE = '/convert_json_to_object';
 const String CONVERT_JSON_TO_OBJECT_TITLE = 'Convert JSON To Object';
 const String CONVERT_JSON_TO_OBJECT_CODE = '';
+
+//my_photo_view
+const String MY_PHOTO_VIEW_ROUTE = 'my_photo_view';
+const String MY_PHOTO_VIEW_TITLE = 'My Photo View';
+const String MY_PHOTO_VIEW_CODE = '';
 //---------------------------------FlutterPackages: End------------------------------
 
 //---------------------------------ExpandableElement: Start -------------------------
