@@ -77,6 +77,14 @@ class _FlutterPackagesState extends State<FlutterPackages> {
               ANIMATED_TEXT_KIT_TITLE,
             ),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, FLUTTER_SLIDABLE_ROUTE);
+            },
+            child: const Text(
+              FLUTTER_SLIDABLE_TITLE,
+            ),
+          ),
         ],
       ),
     );

@@ -33,6 +33,7 @@ dependencies:
   email_validator: any #31-03-2021
   chips_input: any #02-04-2021
   animated_text_kit: ^4.2.1 #12-06-2021
+  flutter_slidable: any #2-07-2021
 
 dev_dependencies:
   flutter_test:

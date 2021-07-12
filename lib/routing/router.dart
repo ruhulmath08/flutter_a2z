@@ -30,6 +30,7 @@ import 'package:flutter_a2z/screens/flutter_packages/flutter_reorderables/flutte
 import 'package:flutter_a2z/screens/flutter_packages/flutter_reorderables/flutter_reorderable_table/flutter_reorderable_table.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_reorderables/flutter_reorderable_wrap/flutter_reorderable_wrap.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_reorderables/flutter_reorderables.dart';
+import 'package:flutter_a2z/screens/flutter_packages/flutter_slidable/flutter_slidable.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_web_view/flutter_web_view.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_web_view/flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_web_view/webview_flutter/webview_flutter.dart';
@@ -599,6 +600,14 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const MyAnimatedTextKit(
           title: ANIMATED_TEXT_KIT_TITLE,
+        ),
+      );
+
+    //flutter_slidable
+    case FLUTTER_SLIDABLE_ROUTE:
+      return MaterialPageRoute(
+        builder: (context) => const MyFlutterSlidable(
+          title: FLUTTER_SLIDABLE_TITLE,
         ),
       );
 

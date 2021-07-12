@@ -276,6 +276,11 @@ const String FLUTTER_CHIPS_INPUT_TITLE = 'Chips Input';
 const String ANIMATED_TEXT_KIT_ROUTE = '/animated_text_kit';
 const String ANIMATED_TEXT_KIT_TITLE = 'Animated Text Kit';
 const String ANIMATED_TEXT_KIT_CODE = '';
+
+//flutter_slidable
+const String FLUTTER_SLIDABLE_ROUTE = '/flutter_slidable';
+const String FLUTTER_SLIDABLE_TITLE = 'Flutter Slidable';
+const String FLUTTER_SLIDABLE_CODE = '';
 //---------------------------------FlutterPackages: End------------------------------
 
 //---------------------------------ExpandableElement: Start -------------------------
