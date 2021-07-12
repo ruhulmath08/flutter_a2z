@@ -85,6 +85,22 @@ class _FlutterPackagesState extends State<FlutterPackages> {
               FLUTTER_SLIDABLE_TITLE,
             ),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, CONVERT_JSON_TO_OBJECT_ROUTE);
+            },
+            child: const Text(
+              CONVERT_JSON_TO_OBJECT_TITLE,
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, MY_PHOTO_VIEW_ROUTE);
+            },
+            child: const Text(
+              MY_PHOTO_VIEW_TITLE,
+            ),
+          ),
         ],
       ),
     );

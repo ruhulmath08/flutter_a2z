@@ -13,7 +13,8 @@ Widget myDrawer(BuildContext context) {
           accountName: const Text('Md. Ruhul Amin'),
           accountEmail: const Text('ruhulmath08@gmail.com'),
           currentAccountPicture: const CircleAvatar(
-            backgroundImage: NetworkImage('https://avatars3.githubusercontent.com/u/19272924?s=460&u=bff8f9b0562582e2503af1fe87323e7b8bbee33d&v=4'),
+            backgroundImage:
+                NetworkImage('https://avatars3.githubusercontent.com/u/19272924?s=460&u=bff8f9b0562582e2503af1fe87323e7b8bbee33d&v=4'),
           ),
           otherAccountsPictures: <Widget>[
             CircleAvatar(
@@ -98,7 +99,7 @@ Widget myDrawer(BuildContext context) {
         const Divider(color: Colors.blue, thickness: 1),
         ListTile(
           visualDensity: const VisualDensity(vertical: -4), //reduce padding
-          trailing: const Icon(Icons.location_pin),
+          trailing: const Icon(Icons.work_rounded),
           title: const Text('Flutter Package'),
           onTap: () {
             Navigator.popAndPushNamed(context, FLUTTER_PACKAGES_SCREEN_ROUTE);

@@ -17,12 +17,12 @@ class HomeCardItem {
       HomeCardItem(1, 'Buttons', Icons.smart_button_rounded),
       HomeCardItem(2, 'Alert Dialog', Icons.add_alert),
       HomeCardItem(3, 'App Bar', Icons.title),
+      HomeCardItem(4, 'App Bar', Icons.title),
       HomeCardItem(
-        4,
-        'App Bar',
-        Icons.title,
+        5,
+        FLUTTER_CARD_SCREEN_TITLE,
+        Icons.credit_card_rounded,
       ),
-      HomeCardItem(5, FLUTTER_CARD_SCREEN_TITLE, Icons.credit_card_rounded),
       HomeCardItem(6, 'Chart', Icons.pie_chart),
       HomeCardItem(7, 'API Handling', Icons.api),
       HomeCardItem(8, 'Firebase', Icons.local_fire_department_rounded),
@@ -43,8 +43,8 @@ class HomeCardItem {
       HomeCardItem(23, EXPANDABLE_ELEMENT_SCREEN_TITLE, Icons.expand),
       HomeCardItem(24, FLUTTER_DATETIME_PICKER_SCREEN_TITLE, Icons.date_range),
       HomeCardItem(25, FLUTTER_REORDERABLES_LIST_TITLE, Icons.list_alt_rounded),
-      HomeCardItem(25, FLUTTER_SCAFFOLD_MESSAGE_TITLE, Icons.message),
-      HomeCardItem(25, FLUTTER_COLOR_SCREEN_TITLE, Icons.format_color_fill),
+      HomeCardItem(26, FLUTTER_SCAFFOLD_MESSAGE_TITLE, Icons.message),
+      HomeCardItem(26, CONVERT_JSON_TO_OBJECT_TITLE, Icons.sync_alt_rounded),
     ];
   }
 }
