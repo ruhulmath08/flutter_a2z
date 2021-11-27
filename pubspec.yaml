@@ -1,0 +1,129 @@
+name: flutter_a2z
+description: Flutter project about flutter details, widgets, layout, advanched topics and more.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  #flutter_design_related
+  flutter_screenutil: ^5.0.0+2 #Pixel Perfect Responsive UI 01-11-2021
+  curved_navigation_bar: ^1.0.1
+  rotated_corner_decoration: ^2.0.0 #30-10-2021
+  flutter_staggered_grid_view: 0.4.1 #17-11-2021 -> used on note view in SQLite
+  #flutter_datatable related
+  syncfusion_flutter_datagrid: ^19.3.45 #14-10-2021
+  syncfusion_flutter_core: ^19.3.45 #14-10-2021
+  horizontal_data_table: ^3.5.0 #16-10-2021
+  store_redirect: ^2.0.0 #10-10-2021
+  url_launcher: ^6.0.12 #10-10-2021
+  syncfusion_flutter_gauges: ^19.3.53 #13-11-2021 For speed metter
+  reflectable: ^3.0.4 #14-10-2021
+  flutter_syntax_view: ^4.0.0 #16-10-2021
+  fluttertoast: ^8.0.8 #16-10-2021
+  font_awesome_flutter: ^9.2.0 #23-10-2021
+  #connection_internet_&_device info related
+  connectivity_plus: ^2.0.2 #27-10-2021
+  network_info_plus: ^2.0.2 #27-10-2021
+  telephony: ^0.1.4 #27-10-2021
+  device_info_plus: ^3.1.0 #27-10-2021
+  package_info_plus: ^1.3.0 #27-10-2021
+  wifi_iot: ^0.3.8 #18-11-2021
+  #text_and_spech related
+  speech_to_text: ^5.1.1 #31-10-2021
+  #location_and_map related
+  location: ^4.3.0 #10-11-2021
+  provider: ^6.0.1 #10-11-2021
+  round_spot: ^0.5.0 #17-11-2021
+  #local_storage
+  shared_preferences: ^2.0.8
+  sqflite: ^2.0.0+4
+  path: ^1.8.0 #17-11-2021
+  path_provider: ^2.0.7 #17-11-2021
+  hive: ^2.0.4
+  #date and time related
+  flutter_holo_date_picker: ^1.0.1+2
+  intl: ^0.17.0 #17-11-2021
+  flutter_countdown_timer: ^4.1.0 #22-11-2021
+  permission_handler: ^8.3.0 #25-11-2021
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lint: ^1.7.2
+
+# The following section is specific to Flutter.
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    #----------------flutter_packages----------------
+    - lib/screens/flutter_packages/syncfusion_flutter_data_grid/
+    - lib/screens/flutter_packages/font_awesome_flutter/
+    - lib/screens/flutter_packages/connectivity_plus/
+    - lib/screens/flutter_packages/network_info_plus/
+    - lib/screens/flutter_packages/telephony/
+    - lib/screens/flutter_packages/device_info_plus/
+    - lib/screens/flutter_packages/package_info_plus/
+    - lib/screens/flutter_packages/curved_navigation_bar/
+    - lib/screens/flutter_packages/store_redirect/
+    - lib/screens/flutter_packages/url_launcher/
+    - lib/screens/flutter_packages/rotated_corner_decoration/
+    - lib/screens/flutter_packages/speech_to_text/
+    - lib/screens/flutter_packages/huawei_location/
+    - lib/screens/flutter_packages/syncfusion_flutter_gauges/
+    - lib/screens/flutter_packages/flutter_holo_date_picker/
+    - lib/screens/flutter_packages/flutter_heat_map/
+    - lib/screens/flutter_packages/wifi_iot/
+    - lib/screens/flutter_packages/flutter_countdown_timer/
+    - lib/screens/flutter_packages/permission_handler/
+    #----------------flutter_complex_widget----------------
+    - lib/screens/flutter_complex_widget/mask_text_with_image/
+    - lib/screens/flutter_complex_widget/set_state_in_alert_dialog/
+    #----------------flutter_advanced----------------------
+    - lib/screens/flutter_advanced/
+    - lib/screens/flutter_advanced/method_channel/
+    - lib/screens/flutter_advanced/pixel_perfect_responsive_ui/
+    - lib/screens/flutter_advanced/flutter_location_as_service/
+    - lib/screens/flutter_advanced/flutter_stream/
+    #---------------------------flutter_local_storage-------
+    - lib/screens/local_storage/flutter_shared_preferences/
+    - lib/screens/local_storage/flutter_with_sqlite/
+    - lib/screens/local_storage/flutter_with_hive/
+    - lib/screens/local_storage/read_and_write_file/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
