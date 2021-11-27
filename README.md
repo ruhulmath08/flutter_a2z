@@ -1,6 +1,13 @@
 # flutter_a2z
 
-A new Flutter application.
+This Flutter application introduce you with different types of flutter widgets, packages, layouts, 
+designs, animations, local storage, push notifications, network operations, maps & locations, live 
+streaming, method channel, state management and more.
+
+Here I will try my best to implement the best practices mand try to improve the readability 
+maintainability and performance. Here I will provide some details information with images.
+
+
 
 ## Getting Started
 
