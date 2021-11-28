@@ -7,6 +7,7 @@ streaming, method channel, state management and more.
 Here I will try my best to implement the best practices mand try to improve the readability
 maintainability and performance. Here I will provide some details information with images.
 
+## This project contains
 <html>
 <body>
     <ul>
@@ -72,7 +73,6 @@ maintainability and performance. Here I will provide some details information wi
 </body>
 </html>
 
-## This project contains
 
 This project is a starting point for a Flutter application.
 
