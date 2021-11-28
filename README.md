@@ -60,6 +60,14 @@ maintainability and performance. Here I will provide some details information wi
           <li>File System</li>
         </ul>
       </li>
+      <li>Flutter Method Channel
+        <ul>
+          <li>Call Battery Level</li>
+          <li>Display Latitude and Longitude</li>
+          <li>Display RSSI Value</li>
+          <li>Call OS Version</li>
+        </ul>
+      </li>
     </ul>
 </body>
 </html>
