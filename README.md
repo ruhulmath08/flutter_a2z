@@ -47,7 +47,8 @@ Flutter provides a great set of basic Material and Cupertino widgets —
 but maybe you want something a little different. A novel UI can give 
 a user a far richer experience.
 
-Here I create some complex widget using flutter widget based on requirement. 
+Here I create some complex widget using flutter widget based on requirement.
+
 </p>
 
 <h3>Flutter Layouts</h3>
@@ -60,6 +61,7 @@ things you don’t see are also widgets, such as the rows, columns, and
 grids that arrange, constrain, and align the visible widgets.
 
 You create a layout by composing widgets to build more complex widgets.
+
 </p>
 
 <h3>Flutter Layouts</h3>
@@ -86,8 +88,9 @@ API Integration
 Sometimes there are just some things that need to be stored 
 locally in our app.
 
-Here I implement <b>Shared Preferences</b>,<b>SQLite</b>,<b>Hive</b> 
+Here I implement <b>Shared Preferences</b>,<b>SQLite</b>,<b>Hive</b>
 and <b>File</b>,
+
 </p>
 
 <h3>Firebase</h3>
@@ -100,6 +103,7 @@ remote configuration, and hosting for your static files.
 
 Firebase supports Flutter. Here I will use firebase and complete some
 operations
+
 </p>
 
 <h3>Map Details</h3>
@@ -120,8 +124,9 @@ cost!) cross-platform messaging solution provided by Google. It allows
 you to send notifications to a customised group of users on a variety 
 of platforms easily.
 
-Here I implement the push notification and send notification to my 
+Here I implement the push notification and send notification to my
 app from server
+
 </p>
 
 <h3>Livestreaming</h3>
@@ -131,11 +136,10 @@ Livestreaming
 </p>
 
 <h2>Bottom Navigation Bar</h2>
-<div id="bottom_navigation_bar">
-<div>
-<img src="screen_short/3-flutter_widget_catalog/bottom_navigation_bar.jpg" alt="bottom_navigation_bar image">
-</div>
-<div></div>
+<div  style = {display: inline;}>
+    <img src="screen_short\3-flutter_widget_catalog\bottom_navigation_bar.jpg" width="252" height="448">
+    <img src="Image/Screenshot_2018-04-25-03-18-15.png" width="252" height="448">
+    <img src="Image/Screenshot_2018-04-25-03-18-21.png" width="252" height="448">
 </div>
 
 </html>
