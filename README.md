@@ -143,4 +143,23 @@ Livestreaming
     <img src="https://github.com/ruhulmath08/flutter_a2z/blob/master/screen_short/3_flutter_widget_catalog/bottom_navigation_bar.jpg" width="280" height="590">
     <img src="F:\my_real_life_flutter_project\flutter_a2z\screen_short\3_flutter_widget_catalog\bottom_navigation_bar.jpg" width="280" height="590">
 </div>
+
+<hr>
+<h3>Flutter Complex Widget Screen</h3>
+<div  style = {display: inline;}>
+<img src="https://github.com/ruhulmath08/flutter_a2z/blob/master/screen_short/4-flutter_complex_widget/home.jpg" width="280" height="590">
+<img src="https://github.com/ruhulmath08/flutter_a2z/blob/master/screen_short/4-flutter_complex_widget/dialog.jpg" width="280" height="590">
+</div>
+
+<h2>ping to zoom an image</h2>
+<div  style = {display: inline;}>
+    <img src="https://github.com/ruhulmath08/flutter_a2z/blob/master/screen_short/3_flutter_widget_catalog/pinch_to_zoom_an_image.jpg" width="280" height="590">
+</div>
+<hr>
+
+<h2>Bottom Navigation Bar</h2>
+<div  style = {display: inline;}>
+    <img src="https://github.com/ruhulmath08/flutter_a2z/blob/master/screen_short/3_flutter_widget_catalog/bottom_navigation_bar.jpg" width="280" height="590">
+    <img src="F:\my_real_life_flutter_project\flutter_a2z\screen_short\3_flutter_widget_catalog\bottom_navigation_bar.jpg" width="280" height="590">
+</div>
 </html>
