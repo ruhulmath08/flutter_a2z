@@ -1,86 +1,141 @@
-# flutter_a2z
-
-This Flutter application introduce you with different types of flutter widgets, packages, layouts,
-designs, animations, local storage, push notifications, network operations, maps & locations, live
-streaming, method channel, state management and more.
-
-Here I will try my best to implement the best practices mand try to improve the readability
-maintainability and performance. Here I will provide some details information with images.
-
-## This project contains
 <html>
-<body>
-    <ul>
-      <li>Flutter Widget Catalog
-        <ul>
-          <li>Accessibility</li>
-          <li>Animation and Motion</li>
-          <li>Assets, Images, and Icons</li>
-          <li>Async</li>
-          <li>Basics</li>
-          <li>Cupertino (iOS-style widgets)</li>
-          <li>Input</li>
-          <li>Interaction Models</li>
-          <li>Layout</li>
-          <li>Material Components</li>
-          <li>Painting and effects</li>
-          <li>Scrolling</li>
-          <li>Styling</li>
-          <li>Text</li>
-        </ul>
-      </li>
-      <li>Packages
-        <ul>
-          <li>Design Related</li>
-          <li>Date & Time related</li>
-          <li>Datatable Related</li>
-          <li>Internet Connection & Device Info Related</li>
-        </ul>
-      </li>
-      <li>Different Types of Layout Views
-        <ul>
-          <li>Tab View</li>
-          <li>Navigation View</li>
-          <li>Bottom Navigation View</li>
-          <li>Grid View</li>
-          <li>Scroll View</li>
-        </ul>
-      </li>
-      <li>Different types of design
-        <ul>
-          <li>Responsive Design</li>
-          <li>Adaptive Design</li>
-          <li>Pixel Perfect Design</li>
-        </ul>
-      </li>
-      <li>Flutter Local Storage
-        <ul>
-          <li>SQLite Database</li>
-          <li>Hive</li>
-          <li>Shared Preferences</li>
-          <li>File System</li>
-        </ul>
-      </li>
-      <li>Flutter Method Channel
-        <ul>
-          <li>Call Battery Level</li>
-          <li>Display Latitude and Longitude</li>
-          <li>Display RSSI Value</li>
-          <li>Call OS Version</li>
-        </ul>
-      </li>
-    </ul>
-</body>
+<h1>flutter_a2z</h1>
+<hr>
+<p>
+This Flutter application introduce you with different types of flutter 
+widgets, packages, layouts, designs, animations, local storage, push 
+notifications, network operations, maps & locations, livestreaming, 
+method channel, state management and more.
+</p>
+<p>
+Here I will try my best to implement the best practices mand try to 
+improve the readability maintainability and performance. Here I 
+will provide some details information with images.
+</p>
+
+<ol>
+    <li><a href="#flutter_widget_catalog">Flutter Widget Catalog</a></li>
+    <li><a href="#flutter_complex_widget">Flutter Complex Widget</a></li>
+    <li><a href="#flutter_layouts">Flutter Layouts</a></li>
+    <li><a href="#flutter_advanced">Flutter Advanced</a></li>
+    <li><a href="#flutter_packages">Flutter Packages</a></li>
+    <li><a href="#api_integration">API Integration</a></li>
+    <li><a href="#local_storage">Local Storage</a></li>
+    <li><a href="#firebase">Firebase</a></li>
+    <li><a href="#map_details">Map Details</a></li>
+    <li><a href="#notifications">Notifications</a></li>
+    <li><a href="#livestreaming">Livestreaming</a></li>
+</ol>
+
+<h3>Flutter Widget Catalog</h3>
+<hr>
+<p id="flutter_widget_catalog">
+Create beautiful apps faster with Flutter’s collection of visual, 
+structural, platform, and interactive widgets. In addition to browsing 
+widgets by category, you can also see all the widgets in the 
+<a href="https://docs.flutter.dev/reference/widgets">widget index</a>.
+</p>
+
+<ol>
+<li><a href="#bottom_navigation_bar">Bottom Navigation Bar</a></li>
+</ol>
+
+<h3>Flutter Complex Widget</h3>
+<hr>
+<p id="flutter_complex_widget">
+Flutter provides a great set of basic Material and Cupertino widgets — 
+but maybe you want something a little different. A novel UI can give 
+a user a far richer experience.
+
+Here I create some complex widget using flutter widget based on requirement. 
+</p>
+
+<h3>Flutter Layouts</h3>
+<hr>
+<p id="flutter_layouts">
+The core of Flutter’s layout mechanism is widgets. In Flutter, almost 
+everything is a widget — even layout models are widgets. The images, 
+icons, and text that you see in a Flutter app are all widgets. But 
+things you don’t see are also widgets, such as the rows, columns, and 
+grids that arrange, constrain, and align the visible widgets.
+
+You create a layout by composing widgets to build more complex widgets.
+</p>
+
+<h3>Flutter Layouts</h3>
+<hr>
+<p id="flutter_advanced">
+Flutter Advanced
+</p>
+
+<h3>Flutter Layouts</h3>
+<hr>
+<p id="flutter_packages">
+Flutter Packages
+</p>
+
+<h3>API Integration</h3>
+<hr>
+<p id="api_integration">
+API Integration
+</p>
+
+<h3>Local Storage</h3>
+<hr>
+<p id="local_storage">
+Sometimes there are just some things that need to be stored 
+locally in our app.
+
+Here I implement <b>Shared Preferences</b>,<b>SQLite</b>,<b>Hive</b> 
+and <b>File</b>,
+</p>
+
+<h3>Firebase</h3>
+<hr>
+<p id="firebase">
+Firebase is a Backend-as-a-Service (BaaS) app development platform 
+that provides hosted backend services such as a realtime database, 
+cloud storage, authentication, crash reporting, machine learning, 
+remote configuration, and hosting for your static files.
+
+Firebase supports Flutter. Here I will use firebase and complete some
+operations
+</p>
+
+<h3>Map Details</h3>
+<hr>
+<p id="map_details">
+For mobile application development Map (google, osm, huawei), implement 
+map is very important. By implementing different types of map we can 
+creates user friendly applications. Here I implement <b>Google</b>, 
+<b>OSM</b>, and <b>Huawei</b> maps
+</p>
+
+<h3>Notifications</h3>
+<hr>
+<p id="notifications">
+Push notifications are great for driving user engagement and notifying 
+users for updates. Firebase Cloud Messaging (FCM) is a free (yes, zero 
+cost!) cross-platform messaging solution provided by Google. It allows 
+you to send notifications to a customised group of users on a variety 
+of platforms easily.
+
+Here I implement the push notification and send notification to my 
+app from server
+</p>
+
+<h3>Livestreaming</h3>
+<hr>
+<p id="livestreaming">
+Livestreaming
+</p>
+
+<h2>Bottom Navigation Bar</h2>
+<div id="bottom_navigation_bar">
+<div>
+<img src="screen_short/3-flutter_widget_catalog/bottom_navigation_bar.jpg" alt="bottom_navigation_bar image">
+</div>
+<div></div>
+</div>
+
 </html>
-
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials, samples, guidance on
-mobile development, and a full API reference.
