@@ -37,7 +37,9 @@ widgets by category, you can also see all the widgets in the
 </p>
 
 <ol>
-<li><a href="#bottom_navigation_bar">Bottom Navigation Bar</a></li>
+    <li>
+        <a href="#bottom_navigation_bar">Bottom Navigation Bar</a>
+    </li>
 </ol>
 
 <h3>Flutter Complex Widget</h3>
@@ -101,8 +103,7 @@ that provides hosted backend services such as a realtime database,
 cloud storage, authentication, crash reporting, machine learning, 
 remote configuration, and hosting for your static files.
 
-Firebase supports Flutter. Here I will use firebase and complete some
-operations
+Firebase supports Flutter. Here I will use firebase and complete some operations
 
 </p>
 
@@ -124,8 +125,7 @@ cost!) cross-platform messaging solution provided by Google. It allows
 you to send notifications to a customised group of users on a variety 
 of platforms easily.
 
-Here I implement the push notification and send notification to my
-app from server
+Here I implement the push notification and send notification to my app from server
 
 </p>
 
@@ -135,10 +135,12 @@ app from server
 Livestreaming
 </p>
 
+<hr>
+<h3>Flutter Widget Catalog Screen</h3>
+<img src="https://github.com/ruhulmath08/flutter_a2z/blob/master/screen_short/3_flutter_widget_catalog/home.jpg" width="280" height="590">
 <h2>Bottom Navigation Bar</h2>
 <div  style = {display: inline;}>
     <img src="https://github.com/ruhulmath08/flutter_a2z/blob/master/screen_short/3_flutter_widget_catalog/bottom_navigation_bar.jpg" width="280" height="590">
     <img src="F:\my_real_life_flutter_project\flutter_a2z\screen_short\3_flutter_widget_catalog\bottom_navigation_bar.jpg" width="280" height="590">
 </div>
-
 </html>
