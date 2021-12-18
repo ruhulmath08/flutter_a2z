@@ -137,9 +137,8 @@ Livestreaming
 
 <h2>Bottom Navigation Bar</h2>
 <div  style = {display: inline;}>
-    <img src="screen_short\3-flutter_widget_catalog\bottom_navigation_bar.jpg" width="252" height="448">
-    <img src="Image/Screenshot_2018-04-25-03-18-15.png" width="252" height="448">
-    <img src="Image/Screenshot_2018-04-25-03-18-21.png" width="252" height="448">
+    <img src="F:\my_real_life_flutter_project\flutter_a2z\screen_short\3_flutter_widget_catalog\bottom_navigation_bar.jpg" width="280" height="590">
+    <img src="F:\my_real_life_flutter_project\flutter_a2z\screen_short\3_flutter_widget_catalog\bottom_navigation_bar.jpg" width="280" height="590">
 </div>
 
 </html>
