@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_a2z/common_widgets/common_circle.dart';
-import 'package:flutter_a2z/models/flutter_widget_catalog_model.dart';
+import 'package:flutter_a2z/models/flutter_widget_catalog/flutter_widget_catalog_model.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
 import 'package:flutter_a2z/utility/utility.dart';
 

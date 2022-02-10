@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_a2z/models/flutter_advanced_model.dart';
 import 'package:flutter_a2z/models/flutter_complex_widget_model.dart';
 import 'package:flutter_a2z/models/flutter_packages_model.dart';
-import 'package:flutter_a2z/models/flutter_widget_catalog_model.dart';
+import 'package:flutter_a2z/models/flutter_widget_catalog/flutter_widget_catalog_model.dart';
 import 'package:flutter_a2z/models/local_storage_model.dart';
 import 'package:flutter_a2z/models/map_details/map_details_model.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
