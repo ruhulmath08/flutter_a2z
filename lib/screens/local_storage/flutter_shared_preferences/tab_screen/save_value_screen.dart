@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_a2z/constants/strings.dart';
 import 'package:flutter_a2z/local_storage_config/shared_preferences_config/flutter_a2z_shared_preferences.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SaveValueScreen extends StatefulWidget {
@@ -20,7 +19,7 @@ class _SaveValueScreenState extends State<SaveValueScreen> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       physics: const BouncingScrollPhysics(),
-      padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       child: Form(
         key: _formKey,
         child: Column(
@@ -42,7 +41,7 @@ class _SaveValueScreenState extends State<SaveValueScreen> {
                 }
               },
             ),
-            SizedBox(height: 10.h),
+            const SizedBox(height: 10),
             TextFormField(
               controller: _emailController,
               keyboardType: TextInputType.emailAddress,
@@ -60,7 +59,7 @@ class _SaveValueScreenState extends State<SaveValueScreen> {
                 }
               },
             ),
-            SizedBox(height: 10.h),
+            const SizedBox(height: 10),
             TextFormField(
               controller: _mobileController,
               keyboardType: TextInputType.phone,
@@ -79,7 +78,7 @@ class _SaveValueScreenState extends State<SaveValueScreen> {
                 }
               },
             ),
-            SizedBox(height: 10.h),
+            const SizedBox(height: 10),
             TextFormField(
               controller: _addressController,
               keyboardType: TextInputType.text,
@@ -97,10 +96,10 @@ class _SaveValueScreenState extends State<SaveValueScreen> {
                 }
               },
             ),
-            SizedBox(height: 10.h),
+            const SizedBox(height: 10),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 12.h),
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               ),
               onPressed: () {
                 if (_formKey.currentState!.validate()) {
@@ -118,10 +117,10 @@ class _SaveValueScreenState extends State<SaveValueScreen> {
               },
               child: const Text('Save Value'),
             ),
-            SizedBox(height: 20.h),
-            Text(
+            const SizedBox(height: 20),
+            const Text(
               '''Save the value in SharedPreferences and display value in 'Display Data' Tab''',
-              style: TextStyle(fontSize: 14.sp),
+              style: TextStyle(fontSize: 14),
             ),
           ],
         ),

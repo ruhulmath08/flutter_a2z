@@ -37,9 +37,9 @@ class _TelephonyScreenState extends State<TelephonyScreen> {
     String? simOperatorName;
     bool? isSmsCapable;
     List<SignalStrength> signalStrengths = [];
-    //final bool? result = await telephony.requestPhoneAndSmsPermissions;
+    final bool? result = await telephony.requestPhoneAndSmsPermissions;
 
-    // if (result != null && result) {
+    //if (result != null && result) {
     if (true) {
       try {
         dataNetworkType = await telephony.dataNetworkType;
@@ -50,7 +50,7 @@ class _TelephonyScreenState extends State<TelephonyScreen> {
         isSmsCapable = await telephony.isSmsCapable;
 
         setState(() {
-          _telephonyInfo = 'DataNetworkType: $dataNetworkType\n'
+          _telephonyInfo = 'DataNetworkType: ${dataNetworkType?.index}\n'
               'NetworkOperatorName: $networkOperatorName\n'
               'SignalStrengths: $signalStrengths\n'
               'SimOperator: $simOperator\n'

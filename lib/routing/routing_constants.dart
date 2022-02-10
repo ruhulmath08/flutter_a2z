@@ -95,6 +95,17 @@ const controlMultipleAnimationCode = '';
 const setStateInPopUpAlertDialogRoute = '/set_state_in_alert_dialog';
 const setStateInPopUpAlertDialogTitle = 'Set State In Alert Dialog';
 const setStateInPopUpAlertDialogFilePath = 'lib/screens/flutter_complex_widget/set_state_in_alert_dialog/set_state_in_alert_dialog_screen.dart';
+
+//flutter_focus
+const flutterFocusRoute = '/flutter_focus';
+const flutterFocusTitle = 'Flutter Focus';
+const flutterFocusFilePath = 'lib/screens/flutter_complex_widget/flutter_focus/flutter_focus.dart';
+
+//transparent_app_bar
+const String transparentAppBarRoute = '/transparent_app_bar';
+const String transparentAppBarTitle = 'transparent App Bar';
+const String transparentAppBarCode = '';
+const String transparentAppBarFilePath = 'lib/screens/flutter_complex_widget/transparent_app_bar/transparent_app_bar.dart';
 //---------------------------------FlutterComplexWidget: End-------------------------
 
 //---------------------------------flutter_advanced: Start---------------------------
@@ -258,6 +269,30 @@ const permissionHandlerRoute = '/permission_handler';
 const permissionHandlerTitle = 'Permission Handler';
 const permissionHandlerCode = '';
 const permissionHandlerFilePath = 'lib/screens/flutter_packages/permission_handler/permission_handler _screen.dart';
+
+//flutter_barcode_scanner
+const String flutterBarcodeScannerRoute = '/flutter_barcode_scanner';
+const String flutterBarcodeScannerTitle = 'Flutter Barcode Scanner';
+const String flutterBarcodeScannerCode = '';
+const String flutterBarcodeScannerFilePath = 'lib/screens/flutter_packages/flutter_barcode_scanner/flutter_barcode_scanner_screen.dart';
+
+//flutter_photo_view
+const String flutterPhotoViewRoute = '/flutter_photo_view';
+const String flutterPhotoViewTitle = 'Flutter Photo View';
+const String flutterPhotoViewCode = '';
+const String flutterPhotoViewFilePath = 'lib/screens/flutter_packages/flutter_photo_view/flutter_photo_view.dart';
+
+//flutter_camera
+const String flutterCameraRoute = '/flutter_camera';
+const String flutterCameraTitle = 'Flutter Camera';
+const String flutterCameraCode = '';
+const String flutterCameraFilePath = 'lib/screens/flutter_packages/camera/camera_screen.dart';
+
+//image_picker
+const String imagePickerRoute = '/image_picker';
+const String imagePickerTitle = 'Image Picker';
+const String imagePickerCode = '';
+const String imagePickerFilePath = 'lib/screens/flutter_packages/image_picker/image_picker_screen.dart';
 //--------------------------------- flutter_packages: End ---------------------------
 
 //--------------------------------- local_storage: Start ----------------------------
@@ -299,11 +334,12 @@ const String googleMapTitle = 'Google Map';
 const String googleMapCode = '';
 const String googleFilePath = '';
 
-//osm_map
+//--------------------------------------osm_map: Start-------------------------------
 const String osmMapRoute = '/osm_map';
 const String osmMapTitle = 'OSM Map';
 const String osmMapCode = '';
 const String osmFilePath = '';
+//----------------------------------osm_map: End-------------------------------------
 
 //huawei_map
 const String huaweiMapRoute = '/huawei_map';

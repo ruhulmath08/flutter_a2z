@@ -2,7 +2,6 @@ import 'dart:developer';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class PermissionHandlerScreen extends StatefulWidget {
@@ -28,7 +27,7 @@ class _PermissionHandlerScreenState extends State<PermissionHandlerScreen> {
       ),
       body: Center(
         child: ListView(
-          padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 10.w),
+          padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
           children: Permission.values
               .where((permission) {
                 if (Platform.isIOS) {

@@ -4,7 +4,6 @@ import 'package:flutter_a2z/models/note_model.dart';
 import 'package:flutter_a2z/screens/local_storage/flutter_with_sqlite/edit_note_page.dart';
 import 'package:flutter_a2z/screens/local_storage/flutter_with_sqlite/note_card_widget.dart';
 import 'package:flutter_a2z/screens/local_storage/flutter_with_sqlite/note_details_Screen.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -27,14 +26,7 @@ class _FlutterWithSqliteScreenState extends State<FlutterWithSqliteScreen> {
   late List<Note> notes = [];
   bool isLoading = false;
 
-  final _lightColors = [
-    Colors.amber.shade300,
-    Colors.lightGreen.shade300,
-    Colors.lightBlue.shade300,
-    Colors.orange.shade300,
-    Colors.pinkAccent.shade100,
-    Colors.tealAccent.shade100
-  ];
+  final _lightColors = [Colors.amber.shade300, Colors.lightGreen.shade300, Colors.lightBlue.shade300, Colors.orange.shade300, Colors.pinkAccent.shade100, Colors.tealAccent.shade100];
 
   @override
   void initState() {
@@ -84,7 +76,7 @@ class _FlutterWithSqliteScreenState extends State<FlutterWithSqliteScreen> {
                   ),
                 )
               : StaggeredGridView.countBuilder(
-                  padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                   itemCount: notes.length,
                   crossAxisCount: 4,
                   mainAxisSpacing: 4,

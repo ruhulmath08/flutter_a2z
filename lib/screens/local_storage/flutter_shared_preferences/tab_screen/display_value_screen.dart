@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_a2z/constants/strings.dart';
 import 'package:flutter_a2z/local_storage_config/shared_preferences_config/flutter_a2z_shared_preferences.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class DisplayValueScreen extends StatefulWidget {
@@ -32,14 +31,14 @@ class _DisplayValueScreenState extends State<DisplayValueScreen> {
     final TextEditingController _addressController = TextEditingController(text: address);
     return SingleChildScrollView(
       physics: const BouncingScrollPhysics(),
-      padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       child: Column(
         children: [
           const Text(
             '''Display Value from 'SharedPreferences' ''',
             style: TextStyle(fontSize: 18),
           ),
-          SizedBox(height: 20.h),
+          const SizedBox(height: 20),
           TextFormField(
             enabled: false,
             controller: _nameController,
@@ -50,7 +49,7 @@ class _DisplayValueScreenState extends State<DisplayValueScreen> {
               prefixIcon: Icon(Icons.person),
             ),
           ),
-          SizedBox(height: 10.h),
+          const SizedBox(height: 10),
           TextFormField(
             controller: _emailController,
             enabled: false,
@@ -61,7 +60,7 @@ class _DisplayValueScreenState extends State<DisplayValueScreen> {
               prefixIcon: Icon(Icons.email),
             ),
           ),
-          SizedBox(height: 10.h),
+          const SizedBox(height: 10),
           TextFormField(
             controller: _mobileController,
             enabled: false,
@@ -72,7 +71,7 @@ class _DisplayValueScreenState extends State<DisplayValueScreen> {
               prefixIcon: Icon(Icons.phone),
             ),
           ),
-          SizedBox(height: 10.h),
+          const SizedBox(height: 10),
           TextFormField(
             controller: _addressController,
             enabled: false,

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_a2z/common_widgets/common_floating_action_button_for_display_code.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MethodChannelScreen extends StatefulWidget {
   final String title;
@@ -27,23 +26,23 @@ class _MethodChannelScreenState extends State<MethodChannelScreen> {
       body: Center(
         child: ListView(
           shrinkWrap: true,
-          padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
+          padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
           physics: const BouncingScrollPhysics(),
           children: [
             ElevatedButton(
               onPressed: getBatteryLevel,
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(double.infinity, (40.h + 40.w) / 2),
+                minimumSize: Size(double.infinity, (40 + 40) / 2),
               ),
-              child: Text(batteryLevel, style: TextStyle(fontSize: 17.sp)),
+              child: Text(batteryLevel, style: TextStyle(fontSize: 17)),
             ),
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: getLatitudeLongitude,
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(double.infinity, (40.h + 40.w) / 2),
+                minimumSize: Size(double.infinity, (40 + 40) / 2),
               ),
-              child: Text(getLatLng, style: TextStyle(fontSize: 17.sp)),
+              child: Text(getLatLng, style: TextStyle(fontSize: 17)),
             )
           ],
         ),

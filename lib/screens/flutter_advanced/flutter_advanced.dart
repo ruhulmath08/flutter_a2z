@@ -4,7 +4,6 @@ import 'package:flutter_a2z/common_widgets/common_floating_action_button_for_dis
 import 'package:flutter_a2z/models/flutter_advanced_model.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
 import 'package:flutter_a2z/utility/utility.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rotated_corner_decoration/rotated_corner_decoration.dart';
 
 class FlutterAdvancedScreen extends StatelessWidget {
@@ -24,7 +23,7 @@ class FlutterAdvancedScreen extends StatelessWidget {
         builder: (BuildContext context, Orientation orientation) {
           return GridView.builder(
             itemCount: flutterAdvancedModels.length,
-            padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             physics: const BouncingScrollPhysics(),
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: orientation == Orientation.portrait ? 2 : 3,
@@ -41,13 +40,13 @@ class FlutterAdvancedScreen extends StatelessWidget {
                 child: Card(
                   elevation: 5,
                   child: Container(
-                    padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                     foregroundDecoration: RotatedCornerDecoration(
                       color: Colors.blue,
-                      geometry: BadgeGeometry(width: 60.w, height: 60.h),
+                      geometry: const BadgeGeometry(width: 60, height: 60),
                       textSpan: TextSpan(
                         text: (index + 1).toString(),
-                        style: TextStyle(fontSize: 17.sp, fontWeight: FontWeight.bold),
+                        style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                       ),
                     ),
                     child: Column(
@@ -56,15 +55,15 @@ class FlutterAdvancedScreen extends StatelessWidget {
                       children: [
                         Icon(
                           flutterAdvancedModel.icon,
-                          size: 30.h,
+                          size: 30,
                           color: Colors.black87,
                         ),
-                        SizedBox(height: 10.h),
+                        const SizedBox(height: 10),
                         Text(
                           flutterAdvancedModels[index].name,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontWeight: FontWeight.w700,
-                            fontSize: 14.sp,
+                            fontSize: 14,
                           ),
                           textAlign: TextAlign.center,
                         ),
@@ -82,9 +81,9 @@ class FlutterAdvancedScreen extends StatelessWidget {
                           },
                           child: Text(
                             flutterAdvancedModels[index].description,
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontWeight: FontWeight.w400,
-                              fontSize: 14.sp,
+                              fontSize: 14,
                             ),
                             maxLines: 3,
                             softWrap: false,

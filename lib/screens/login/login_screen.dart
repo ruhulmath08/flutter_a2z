@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -12,20 +11,20 @@ class LoginScreen extends StatelessWidget {
         body: Center(
           child: ListView(
             shrinkWrap: true,
-            padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             children: [
               _AppLogoContainer(),
-              SizedBox(height: 10.h),
+              const SizedBox(height: 10),
               _Username(),
-              SizedBox(height: 10.h),
+              const SizedBox(height: 10),
               _Password(),
-              SizedBox(height: 10.h),
+              const SizedBox(height: 10),
               KeepMeLoggedIn(),
-              SizedBox(height: 10.h),
+              const SizedBox(height: 10),
               _LoginButton(),
-              SizedBox(height: 10.h),
+              const SizedBox(height: 10),
               _SignUpText(),
-              SizedBox(height: 10.h),
+              const SizedBox(height: 10),
             ],
           ),
         ),
@@ -38,7 +37,7 @@ class _AppLogoContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
-      radius: 70.r,
+      radius: 70,
       backgroundColor: Colors.transparent,
       child: Image.asset(
         'assets/images/flutter_a2z.png',
@@ -98,7 +97,7 @@ class _KeepMeLoggedInState extends State<KeepMeLoggedIn> {
           child: InkWell(
             onTap: () => _pressRememberMe(!_rememberMe),
             child: Container(
-              padding: EdgeInsets.symmetric(vertical: 10.h),
+              padding: const EdgeInsets.symmetric(vertical: 10),
               child: Row(
                 children: <Widget>[
                   SizedBox(
@@ -110,7 +109,7 @@ class _KeepMeLoggedInState extends State<KeepMeLoggedIn> {
                       onChanged: _pressRememberMe,
                     ),
                   ),
-                  Text('Remember Me', style: TextStyle(fontSize: 14.sp)),
+                  const Text('Remember Me', style: TextStyle(fontSize: 14)),
                 ],
               ),
             ),
@@ -120,10 +119,10 @@ class _KeepMeLoggedInState extends State<KeepMeLoggedIn> {
           flex: 0,
           child: InkWell(
             onTap: () {},
-            child: Text(
+            child: const Text(
               'Forgot Password',
               textAlign: TextAlign.right,
-              style: TextStyle(fontSize: 14.sp, color: Colors.blue),
+              style: TextStyle(fontSize: 14, color: Colors.blue),
             ),
           ),
         ),
@@ -140,9 +139,9 @@ class _LoginButton extends StatelessWidget {
         Navigator.pushReplacementNamed(context, homeScreenRoute);
       },
       style: ElevatedButton.styleFrom(
-        minimumSize: Size(double.infinity, 40.h),
+        minimumSize: const Size(double.infinity, 45),
       ),
-      child: Text('Login', style: TextStyle(fontSize: 17.sp)),
+      child: const Text('Login', style: TextStyle(fontSize: 17)),
     );
   }
 }
@@ -153,17 +152,17 @@ class _SignUpText extends StatelessWidget {
     return Wrap(
       alignment: WrapAlignment.end,
       children: [
-        Text(
+        const Text(
           "Don't have an account? ",
-          style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w400),
+          style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
         ),
         InkWell(
           onTap: () {
             Navigator.of(context).pushNamed(signUpScreenRoute);
           },
-          child: Text(
+          child: const Text(
             'SignUp',
-            style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w600, color: Colors.blue),
+            style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: Colors.blue),
           ),
         ),
       ],

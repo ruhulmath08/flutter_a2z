@@ -8,19 +8,25 @@ import 'package:flutter_a2z/screens/flutter_advanced/method_channel/method_chann
 import 'package:flutter_a2z/screens/flutter_advanced/pixel_perfect_responsive_ui/pixel_perfect_responsive_ui_screen.dart';
 import 'package:flutter_a2z/screens/flutter_complex_widget/control_multiple_animations/control_multiple_animations.dart';
 import 'package:flutter_a2z/screens/flutter_complex_widget/flutter_complex_widget.dart';
+import 'package:flutter_a2z/screens/flutter_complex_widget/flutter_focus/flutter_focus.dart';
 import 'package:flutter_a2z/screens/flutter_complex_widget/mask_text_with_image/mask_text_with_image_screen.dart';
 import 'package:flutter_a2z/screens/flutter_complex_widget/set_state_in_alert_dialog/set_state_in_alert_dialog_screen.dart';
+import 'package:flutter_a2z/screens/flutter_complex_widget/transparent_app_bar/transparent_app_bar.dart';
+import 'package:flutter_a2z/screens/flutter_packages/camera/camera_screen.dart';
 import 'package:flutter_a2z/screens/flutter_packages/connectivity_plus/connectivity_plus_screen.dart';
 import 'package:flutter_a2z/screens/flutter_packages/curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter_a2z/screens/flutter_packages/device_info_plus/device_info_plus_screen.dart';
 import 'package:flutter_a2z/screens/flutter_packages/file_picker/flutter_file_picker.dart';
+import 'package:flutter_a2z/screens/flutter_packages/flutter_barcode_scanner/flutter_barcode_scanner_screen.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_countdown_timer/flutter_countdown_timer_screen.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_heat_map/flutter_heat_map_screen.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_holo_date_picker/flutter_holo_date_picker_screen.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_packages.dart';
+import 'package:flutter_a2z/screens/flutter_packages/flutter_photo_view/flutter_photo_view.dart';
 import 'package:flutter_a2z/screens/flutter_packages/font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_a2z/screens/flutter_packages/horizontal_data_table/horizontal_data_table_screen.dart';
 import 'package:flutter_a2z/screens/flutter_packages/huawei_location/huawei_location_screen.dart';
+import 'package:flutter_a2z/screens/flutter_packages/image_picker/image_picker_screen.dart';
 import 'package:flutter_a2z/screens/flutter_packages/network_info_plus/network_info_plus_screen.dart';
 import 'package:flutter_a2z/screens/flutter_packages/package_info_plus/package_info_plus_screen.dart';
 import 'package:flutter_a2z/screens/flutter_packages/permission_handler/permission_handler%20_screen.dart';
@@ -42,6 +48,7 @@ import 'package:flutter_a2z/screens/local_storage/local_storage_screen.dart';
 import 'package:flutter_a2z/screens/local_storage/read_and_write_file/read_and_write_file.dart';
 import 'package:flutter_a2z/screens/login/login_screen.dart';
 import 'package:flutter_a2z/screens/map_details/map_details_screen.dart';
+import 'package:flutter_a2z/screens/map_details/osm_map/osm_map_screen.dart';
 import 'package:flutter_a2z/screens/sign_up/sign_up_screen.dart';
 
 Route<MaterialPageRoute>? generateRoute(RouteSettings settings) {
@@ -149,6 +156,24 @@ Route<MaterialPageRoute>? generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => SetStateInAlertDialogScreen(
           title: setStateInPopUpAlertDialogTitle,
+          model: settings.arguments!,
+        ),
+      );
+
+    //flutter_focus
+    case flutterFocusRoute:
+      return MaterialPageRoute(
+        builder: (context) => FlutterFocusScreen(
+          title: flutterFocusTitle,
+          model: settings.arguments!,
+        ),
+      );
+
+    //transparent_app_bar
+    case transparentAppBarRoute:
+      return MaterialPageRoute(
+        builder: (context) => TransparentAppBar(
+          title: transparentAppBarTitle,
           model: settings.arguments!,
         ),
       );
@@ -360,6 +385,42 @@ Route<MaterialPageRoute>? generateRoute(RouteSettings settings) {
           model: settings.arguments!,
         ),
       );
+
+    //flutter_barcode_scanner
+    case flutterBarcodeScannerRoute:
+      return MaterialPageRoute(
+        builder: (context) => FlutterBarcodeScannerScreen(
+          title: flutterBarcodeScannerTitle,
+          model: settings.arguments!,
+        ),
+      );
+
+    //flutter_photo_view
+    case flutterPhotoViewRoute:
+      return MaterialPageRoute(
+        builder: (context) => FlutterPhotoView(
+          title: flutterPhotoViewTitle,
+          model: settings.arguments!,
+        ),
+      );
+
+    //flutter_camera
+    case flutterCameraRoute:
+      return MaterialPageRoute(
+        builder: (context) => CameraScreen(
+          title: flutterCameraTitle,
+          model: settings.arguments!,
+        ),
+      );
+
+    //image_picker
+    case imagePickerRoute:
+      return MaterialPageRoute(
+        builder: (context) => ImagePickerScreen(
+          title: imagePickerTitle,
+          model: settings.arguments!,
+        ),
+      );
     //---------------------------------Package: End -------------------------------------
 
     //---------------------------------local_storage: Start------------------------------
@@ -417,6 +478,16 @@ Route<MaterialPageRoute>? generateRoute(RouteSettings settings) {
         ),
       );
     //---------------------------------map_details: End----------------------------------
+
+    //--------------------------------------osm_map: Start-------------------------------
+    case osmMapRoute:
+      return MaterialPageRoute(
+        builder: (context) => OsmMapScreen(
+          title: osmMapTitle,
+          model: settings.arguments!,
+        ),
+      );
+    //--------------------------------------osm_map: End---------------------------------
 
     default:
       return null;

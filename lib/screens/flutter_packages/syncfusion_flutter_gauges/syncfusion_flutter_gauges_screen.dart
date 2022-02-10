@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_a2z/constants/strings.dart';
 import 'package:flutter_a2z/local_storage_config/shared_preferences_config/flutter_a2z_shared_preferences.dart';
 import 'package:flutter_a2z/models/user_location.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 
@@ -39,9 +38,9 @@ class _SyncfusionFlutterGaugesScreenState extends State<SyncfusionFlutterGaugesS
           children: [
             Text(
               'Top Speed: ${topSpeed(topSeed: userLocation.speed)}',
-              style: TextStyle(fontSize: 30.r, fontWeight: FontWeight.w700),
+              style: const TextStyle(fontSize: 30, fontWeight: FontWeight.w700),
             ),
-            SizedBox(height: 15.h),
+            const SizedBox(height: 15),
             SfRadialGauge(
               axes: <RadialAxis>[
                 RadialAxis(
@@ -91,7 +90,7 @@ class _SyncfusionFlutterGaugesScreenState extends State<SyncfusionFlutterGaugesS
         ),
       ),
       bottomNavigationBar: Container(
-        padding: EdgeInsets.symmetric(horizontal: 10.r),
+        padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Row(
           children: [
             Expanded(
@@ -100,7 +99,7 @@ class _SyncfusionFlutterGaugesScreenState extends State<SyncfusionFlutterGaugesS
                 child: const Text('Show Details'),
               ),
             ),
-            SizedBox(width: 15.r),
+            const SizedBox(width: 15),
             Expanded(
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(primary: Colors.red),

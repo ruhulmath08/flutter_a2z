@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_a2z/common_widgets/common_floating_action_button_for_display_code.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SetStateInAlertDialogScreen extends StatefulWidget {
   final String title;
@@ -29,17 +28,17 @@ class _SetStateInAlertDialogScreenState extends State<SetStateInAlertDialogScree
       body: Center(
         child: ListView(
           physics: const BouncingScrollPhysics(),
-          padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
+          padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
           shrinkWrap: true,
           children: [
             Row(
               children: [
-                Expanded(
+                const Expanded(
                   child: Text(
                     'CheckBox',
                     style: TextStyle(
                       fontWeight: FontWeight.w700,
-                      fontSize: 25.sp,
+                      fontSize: 25,
                     ),
                   ),
                 ),
@@ -52,7 +51,7 @@ class _SetStateInAlertDialogScreenState extends State<SetStateInAlertDialogScree
                 )
               ],
             ),
-            SizedBox(height: 10.h),
+            const SizedBox(height: 10),
             ElevatedButton(
               onPressed: () async {
                 await openDialog();

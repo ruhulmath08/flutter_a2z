@@ -54,6 +54,14 @@ dependencies:
   intl: ^0.17.0 #17-11-2021
   flutter_countdown_timer: ^4.1.0 #22-11-2021
   permission_handler: ^8.3.0 #25-11-2021
+  #barcode_scanner
+  flutter_barcode_scanner: ^2.0.0
+  #image_related
+  photo_view: ^0.13.0 #13-12-2021
+  flutter_map: ^0.14.0 #26-01-2022
+  latlong2: ^0.8.1 #26-01-2022
+  camera: ^0.9.4+10 #07-02-2022
+  image_picker: ^0.8.4+6 #07-02-2022
 
 dev_dependencies:
   flutter_test:
@@ -87,9 +95,15 @@ flutter:
     - lib/screens/flutter_packages/wifi_iot/
     - lib/screens/flutter_packages/flutter_countdown_timer/
     - lib/screens/flutter_packages/permission_handler/
+    - lib/screens/flutter_packages/flutter_barcode_scanner/
+    - lib/screens/flutter_packages/flutter_photo_view/
+    - lib/screens/flutter_packages/camera/
+    - lib/screens/flutter_packages/image_picker/
     #----------------flutter_complex_widget----------------
     - lib/screens/flutter_complex_widget/mask_text_with_image/
     - lib/screens/flutter_complex_widget/set_state_in_alert_dialog/
+    - lib/screens/flutter_complex_widget/flutter_focus/
+    - lib/screens/flutter_complex_widget/transparent_app_bar/
     #----------------flutter_advanced----------------------
     - lib/screens/flutter_advanced/
     - lib/screens/flutter_advanced/method_channel/

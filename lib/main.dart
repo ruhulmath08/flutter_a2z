@@ -7,7 +7,6 @@ import 'package:flutter_a2z/routing/routing_constants.dart';
 import 'package:flutter_a2z/screens/home/home_screen.dart';
 import 'package:flutter_a2z/screens/undefined_screen/undefined_screen.dart';
 import 'package:flutter_a2z/service/location_service.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -26,25 +25,20 @@ class MyApp extends StatelessWidget {
     return StreamProvider<UserLocation>(
       initialData: UserLocation(longitude: 0.0, latitude: 0.0, speed: 0.0),
       create: (context) => LocationService().locationStream,
-      child: ScreenUtilInit(
-        builder: () => MaterialApp(
-          title: 'Flutter a2z',
-          debugShowCheckedModeBanner: false,
-          theme: ThemeData(
-            primarySwatch: Colors.blue,
-            //visualDensity: VisualDensity.adaptivePlatformDensity,
-          ),
-          onGenerateRoute: generateRoute,
-          initialRoute: loginScreenRoute,
-          onUnknownRoute: (settings) => MaterialPageRoute(
-            builder: (context) => const UndefinedScreen(),
-          ),
-          home: const HomeScreen(),
+      child: MaterialApp(
+        title: 'Flutter a2z',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+          //visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        designSize: const Size(360, 640),
+        onGenerateRoute: generateRoute,
+        initialRoute: loginScreenRoute,
+        onUnknownRoute: (settings) => MaterialPageRoute(
+          builder: (context) => const UndefinedScreen(),
+        ),
+        home: const HomeScreen(),
       ),
     );
   }
 }
-
-//ToDo: https://docs.flutter.dev/development/ui/widgets/material

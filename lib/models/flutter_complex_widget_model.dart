@@ -50,5 +50,21 @@ class FlutterComplexWidgetModel {
           youTubeLink: 'https://youtu.be/THMcgdtUtFQ',
           gitLink: '',
         ),
+        FlutterComplexWidgetModel(
+          name: flutterFocusTitle,
+          description: '''Flutter focus node details and practical examples''',
+          documentation: '',
+          packageLink: '',
+          youTubeLink: '',
+          gitLink: '',
+        ),
+        FlutterComplexWidgetModel(
+          name: transparentAppBarTitle,
+          description: '''Create a transparent AppBar in Flutter and show a background image or display the body under the AppBar of the Scaffold Widget in Flutter.''',
+          documentation: '',
+          packageLink: '',
+          youTubeLink: '',
+          gitLink: '',
+        ),
       ];
 }

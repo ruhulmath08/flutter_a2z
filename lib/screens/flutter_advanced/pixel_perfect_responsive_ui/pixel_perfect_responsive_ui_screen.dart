@@ -12,6 +12,12 @@ class PixelPerfectResponsiveUiScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ScreenUtil.init(
+      BoxConstraints(maxWidth: MediaQuery.of(context).size.width, maxHeight: MediaQuery.of(context).size.height),
+      designSize: Size(360, 690),
+      context: context,
+      minTextAdapt: true,
+    );
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(title: Text(title)),
