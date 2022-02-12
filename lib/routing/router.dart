@@ -38,7 +38,7 @@ import 'package:flutter_a2z/screens/flutter_packages/syncfusion_flutter_gauges/s
 import 'package:flutter_a2z/screens/flutter_packages/telephony/telephony_screen.dart';
 import 'package:flutter_a2z/screens/flutter_packages/url_launcher/url_launcher_screen.dart';
 import 'package:flutter_a2z/screens/flutter_packages/wifi_iot/wifi_iot_screen.dart';
-import 'package:flutter_a2z/screens/flutter_widget_catalog/flutter_widget_catalog.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/flutter_widget_catalog/flutter_widget_catalog.dart';
 import 'package:flutter_a2z/screens/flutter_widget_catalog/material_components/app_structure_and_navigation/bottom_navigation_bar/bottom_navigation_bar.dart';
 import 'package:flutter_a2z/screens/home/home_screen.dart';
 import 'package:flutter_a2z/screens/local_storage/flutter_shared_preferences/flutter_shared_preferences_screen.dart';
