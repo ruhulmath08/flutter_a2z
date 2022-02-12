@@ -180,7 +180,7 @@ Route<MaterialPageRoute>? generateRoute(RouteSettings settings) {
     //---------------------------------flutter_complex_widget: End-----------------------
 
     //---------------------------------Widgets: Start------------------------------------
-    case flutterWidgetRoute:
+    case flutterWidgetCatalogRoute:
       return MaterialPageRoute(
         builder: (context) => const FlutterWidgetCatalogScreen(),
       );

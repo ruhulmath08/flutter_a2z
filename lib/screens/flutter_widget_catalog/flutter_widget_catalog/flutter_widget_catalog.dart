@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/flutter_widget_catalog/tabs/card_view_tab.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/flutter_widget_catalog/tabs/tree_view_tab.dart';
 
 ///Display all the widget from flutter "Widget catalog" (https://docs.flutter.dev/development/ui/widgets)
 /// 1. display all widget by using listView.builder()
@@ -21,17 +23,32 @@ class _FlutterWidgetCatalogScreenState extends State<FlutterWidgetCatalogScreen>
     return DefaultTabController(
       length: 2,
       child: SafeArea(
-        child: Scaffold(
-          appBar: AppBar(
-            title: const Text(flutterWidgetTitle),
-            bottom: const TabBar(
-              tabs: [
-                Tab(icon: Icon(Icons.apps_outlined)),
-                Tab(icon: Icon(Icons.workspaces_filled)),
-              ],
-            ),
-          ),
-          body: const Center(child: Text('tab')),
+        child: OrientationBuilder(
+          builder: (BuildContext context, Orientation orientation) {
+            return Scaffold(
+              appBar: AppBar(
+                title: const Text(flutterWidgetCatalogTitle),
+                bottom: TabBar(
+                  tabs: [
+                    Tab(
+                      text: 'Card View',
+                      icon: orientation == Orientation.portrait ? const Icon(Icons.apps_outlined) : null,
+                    ),
+                    Tab(
+                      text: 'Tree View',
+                      icon: orientation == Orientation.portrait ? const Icon(Icons.workspaces_filled) : null,
+                    ),
+                  ],
+                ),
+              ),
+              body: const TabBarView(
+                children: [
+                  CardViewTab(),
+                  TreeViewTab(),
+                ],
+              ),
+            );
+          },
         ),
       ),
     );
