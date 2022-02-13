@@ -12,7 +12,6 @@ class FlutterLocationAsServiceScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double topSpeed = 0.00;
     final userLocation = Provider.of<UserLocation>(context);
     log('${(userLocation.speed) * ((60 * 60) / 1000)}');
     return Scaffold(

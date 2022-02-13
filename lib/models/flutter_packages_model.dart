@@ -274,5 +274,15 @@ class FlutterPackagesModel {
           youTubeLink: '',
           gitLink: '',
         ),
+        FlutterPackagesModel(
+          name: geoLocatorTitle,
+          packageName: 'geolocator',
+          nullSafe: true,
+          description: '''Geolocation plugin for Flutter. This plugin provides a cross-platform (iOS, Android) API for generic location (GPS etc.) functions.''',
+          documentation: 'https://pub.dev/documentation/geolocator/latest/',
+          packageLink: 'https://pub.dev/packages/geolocator',
+          youTubeLink: '',
+          gitLink: '',
+        ),
       ];
 }

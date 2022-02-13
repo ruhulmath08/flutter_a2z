@@ -26,23 +26,23 @@ class _MethodChannelScreenState extends State<MethodChannelScreen> {
       body: Center(
         child: ListView(
           shrinkWrap: true,
-          padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
           physics: const BouncingScrollPhysics(),
           children: [
             ElevatedButton(
               onPressed: getBatteryLevel,
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(double.infinity, (40 + 40) / 2),
+                minimumSize: const Size(double.infinity, 40),
               ),
-              child: Text(batteryLevel, style: TextStyle(fontSize: 17)),
+              child: Text(batteryLevel, style: const TextStyle(fontSize: 17)),
             ),
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: getLatitudeLongitude,
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(double.infinity, (40 + 40) / 2),
+                minimumSize: const Size(double.infinity, 40),
               ),
-              child: Text(getLatLng, style: TextStyle(fontSize: 17)),
+              child: Text(getLatLng, style: const TextStyle(fontSize: 17)),
             )
           ],
         ),
