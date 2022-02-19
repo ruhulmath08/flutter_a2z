@@ -115,6 +115,25 @@ flutter:
     - lib/screens/local_storage/flutter_with_sqlite/
     - lib/screens/local_storage/flutter_with_hive/
     - lib/screens/local_storage/read_and_write_file/
+    #---------------------------flutter_widget_catalog------
+    ###--------app_structure_and_navigation--------
+    - lib/screens/flutter_widget_catalog/material_components/app_structure_and_navigation/
+    ###--------buttons_widgets--------
+    - lib/screens/flutter_widget_catalog/material_components/buttons/
+    ###--------input_and_selections_widgets--------
+    - lib/screens/flutter_widget_catalog/material_components/input_and_selections/
+    ###--------dialogs_alerts_and_panels--------
+    - lib/screens/flutter_widget_catalog/material_components/dialogs_alerts_and_panels/
+    ###--------information_displays--------
+    - lib/screens/flutter_widget_catalog/material_components/information_displays/
+    ###--------layout--------
+    - lib/screens/flutter_widget_catalog/material_components/layout/
+    ###--------basic_widgets--------
+    - lib/screens/flutter_widget_catalog/basic_widgets/
+    ###--------cupertino_widgets--------
+    - lib/screens/flutter_widget_catalog/cupertino_widgets/
+    #---------------------------material_components---------
+    - lib/screens/flutter_widget_catalog/material_components/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

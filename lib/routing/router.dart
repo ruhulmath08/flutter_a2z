@@ -38,8 +38,24 @@ import 'package:flutter_a2z/screens/flutter_packages/syncfusion_flutter_gauges/s
 import 'package:flutter_a2z/screens/flutter_packages/telephony/telephony_screen.dart';
 import 'package:flutter_a2z/screens/flutter_packages/url_launcher/url_launcher_screen.dart';
 import 'package:flutter_a2z/screens/flutter_packages/wifi_iot/wifi_iot_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/accessibility/accessibility_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/animation_and_motion/animation_and_motion_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/assets_images_and_icons/assets_images_and_icons_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/async_widgets/async_widgets_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/basic_widgets/basic_widgets_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/cupertino_widgets/cupertino_widgets_screen.dart';
 import 'package:flutter_a2z/screens/flutter_widget_catalog/flutter_widget_catalog/flutter_widget_catalog.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/input_widgets/input_widgets_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/interaction_models/interaction_models_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/layout_widgets/layout_widget_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/material_components/app_structure_and_navigation/app_structure_and_navigation_screen.dart';
 import 'package:flutter_a2z/screens/flutter_widget_catalog/material_components/app_structure_and_navigation/bottom_navigation_bar/bottom_navigation_bar.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/material_components/buttons/buttons_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/material_components/dialogs_alerts_and_panels/dialogs_alerts_and_panels_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/material_components/information_displays/information_displays_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/material_components/input_and_selections/input_and_selections_screen..dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/material_components/layout/layout_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/material_components/material_components_screen.dart';
 import 'package:flutter_a2z/screens/home/home_screen.dart';
 import 'package:flutter_a2z/screens/local_storage/flutter_shared_preferences/flutter_shared_preferences_screen.dart';
 import 'package:flutter_a2z/screens/local_storage/flutter_with_hive/flutter_with_hive_screen.dart';
@@ -179,13 +195,118 @@ Route<MaterialPageRoute>? generateRoute(RouteSettings settings) {
       );
     //---------------------------------flutter_complex_widget: End-----------------------
 
-    //---------------------------------Widgets: Start------------------------------------
+    //--------------------------------- flutter_widget_catalog: Start--------------------
     case flutterWidgetCatalogRoute:
       return MaterialPageRoute(
         builder: (context) => const FlutterWidgetCatalogScreen(),
       );
+    //---------------------------------accessibility: Start------------------------------
+    //accessibility
+    case accessibilityRoute:
+      return MaterialPageRoute(
+        builder: (context) => const AccessibilityScreen(
+          title: accessibilityTitle,
+        ),
+      );
+    //---------------------------------accessibility: End--------------------------------
+
+    //---------------------------------animation_and_motion: Start-----------------------
+    //animation_and_motion
+    case animationAndMotionRoute:
+      return MaterialPageRoute(
+        builder: (context) => const AnimationAndMotionScreen(
+          title: animationAndMotionTitle,
+        ),
+      );
+    //---------------------------------animation_and_motion: End-------------------------
+
+    //---------------------------------assets_images_and_icons: Start--------------------
+    //assets_images_and_icons
+    case assetsImagesAndIconsRoute:
+      return MaterialPageRoute(
+        builder: (context) => const AssetsImagesAndIconsScreen(
+          title: assetsImagesAndIconsTitle,
+        ),
+      );
+    //---------------------------------assets_images_and_icons: End----------------------
+
+    //---------------------------------async_widgets: Start------------------------------
+    //async_widgets
+    case asyncWidgetsRoute:
+      return MaterialPageRoute(
+        builder: (context) => const AsyncWidgetsScreen(
+          title: asyncWidgetsTitle,
+        ),
+      );
+    //---------------------------------async_widgets: End--------------------------------
+
+    //---------------------------------basic_widgets: Start------------------------------
+    //basic_widgets
+    case basicWidgetsRoute:
+      return MaterialPageRoute(
+        builder: (context) => const BasicWidgetsScreen(
+          title: basicWidgetsTitle,
+        ),
+      );
+    //---------------------------------basic_widgets: End--------------------------------
+
+    //---------------------------------cupertino_widgets: Start--------------------------
+    //cupertino_widgets
+    case cupertinoWidgetsRoute:
+      return MaterialPageRoute(
+        builder: (context) => const CupertinoWidgetsScreen(
+          title: cupertinoWidgetsTitle,
+        ),
+      );
+    //---------------------------------cupertino_widgets: End----------------------------
+
+    //---------------------------------input_widgets: Start------------------------------
+    //input_widgets
+    case inputWidgetsRoute:
+      return MaterialPageRoute(
+        builder: (context) => const InputWidgetsScreens(
+          title: inputWidgetsTitle,
+        ),
+      );
+    //---------------------------------input_widgets: End--------------------------------
+
+    //---------------------------------interaction_models: Start-------------------------
+    //interaction_models
+    case interactionModelsRoute:
+      return MaterialPageRoute(
+        builder: (context) => const InteractionModelsScreen(
+          title: interactionModelsTitle,
+        ),
+      );
+    //---------------------------------interaction_models: End---------------------------
+
+    //---------------------------------layout_widgets: Start-----------------------------
+    //layout_widgets
+    case layoutWidgetsRoute:
+      return MaterialPageRoute(
+        builder: (context) => const LayoutWidgetScreen(
+          title: layoutWidgetsTitle,
+        ),
+      );
+    //---------------------------------layout_widgets: End-------------------------------
+
     //---------------------------------material_components: Start------------------------
+    //material_components
+    case materialComponentsRoute:
+      return MaterialPageRoute(
+        builder: (context) => const MaterialsComponentsScreen(
+          title: materialComponentsTitle,
+        ),
+      );
     //---------------------------------app_structure_and_navigation: Start---------------
+    //app_structure_and_navigation
+    case appStructureAndNavigationRoute:
+      return MaterialPageRoute(
+        builder: (context) => const AppStructureAndNavigationScreens(
+          title: appStructureAndNavigationTitle,
+        ),
+      );
+
     //bottom_navigation_bar
     case bottomNavigationBarRoute:
       return MaterialPageRoute(
@@ -194,8 +315,57 @@ Route<MaterialPageRoute>? generateRoute(RouteSettings settings) {
         ),
       );
     //---------------------------------app_structure_and_navigation: End-----------------
+    //---------------------------------buttons: Start------------------------------------
+    //buttons
+    case buttonsRoute:
+      return MaterialPageRoute(
+        builder: (context) => const ButtonsScreens(
+          title: buttonsTitle,
+        ),
+      );
+    //---------------------------------buttons: End--------------------------------------
+    //---------------------------------input_and_selections: Start-----------------------
+    //input_and_selections
+    case inputAndSelectionRoute:
+      return MaterialPageRoute(
+        builder: (context) => const InputAndSelectionsScreens(
+          title: inputAndSelectionTitle,
+        ),
+      );
+    //---------------------------------input_and_selections: End-------------------------
+    //---------------------------------dialogs_alerts_and_panels: Start------------------
+    //dialogs_alerts_and_panels
+    case dialogsAlertsAndPanelsRoute:
+      return MaterialPageRoute(
+        builder: (context) => const DialogsAlertsAndPanelsScreens(
+          title: dialogsAlertsAndPanelsTitle,
+        ),
+      );
+    //---------------------------------dialogs_alerts_and_panels: End--------------------
+    //---------------------------------information_displays: Start-----------------------
+    //information_displays
+    case informationDisplaysRoute:
+      return MaterialPageRoute(
+        builder: (context) => const InformationDisplaysScreens(
+          title: informationDisplaysTitle,
+        ),
+      );
+    //---------------------------------information_displays: End-------------------------
+    //---------------------------------layout: Start-------------------------------------
+    //layout
+    case layoutRoute:
+      return MaterialPageRoute(
+        builder: (context) => const LayoutScreens(
+          title: layoutTitle,
+        ),
+      );
+    //---------------------------------layout: End---------------------------------------
     //---------------------------------material_components: End--------------------------
-    //---------------------------------Widgets: End--------------------------------------
+
+    //---------------------------------material_components: End--------------------------
+    //---------------------------------material_components: End--------------------------
+
+    //---------------------------------flutter_widget_catalog: End-----------------------
 
     //---------------------------------Package: Start------------------------------------
     case flutterPackagesRoute:

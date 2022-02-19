@@ -29,4 +29,10 @@ class Utility {
 
     return routePath;
   }
+
+  static int cardPerRow({required BuildContext context}) {
+    final double screenWidth = MediaQuery.of(context).size.width;
+    final int cardPerRow = (screenWidth / 200).round();
+    return cardPerRow;
+  }
 }

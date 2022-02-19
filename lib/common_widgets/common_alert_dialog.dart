@@ -54,10 +54,10 @@ void commonAlertDialog({
             )
           else
             const SizedBox(),
-          if (isCancelButtonRequired ?? true)
+          if (isCancelButtonRequired ?? false)
             ElevatedButton(
               onPressed: cancelButtonPress,
-              child: Text(cancelButtonTitle ?? 'Ok'),
+              child: Text(cancelButtonTitle ?? 'Cancel'),
             )
           else
             const SizedBox(),

@@ -143,16 +143,171 @@ const String flutterStreamFilePath = 'lib/screens/flutter_advanced/flutter_strea
 
 //---------------------------------flutter_advanced: End-----------------------------
 
-//---------------------------------Widgets: Start------------------------------------
-//---------------------------------material_components: Start------------------------
+//---------------------------------flutter_widget_catalog: Start---------------------
+
+//---------------------------------accessibility: Start------------------------------
+//accessibility
+const accessibilityRoute = '/accessibility';
+const accessibilityTitle = 'Accessibility';
+const accessibilityCode = '';
+const accessibilityFilePath = '';
+//---------------------------------accessibility: End--------------------------------
+
+//---------------------------------animation_and_motion_widgets: Start---------------
+//animation_and_motion_widgets
+const animationAndMotionRoute = '/animation_and_motion';
+const animationAndMotionTitle = 'Animation And Motion';
+const animationAndMotionCode = '';
+const animationAndMotionFilePath = '';
+//---------------------------------animation_and_motion_widgets: End-----------------
+
+//---------------------------------assets_images_and_icons: Start--------------------
+//assets_images_and_icons
+const assetsImagesAndIconsRoute = '/assets_images_and_icons';
+const assetsImagesAndIconsTitle = 'Assets Images And Icons';
+const assetsImagesAndIconsCode = '';
+const assetsImagesAndIconsFilePath = '';
+//---------------------------------assets_images_and_icons: End----------------------
+
+//---------------------------------async: Start--------------------------------------
+//async_widgets
+const asyncWidgetsRoute = '/async_widgets';
+const asyncWidgetsTitle = '';
+const asyncWidgetsCode = '';
+const asyncWidgetsFilePath = '';
+//---------------------------------async: End----------------------------------------
+
+//---------------------------------basic_widgets: Start------------------------------
+//basic_widgets
+const basicWidgetsRoute = '/basic_widgets';
+const basicWidgetsTitle = 'Basic Widgets';
+const basicWidgetsCode = '';
+const String basicWidgetsFilePath = 'lib/screens/flutter_widget_catalog/basic_widgets/basic_widgets.dart';
+//---------------------------------basic_widgets: End--------------------------------
+
+//---------------------------------cupertino_widgets: Start--------------------------
+//cupertino_widgets
+const cupertinoWidgetsRoute = '/cupertino_widgets';
+const cupertinoWidgetsTitle = 'Cupertino Widgets';
+const cupertinoWidgetsCode = '';
+const String cupertinoWidgetsFilePath = 'lib/screens/flutter_widget_catalog/cupertino_widgets/cupertino_widgets.dart';
+
+//---------------------------------cupertino_widgets: End---------------------------
+
+//---------------------------------input_widgets: Start-----------------------------
+//input_widgets
+const inputWidgetsRoute = '/input_widgets';
+const inputWidgetsTitle = 'Input Widgets';
+const inputWidgetsCode = '';
+const inputWidgetsFilePath = '';
+//---------------------------------input_widgets: End-------------------------------
+
+//---------------------------------interaction_models: Start------------------------
+//interaction_models
+const interactionModelsRoute = '/interaction_models';
+const interactionModelsTitle = 'Interaction Models';
+const interactionModelsCode = '';
+const interactionModelsFilePath = '';
+//---------------------------------interaction_models: End--------------------------
+
+//---------------------------------layout_widgets: Start----------------------------
+//layout_widgets
+const layoutWidgetsRoute = '/layout_widgets';
+const layoutWidgetsTitle = 'Layout Widgets';
+const layoutWidgetsCode = '';
+const layoutWidgetsFilePath = '';
+//---------------------------------layout_widgets: End------------------------------
+
+//---------------------------------material_components: Start-----------------------
+//material_components
+const materialComponentsRoute = '/material_components';
+const materialComponentsTitle = 'Material Components';
+const materialComponentsCode = '';
+const materialComponentsFilePath = 'lib/screens/flutter_widget_catalog/material_components/material_components_screen.dart';
 //---------------------------------app_structure_and_navigation: Start---------------
+//App structure and navigation
+const appStructureAndNavigationRoute = '/app_structure_and_navigation';
+const appStructureAndNavigationTitle = 'App Structure And Navigation';
+const appStructureAndNavigationCode = '';
+const appStructureAndNavigationFilePath =
+    'lib/screens/flutter_widget_catalog/material_components/app_structure_and_navigation/app_structure_and_navigation_screen.dart';
 //bottom_navigation_bar
 const String bottomNavigationBarRoute = '/bottom_navigation_bar';
 const String bottomNavigationBarTitle = 'Bottom Navigation Bar';
 const String bottomNavigationBarCode = '';
 //---------------------------------app_structure_and_navigation: End-----------------
+//---------------------------------buttons: Start------------------------------------
+//buttons
+const buttonsRoute = '/buttons';
+const buttonsTitle = 'Buttons';
+const buttonsCode = '';
+const buttonsFilePath = 'lib/screens/flutter_widget_catalog/material_components/buttons/buttons_screen.dart';
+//---------------------------------buttons: End--------------------------------------
+//---------------------------------input_and_selections: Start-----------------------
+//input_and_selections
+const inputAndSelectionRoute = '/input_and_selections';
+const inputAndSelectionTitle = 'Input And Selections';
+const inputAndSelectionCode = '';
+const inputAndSelectionFilePath =
+    'lib/screens/flutter_widget_catalog/material_components/input_and_selections/input_and_selections_screen..dart';
+//---------------------------------input_and_selections: End-------------------------
+//---------------------------------dialogs_alerts_and_panels: Start------------------
+//dialogs_alerts_and_panels
+const dialogsAlertsAndPanelsRoute = '/dialogs_alerts_and_panels';
+const dialogsAlertsAndPanelsTitle = 'Dialogs Alerts And Panels';
+const dialogsAlertsAndPanelsCode = '';
+const dialogsAlertsAndPanelsFilePath =
+    'lib/screens/flutter_widget_catalog/material_components/dialogs_alerts_and_panels/dialogs_alerts_and_panels_screen.dart';
+//---------------------------------dialogs_alerts_and_panels: End--------------------
+//---------------------------------information_displays: Start-----------------------
+//information_displays
+const informationDisplaysRoute = '/information_displays';
+const informationDisplaysTitle = 'Information Displays';
+const informationDisplaysCode = '';
+const informationDisplaysFilePath =
+    'lib/screens/flutter_widget_catalog/material_components/information_displays/information_displays_screen.dart';
+
+//layout
+const layoutRoute = '/layout';
+const layoutTitle = 'Layout';
+const layoutCode = '';
+const layoutFilePath = 'lib/screens/flutter_widget_catalog/material_components/layout/layout_screen.dart';
+//---------------------------------information_displays: End-------------------------
 //---------------------------------material_components: End--------------------------
-//---------------------------------Widgets: End--------------------------------------
+
+//---------------------------------painting_and_effects: Start-----------------------
+//painting_and_effects
+const paintingAndEffectsRoute = '/painting_and_effects';
+const paintingAndEffectsTitle = 'Painting And Effects';
+const paintingAndEffectsCode = '';
+const paintingAndEffectsFilePath = '';
+//---------------------------------painting_and_effects: End-------------------------
+
+//---------------------------------scrolling_widgets: Start--------------------------
+//scrolling_widgets
+const scrollingWidgetsRoute = '/scrolling_widgets';
+const scrollingWidgetsTitle = 'Scrolling Widgets';
+const scrollingWidgetsCode = '';
+const scrollingWidgetsFilePath = '';
+//---------------------------------scrolling_widgets: End----------------------------
+
+//---------------------------------styling_widget: Start-----------------------------
+//stying_widget
+const stylingWidgetRoute = '/stying_widget';
+const stylingWidgetTitle = 'Stying Widget';
+const stylingWidgetCode = '';
+const stylingWidgetFilePath = '';
+//---------------------------------styling_widget: End-------------------------------
+
+//---------------------------------text_widget: Start--------------------------------
+//text_widget
+const textWidgetRoute = '/text_widget';
+const textWidgetTitle = 'Text Widget';
+const textWidgetCode = '';
+const textWidgetFilePath = '';
+//---------------------------------text_widget: End----------------------------------
+
+//---------------------------------flutter_widget_catalog: End-----------------------
 
 //--------------------------------- flutter_packages: Start -------------------------
 //font_awesome_flutter

@@ -92,7 +92,6 @@ class FlutterWidgetCatalogModelDetails {
               details: '',
               subWidget: [],
             ),
-            //////////
             FlutterWidgetCatalogModelDetails(
               name: 'AnimatedPhysicalModel',
               details: 'Animated version of PhysicalModel.',
@@ -531,7 +530,8 @@ class FlutterWidgetCatalogModelDetails {
           subWidget: [
             FlutterWidgetCatalogModelDetails(
               name: 'Single-child layout widgets',
-              details: '',
+              details:
+                  'Single-Child Layout Widgets are the ones that will accept only one widget as there child. Such as: Container(), Center(), Expanded(), Align(), SizedBox() etc.',
               subWidget: [
                 FlutterWidgetCatalogModelDetails(
                   name: 'Align',
@@ -637,7 +637,8 @@ class FlutterWidgetCatalogModelDetails {
             ),
             FlutterWidgetCatalogModelDetails(
               name: 'Multi-child layout widgets',
-              details: '',
+              details:
+                  'Multi-Child Layout Widgets are the ones that will accept more than one widget as there child. Such as: Column(), Row(), Stack(), GridView(), ListView(), Table() etc.',
               subWidget: [
                 FlutterWidgetCatalogModelDetails(
                   name: 'Column',
@@ -707,7 +708,8 @@ class FlutterWidgetCatalogModelDetails {
             ),
             FlutterWidgetCatalogModelDetails(
               name: 'Sliver widgets',
-              details: '',
+              details:
+                  'Sliver is a portion of the scrollable area which is used to achieve a custom scrolling effect. In other words, the sliver widget is a slice of the viewport. We can implement all of the scrollable views, such as ListView, GridView using slivers.',
               subWidget: [
                 FlutterWidgetCatalogModelDetails(
                   name: 'CupertinoSliverNavigationBar',
