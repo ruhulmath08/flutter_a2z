@@ -24,6 +24,7 @@ import 'package:flutter_a2z/screens/flutter_packages/flutter_holo_date_picker/fl
 import 'package:flutter_a2z/screens/flutter_packages/flutter_packages.dart';
 import 'package:flutter_a2z/screens/flutter_packages/flutter_photo_view/flutter_photo_view.dart';
 import 'package:flutter_a2z/screens/flutter_packages/font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_a2z/screens/flutter_packages/geolocator/geolocator_screen.dart';
 import 'package:flutter_a2z/screens/flutter_packages/horizontal_data_table/horizontal_data_table_screen.dart';
 import 'package:flutter_a2z/screens/flutter_packages/huawei_location/huawei_location_screen.dart';
 import 'package:flutter_a2z/screens/flutter_packages/image_picker/image_picker_screen.dart';
@@ -588,6 +589,15 @@ Route<MaterialPageRoute>? generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => ImagePickerScreen(
           title: imagePickerTitle,
+          model: settings.arguments!,
+        ),
+      );
+
+    //geolocator
+    case geoLocatorRoute:
+      return MaterialPageRoute(
+        builder: (context) => GeoLocatorScreen(
+          title: geoLocatorTitle,
           model: settings.arguments!,
         ),
       );
