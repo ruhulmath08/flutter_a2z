@@ -1,4 +1,4 @@
-import 'package:flutter_a2z/models/flutter_widget_catalog/layout_widget_model.dart';
+import 'package:flutter_a2z/models/flutter_widget_catalog/layout_widgets_model/layout_widget_model.dart';
 import 'package:flutter_a2z/models/flutter_widget_catalog/material_components_model/app_structure_and_navigation_model.dart';
 import 'package:flutter_a2z/models/flutter_widget_catalog/material_components_model/buttons_model.dart';
 import 'package:flutter_a2z/models/flutter_widget_catalog/material_components_model/dialogs_alerts_and_panels_model.dart';
@@ -10,13 +10,11 @@ class MaterialComponentsModel {
   String name;
   String details;
   int numberOfElements;
-  List<MaterialComponentsModel>? subWidget;
 
   MaterialComponentsModel({
     required this.name,
     required this.details,
     required this.numberOfElements,
-    this.subWidget,
   });
 
   static List<MaterialComponentsModel> fetchAll() => [

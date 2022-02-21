@@ -30,6 +30,7 @@ class Utility {
     return routePath;
   }
 
+  //Based on screen width this method return the number (number of card for display in GridView)
   static int cardPerRow({required BuildContext context}) {
     final double screenWidth = MediaQuery.of(context).size.width;
     final int cardPerRow = (screenWidth / 200).round();

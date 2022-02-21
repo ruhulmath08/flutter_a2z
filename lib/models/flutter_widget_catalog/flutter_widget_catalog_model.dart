@@ -5,8 +5,8 @@ import 'package:flutter_a2z/models/flutter_widget_catalog/async_widget_model.dar
 import 'package:flutter_a2z/models/flutter_widget_catalog/basic_widget_model.dart';
 import 'package:flutter_a2z/models/flutter_widget_catalog/cupertion_widget_model.dart';
 import 'package:flutter_a2z/models/flutter_widget_catalog/input_widget_model.dart';
-import 'package:flutter_a2z/models/flutter_widget_catalog/interaction_widget_model.dart';
-import 'package:flutter_a2z/models/flutter_widget_catalog/layout_widget_model.dart';
+import 'package:flutter_a2z/models/flutter_widget_catalog/interaction_widget_model/interaction_widget_model.dart';
+import 'package:flutter_a2z/models/flutter_widget_catalog/layout_widgets_model/layout_widget_model.dart';
 import 'package:flutter_a2z/models/flutter_widget_catalog/material_components_model/material_components_model.dart';
 import 'package:flutter_a2z/models/flutter_widget_catalog/painting_and_effects_model.dart';
 import 'package:flutter_a2z/models/flutter_widget_catalog/scrolling_widget_model.dart';
@@ -17,32 +17,32 @@ import 'package:flutter_a2z/routing/routing_constants.dart';
 class FlutterWidgetCatalogModel {
   String name;
   String details;
-  int? numberOfElements;
+  int numberOfElements;
 
   FlutterWidgetCatalogModel({
     required this.name,
     required this.details,
-    this.numberOfElements,
+    required this.numberOfElements,
   });
 
   static List<FlutterWidgetCatalogModel> fetchAll() => [
         FlutterWidgetCatalogModel(
-          name: 'Accessibility',
+          name: accessibilityTitle,
           details: 'Make your app accessible',
           numberOfElements: AccessibilityWidgetModel.fetchAll().length,
         ),
         FlutterWidgetCatalogModel(
-          name: 'Animation and Motion',
+          name: animationAndMotionTitle,
           details: 'Bring animations to your app.',
           numberOfElements: AnimationAndMotionModel.fetchAll().length,
         ),
         FlutterWidgetCatalogModel(
-          name: 'Assets, Images, and Icons',
+          name: assetsImagesAndIconsTitle,
           details: 'Manage assets, display images, and show icons.',
           numberOfElements: AssetsImagesAndIconsModel.fetchAll().length,
         ),
         FlutterWidgetCatalogModel(
-          name: 'Async',
+          name: asyncWidgetsTitle,
           details: 'Async patterns to your Flutter application.',
           numberOfElements: AsyncWidgetModel.fetchAll().length,
         ),
@@ -57,17 +57,17 @@ class FlutterWidgetCatalogModel {
           numberOfElements: CupertinoWidgetModel.fetchAll().length,
         ),
         FlutterWidgetCatalogModel(
-          name: 'Input',
+          name: inputWidgetsTitle,
           details: 'Take user input in addition to input widgets in Material Components and Cupertino.',
           numberOfElements: InputWidgetModel.fetchAll().length,
         ),
         FlutterWidgetCatalogModel(
-          name: 'Interaction Models',
+          name: interactionModelsTitle,
           details: 'Respond to touch events and route users to different views.',
           numberOfElements: InteractionWidgetModel.fetchAll().length,
         ),
         FlutterWidgetCatalogModel(
-          name: 'Layout',
+          name: layoutWidgetsTitle,
           details: 'Arrange other widgets columns, rows, grids, and many other layouts.',
           numberOfElements: LayoutWidgetModel.fetchAll().length,
         ),
@@ -77,22 +77,22 @@ class FlutterWidgetCatalogModel {
           numberOfElements: MaterialComponentsModel.fetchAll().length,
         ),
         FlutterWidgetCatalogModel(
-          name: 'Painting and effects',
+          name: paintingAndEffectsTitle,
           details: 'These widgets apply visual effects to the children without changing their layout, size, or position.',
           numberOfElements: PaintingAndEffectsModel.fetchAll().length,
         ),
         FlutterWidgetCatalogModel(
-          name: 'Scrolling',
+          name: scrollingWidgetsTitle,
           details: 'Scroll multiple widgets as children of the parent.',
           numberOfElements: ScrollingWidgetModel.fetchAll().length,
         ),
         FlutterWidgetCatalogModel(
-          name: 'Styling',
+          name: stylingWidgetTitle,
           details: 'Manage the theme of your app, makes your app responsive to screen sizes, or add padding.',
           numberOfElements: StylingWidgetModel.fetchAll().length,
         ),
         FlutterWidgetCatalogModel(
-          name: 'Text',
+          name: textWidgetTitle,
           details: 'Display and style text.',
           numberOfElements: TextWidgetModel.fetchAll().length,
         ),

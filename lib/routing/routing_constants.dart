@@ -94,7 +94,8 @@ const controlMultipleAnimationCode = '';
 //set_state_in_alert_dialog
 const setStateInPopUpAlertDialogRoute = '/set_state_in_alert_dialog';
 const setStateInPopUpAlertDialogTitle = 'Set State In Alert Dialog';
-const setStateInPopUpAlertDialogFilePath = 'lib/screens/flutter_complex_widget/set_state_in_alert_dialog/set_state_in_alert_dialog_screen.dart';
+const setStateInPopUpAlertDialogFilePath =
+    'lib/screens/flutter_complex_widget/set_state_in_alert_dialog/set_state_in_alert_dialog_screen.dart';
 
 //flutter_focus
 const flutterFocusRoute = '/flutter_focus';
@@ -119,7 +120,8 @@ const String methodChannelFilePath = 'lib/screens/flutter_advanced/method_channe
 const pixelPerfectResponsiveUiRoute = '/pixel_perfect_responsive_ui';
 const pixelPerfectResponsiveUiTitle = 'Pixel Perfect Responsive UI';
 const pixelPerfectResponsiveUiCode = '';
-const pixelPerfectResponsiveUiFilePath = 'lib/screens/flutter_advanced/pixel_perfect_responsive_ui/pixel_perfect_responsive_ui_screen.dart';
+const pixelPerfectResponsiveUiFilePath =
+    'lib/screens/flutter_advanced/pixel_perfect_responsive_ui/pixel_perfect_responsive_ui_screen.dart';
 
 //isolates_and_multithreading
 const String isolateAndMultithreadingRoute = '/isolates_and_multithreading';
@@ -130,7 +132,8 @@ const String isolateAndMultithreadingCode = '';
 const String flutterLocationAsServiceRoute = '/flutter_location_as_service';
 const String flutterLocationAsServiceTitle = 'Flutter Location As Service';
 const String flutterLocationAsServiceCode = '';
-const String flutterLocationAsServiceFilePath = 'lib/screens/flutter_advanced/flutter_location_as_service/flutter_location_as_service_screen.dart';
+const String flutterLocationAsServiceFilePath =
+    'lib/screens/flutter_advanced/flutter_location_as_service/flutter_location_as_service_screen.dart';
 
 //flutter_stream
 const String flutterStreamRoute = '/flutter_stream';
@@ -169,7 +172,7 @@ const assetsImagesAndIconsFilePath = '';
 //---------------------------------async: Start--------------------------------------
 //async_widgets
 const asyncWidgetsRoute = '/async_widgets';
-const asyncWidgetsTitle = '';
+const asyncWidgetsTitle = 'Async Widgets';
 const asyncWidgetsCode = '';
 const asyncWidgetsFilePath = '';
 //---------------------------------async: End----------------------------------------
@@ -205,6 +208,22 @@ const interactionModelsRoute = '/interaction_models';
 const interactionModelsTitle = 'Interaction Models';
 const interactionModelsCode = '';
 const interactionModelsFilePath = '';
+
+//---------------------------------touch_interactions: Start------------------------
+//touch_interactions
+const touchInteractionRoute = '/touch_interactions';
+const touchInteractionTitle = 'Touch Interactions';
+const touchInteractionCode = '';
+const touchInteractionFilePath = '';
+//---------------------------------touch_interactions: End--------------------------
+
+//---------------------------------routing: Start-----------------------------------
+//routing
+const routingRoute = '/routing';
+const routingTitle = 'Routing';
+const routingCode = '';
+const routingFilePath = '';
+//---------------------------------routing: End-------------------------------------
 //---------------------------------interaction_models: End--------------------------
 
 //---------------------------------layout_widgets: Start----------------------------
@@ -213,6 +232,30 @@ const layoutWidgetsRoute = '/layout_widgets';
 const layoutWidgetsTitle = 'Layout Widgets';
 const layoutWidgetsCode = '';
 const layoutWidgetsFilePath = '';
+
+//---------------------------------single_child_layout_widgets: Start---------------
+//single_child_layout_widgets
+const singleChildLayoutWidgetsRoute = '/single_child_layout_widgets';
+const singleChildLayoutWidgetsTitle = 'Single Child Layout Widgets';
+const singleChildLayoutWidgetsCode = '';
+const singleChildLayoutWidgetsFilePath = '';
+//---------------------------------single_child_layout_widgets: End-----------------
+
+//---------------------------------multi_child_layout_widgets: Start----------------
+//multi_child_layout_widgets
+const multiChildLayoutWidgetsRoute = '/multi_child_layout_widgets';
+const multiChildLayoutWidgetsTitle = 'Multi Child Layout Widgets';
+const multiChildLayoutWidgetsCode = '';
+const multiChildLayoutWidgetsFilePath = '';
+//---------------------------------multi_child_layout_widgets: End------------------
+
+//---------------------------------sliver_widgets: Start----------------------------
+//sliver_widgets
+const sliverWidgetsRoute = '/sliver_widgets';
+const sliverWidgetsTitle = 'Sliver Widgets';
+const sliverWidgetsCode = '';
+const sliverWidgetsFilePath = '';
+//---------------------------------sliver_widgets: End------------------------------
 //---------------------------------layout_widgets: End------------------------------
 
 //---------------------------------material_components: Start-----------------------
@@ -340,7 +383,8 @@ const urlLauncherFilePath = 'lib/screens/flutter_packages/url_launcher/url_launc
 const String syncfusionFlutterDataGridRoute = '/syncfusion_flutter_data_grid';
 const String syncfusionFlutterDataGridTitle = 'Syncfusion Flutter Data Grid';
 const String syncfusionFlutterDataGridCode = '';
-const String syncfusionFlutterDataGridFilePath = 'lib/screens/flutter_packages/syncfusion_flutter_data_grid/syncfusion_flutter_data_grid.dart';
+const String syncfusionFlutterDataGridFilePath =
+    'lib/screens/flutter_packages/syncfusion_flutter_data_grid/syncfusion_flutter_data_grid.dart';
 
 //horizontal_data_table
 const horizontalDataTableRoute = '/horizontal_data_table';
@@ -399,7 +443,8 @@ const String huaweiLocationFilePath = 'lib/screens/flutter_packages/huawei_locat
 const String syncfusionFlutterGaugesRoute = '/syncfusion_flutter_gauges';
 const String syncfusionFlutterGaugesTitle = 'Syncfusion Flutter Gauges';
 const String syncfusionFlutterGaugesCode = '';
-const String syncfusionFlutterGaugesFilePath = 'lib/screens/flutter_advanced/flutter_location_as_service/flutter_location_as_service_screen.dart';
+const String syncfusionFlutterGaugesFilePath =
+    'lib/screens/flutter_advanced/flutter_location_as_service/flutter_location_as_service_screen.dart';
 
 //flutter_heat_map
 const String flutterHeatMapRoute = '/flutter_heat_map';
@@ -417,7 +462,8 @@ const String wifiIotFilePath = 'lib/screens/flutter_packages/wifi_iot/wifi_iot_s
 const String flutterCountdownTimerRoute = '/flutter_countdown_timer';
 const String flutterCountdownTimerTitle = 'Flutter Countdown Timer';
 const String flutterCountdownTimerCode = '';
-const String flutterCountdownTimerFilePath = 'lib/screens/flutter_packages/flutter_countdown_timer/flutter_countdown_timer_screen.dart';
+const String flutterCountdownTimerFilePath =
+    'lib/screens/flutter_packages/flutter_countdown_timer/flutter_countdown_timer_screen.dart';
 
 //permission_handler
 const permissionHandlerRoute = '/permission_handler';
@@ -429,7 +475,8 @@ const permissionHandlerFilePath = 'lib/screens/flutter_packages/permission_handl
 const String flutterBarcodeScannerRoute = '/flutter_barcode_scanner';
 const String flutterBarcodeScannerTitle = 'Flutter Barcode Scanner';
 const String flutterBarcodeScannerCode = '';
-const String flutterBarcodeScannerFilePath = 'lib/screens/flutter_packages/flutter_barcode_scanner/flutter_barcode_scanner_screen.dart';
+const String flutterBarcodeScannerFilePath =
+    'lib/screens/flutter_packages/flutter_barcode_scanner/flutter_barcode_scanner_screen.dart';
 
 //flutter_photo_view
 const String flutterPhotoViewRoute = '/flutter_photo_view';
@@ -461,7 +508,8 @@ const String geoLocatorFilePath = '';
 const String flutterSharedPreferencesRoute = '/flutter_shared_preferences';
 const String flutterSharedPreferencesTitle = 'Flutter Shared Preferences';
 const String flutterSharedPreferencesCode = '';
-const String flutterSharedPreferencesFilePath = 'lib/screens/local_storage/flutter_shared_preferences/flutter_shared_preferences_screen.dart';
+const String flutterSharedPreferencesFilePath =
+    'lib/screens/local_storage/flutter_shared_preferences/flutter_shared_preferences_screen.dart';
 
 //flutter_with_sqlite
 const String flutterWithSqliteRoute = '/flutter_with_sqlite';
@@ -485,7 +533,8 @@ const String readAndWriteFileFilePath = 'lib/screens/local_storage/read_and_writ
 const String flutterHoloDatePickerRoute = '/flutter_holo_date_picker';
 const String flutterHoloDatePickerTitle = 'Flutter Holo Date Picker';
 const String flutterHoloDatePickerCode = '';
-const String flutterHoloDatePickerFilePath = 'lib/screens/flutter_packages/flutter_holo_date_picker/flutter_holo_date_picker_screen.dart';
+const String flutterHoloDatePickerFilePath =
+    'lib/screens/flutter_packages/flutter_holo_date_picker/flutter_holo_date_picker_screen.dart';
 //----------------------------------local_storage: End ------------------------------
 
 //----------------------------------map_details: Start-------------------------------

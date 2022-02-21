@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_a2z/common_widgets/flutter_a2z_grid_view.dart';
+import 'package:flutter_a2z/models/flutter_widget_catalog/input_widget_model.dart';
 
 class InputWidgetsScreens extends StatelessWidget {
   final String title;
@@ -6,13 +8,12 @@ class InputWidgetsScreens extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final List<InputWidgetModel> models = InputWidgetModel.fetchAll();
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
       ),
-      body: Center(
-        child: Text(title),
-      ),
+      body: FlutterA2zGridView(models: models),
     );
   }
 }
