@@ -1,3 +1,5 @@
+import 'package:flutter_a2z/routing/routing_constants.dart';
+
 class BasicWidgetModel {
   String name;
   String details;
@@ -11,59 +13,59 @@ class BasicWidgetModel {
 
   static List<BasicWidgetModel> fetchAll() => [
         BasicWidgetModel(
-          name: 'Appbar',
+          name: appBarTitle,
           details:
               'A Material Design app bar. An app bar consists of a toolbar and potentially other widgets, such as a TabBar and a FlexibleSpaceBar.',
           numberOfElements: 0,
         ),
         BasicWidgetModel(
-          name: 'Column',
+          name: columnTitle,
           details: 'Layout a list of child widgets in the vertical direction.',
           numberOfElements: 0,
         ),
         BasicWidgetModel(
-          name: 'Container',
+          name: containerTitle,
           details: 'A convenience widget that combines common painting, positioning, and sizing widgets.',
           numberOfElements: 0,
         ),
         BasicWidgetModel(
-          name: 'ElevatedButton',
+          name: elevatedButtonTitle,
           details: 'A Material Design elevated button. A filled button whose material elevates when pressed.',
           numberOfElements: 0,
         ),
         BasicWidgetModel(
-          name: 'FlutterLogo',
+          name: flutterLogoTitle,
           details: 'The Flutter logo, in widget form. This widget respects the IconTheme.',
           numberOfElements: 0,
         ),
         BasicWidgetModel(
-          name: 'Icon',
+          name: iconTitle,
           details: 'A Material Design icon.',
           numberOfElements: 0,
         ),
         BasicWidgetModel(
-          name: 'Image',
+          name: imageTitle,
           details: 'A widget that displays an image.',
           numberOfElements: 0,
         ),
         BasicWidgetModel(
-          name: 'Placeholder',
+          name: placeholderTitle,
           details: 'A widget that draws a box that represents where other widgets will one day be added.',
           numberOfElements: 0,
         ),
         BasicWidgetModel(
-          name: 'Row',
+          name: rowTitle,
           details: 'Layout a list of child widgets in the horizontal direction.',
           numberOfElements: 0,
         ),
         BasicWidgetModel(
-          name: 'Scaffold',
+          name: scaffoldTitle,
           details:
               'Implements the basic Material Design visual layout structure. This class provides APIs for showing drawers, snack bars, and bottom sheets.',
           numberOfElements: 0,
         ),
         BasicWidgetModel(
-          name: 'Text',
+          name: textTitle,
           details: 'A run of text with a single style.',
           numberOfElements: 0,
         ),

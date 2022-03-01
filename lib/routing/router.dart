@@ -43,7 +43,18 @@ import 'package:flutter_a2z/screens/flutter_widget_catalog/accessibility/accessi
 import 'package:flutter_a2z/screens/flutter_widget_catalog/animation_and_motion/animation_and_motion_screen.dart';
 import 'package:flutter_a2z/screens/flutter_widget_catalog/assets_images_and_icons/assets_images_and_icons_screen.dart';
 import 'package:flutter_a2z/screens/flutter_widget_catalog/async_widgets/async_widgets_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/basic_widgets/app_bar/app_bar_screen.dart';
 import 'package:flutter_a2z/screens/flutter_widget_catalog/basic_widgets/basic_widgets_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/basic_widgets/column/column_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/basic_widgets/container/container_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/basic_widgets/elevated_button/elevated_button_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/basic_widgets/flutter_logo/flutter_logo_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/basic_widgets/icon/icon_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/basic_widgets/image/image_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/basic_widgets/placeholder/placeholder_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/basic_widgets/row/row_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/basic_widgets/scaffold/scaffold_screen.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/basic_widgets/text/text_screen.dart';
 import 'package:flutter_a2z/screens/flutter_widget_catalog/cupertino_widgets/cupertino_widgets_screen.dart';
 import 'package:flutter_a2z/screens/flutter_widget_catalog/flutter_widget_catalog/flutter_widget_catalog.dart';
 import 'package:flutter_a2z/screens/flutter_widget_catalog/input_widgets/input_widgets_screen.dart';
@@ -256,6 +267,94 @@ Route<MaterialPageRoute>? generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const BasicWidgetsScreen(
           title: basicWidgetsTitle,
+        ),
+      );
+
+    //app_bar
+    case appBarRoute:
+      return MaterialPageRoute(
+        builder: (context) => const AppBarScreen(
+          title: appBarTitle,
+        ),
+      );
+
+    //column
+    case columnRoute:
+      return MaterialPageRoute(
+        builder: (context) => const ColumnScreen(
+          title: columnTitle,
+        ),
+      );
+
+    //container
+    case containerRoute:
+      return MaterialPageRoute(
+        builder: (context) => const ContainerScreen(
+          title: containerTitle,
+        ),
+      );
+
+    //elevated_button
+    case elevatedButtonRoute:
+      return MaterialPageRoute(
+        builder: (context) => const ElevatedButtonScreen(
+          title: elevatedButtonTitle,
+        ),
+      );
+
+    //icon
+    case iconRoute:
+      return MaterialPageRoute(
+        builder: (context) => const IconScreen(
+          title: iconTitle,
+        ),
+      );
+
+    //image
+    case imageRoute:
+      return MaterialPageRoute(
+        builder: (context) => const ImageScreen(
+          title: imageTitle,
+        ),
+      );
+
+    //flutter_logo
+    case flutterLogoRoute:
+      return MaterialPageRoute(
+        builder: (context) => const FlutterLogoScreen(
+          title: flutterLogoTitle,
+        ),
+      );
+
+    //placeholder
+    case placeholderRoute:
+      return MaterialPageRoute(
+        builder: (context) => const PlaceholderScreen(
+          title: placeholderTitle,
+        ),
+      );
+
+    //row
+    case rowRoute:
+      return MaterialPageRoute(
+        builder: (context) => const RowScreen(
+          title: rowTitle,
+        ),
+      );
+
+    //scaffold
+    case scaffoldRoute:
+      return MaterialPageRoute(
+        builder: (context) => const ScaffoldScreen(
+          title: scaffoldTitle,
+        ),
+      );
+
+    //text
+    case textRoute:
+      return MaterialPageRoute(
+        builder: (context) => const TextScreen(
+          title: textTitle,
         ),
       );
     //---------------------------------basic_widgets: End--------------------------------

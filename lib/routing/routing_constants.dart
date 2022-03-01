@@ -183,6 +183,72 @@ const basicWidgetsRoute = '/basic_widgets';
 const basicWidgetsTitle = 'Basic Widgets';
 const basicWidgetsCode = '';
 const String basicWidgetsFilePath = 'lib/screens/flutter_widget_catalog/basic_widgets/basic_widgets.dart';
+
+//app_bar
+const appBarRoute = '/app_bar';
+const appBarTitle = 'App Bar';
+const appBarCode = '';
+const appBarFilePath = 'lib/screens/flutter_widget_catalog/basic_widgets/app_bar/app_bar_screen.dart';
+
+//column
+const columnRoute = '/column';
+const columnTitle = 'Column';
+const columnCode = '';
+const columnFilePath = 'lib/screens/flutter_widget_catalog/basic_widgets/column/column_screen.dart';
+
+//container
+const containerRoute = '/container';
+const containerTitle = 'Container';
+const containerCode = '';
+const containerFilePath = 'lib/screens/flutter_widget_catalog/basic_widgets/container/container_screen.dart';
+
+//elevated_button
+const elevatedButtonRoute = '/elevated_button';
+const elevatedButtonTitle = 'Elevated Button';
+const elevatedButtonCode = '';
+const elevatedButtonFilePath = 'lib/screens/flutter_widget_catalog/basic_widgets/elevated_button/elevated_button_screen.dart';
+
+//icon
+const iconRoute = '/icon';
+const iconTitle = 'Icon';
+const iconCode = '';
+const iconFilePath = 'lib/screens/flutter_widget_catalog/basic_widgets/icon/icon_screen.dart';
+
+//image
+const imageRoute = '/image';
+const imageTitle = 'Image';
+const imageCode = '';
+const imageFilePath = 'lib/screens/flutter_widget_catalog/basic_widgets/image/image_screen.dart';
+
+//flutter_logo
+const flutterLogoRoute = '/flutter_logo';
+const flutterLogoTitle = 'Flutter Logo';
+const flutterLogoCode = '';
+const flutterLogoFilePath = 'lib/screens/flutter_widget_catalog/basic_widgets/flutter_logo/flutter_logo_screen.dart';
+
+//placeholder
+const placeholderRoute = '/placeholder';
+const placeholderTitle = 'Placeholder';
+const placeholderCode = '';
+const placeholderFilePath = 'lib/screens/flutter_widget_catalog/basic_widgets/placeholder/placeholder_screen.dart';
+
+//row
+const rowRoute = '/row';
+const rowTitle = 'Row';
+const rowCode = '';
+const rowFilePath = 'lib/screens/flutter_widget_catalog/basic_widgets/row/row_screen.dart';
+
+//scaffold
+const scaffoldRoute = '/scaffold';
+const scaffoldTitle = 'Scaffold';
+const scaffoldCode = '';
+const scaffoldFilePath = 'lib/screens/flutter_widget_catalog/basic_widgets/scaffold/scaffold_screen.dart';
+
+//text
+const textRoute = '/text';
+const textTitle = 'Text';
+const textCode = '';
+const textFilePath = 'lib/screens/flutter_widget_catalog/basic_widgets/text/text_screen.dart';
 //---------------------------------basic_widgets: End--------------------------------
 
 //---------------------------------cupertino_widgets: Start--------------------------

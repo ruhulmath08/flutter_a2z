@@ -7,10 +7,11 @@ Future<bool?> showFlutterToast({
   Color backgroundColor = Colors.black87,
   Color textColor = Colors.white,
   ToastGravity toastGravity = ToastGravity.CENTER,
+  Toast toastDuration = Toast.LENGTH_SHORT,
 }) {
   return Fluttertoast.showToast(
     msg: message,
-    toastLength: Toast.LENGTH_SHORT,
+    toastLength: toastDuration,
     backgroundColor: backgroundColor,
     textColor: textColor,
     gravity: toastGravity,

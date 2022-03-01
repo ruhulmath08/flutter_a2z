@@ -131,8 +131,20 @@ flutter:
     - lib/screens/flutter_widget_catalog/material_components/information_displays/
     ###--------layout--------
     - lib/screens/flutter_widget_catalog/material_components/layout/
-    ###--------basic_widgets--------
+    ###--------basic_widgets: start--------
     - lib/screens/flutter_widget_catalog/basic_widgets/
+    - lib/screens/flutter_widget_catalog/basic_widgets/app_bar/
+    - lib/screens/flutter_widget_catalog/basic_widgets/column/
+    - lib/screens/flutter_widget_catalog/basic_widgets/container/
+    - lib/screens/flutter_widget_catalog/basic_widgets/elevated_button/
+    - lib/screens/flutter_widget_catalog/basic_widgets/icon/
+    - lib/screens/flutter_widget_catalog/basic_widgets/image/
+    - lib/screens/flutter_widget_catalog/basic_widgets/flutter_logo/
+    - lib/screens/flutter_widget_catalog/basic_widgets/placeholder/
+    - lib/screens/flutter_widget_catalog/basic_widgets/row/
+    - lib/screens/flutter_widget_catalog/basic_widgets/scaffold/
+    - lib/screens/flutter_widget_catalog/basic_widgets/text/
+    ###--------basic_widgets: end--------
     ###--------cupertino_widgets--------
     - lib/screens/flutter_widget_catalog/cupertino_widgets/
     #---------------------------material_components---------
