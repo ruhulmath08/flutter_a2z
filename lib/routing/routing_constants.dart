@@ -107,6 +107,20 @@ const String transparentAppBarRoute = '/transparent_app_bar';
 const String transparentAppBarTitle = 'transparent App Bar';
 const String transparentAppBarCode = '';
 const String transparentAppBarFilePath = 'lib/screens/flutter_complex_widget/transparent_app_bar/transparent_app_bar.dart';
+
+//nested_listview_and_column
+const String nestedListviewAndColumnRoute = '/nested_listview_and_column';
+const String nestedListviewAndColumnTitle = 'Nested Listview And Column';
+const String nestedListviewAndColumnCode = '';
+const String nestedListviewAndColumnFilePath =
+    'lib/screens/flutter_complex_widget/nested_listview_and_column/nested_listview_and_column.dart';
+
+//infinite_scrolling_listview
+const String infiniteScrollingListViewRoute = '/infinite_scrolling_listview';
+const String infiniteScrollingListViewTitle = 'Infinite Scrolling Listview';
+const String infiniteScrollingListViewCode = '';
+const String infiniteScrollingListViewFilePath =
+    'lib/screens/flutter_complex_widget/infinite_scrolling_listview/infinite_scrolling_listview_screen.dart';
 //---------------------------------FlutterComplexWidget: End-------------------------
 
 //---------------------------------flutter_advanced: Start---------------------------

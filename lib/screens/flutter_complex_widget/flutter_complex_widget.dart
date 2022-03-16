@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_a2z/app_style/app_style.dart';
 import 'package:flutter_a2z/common_widgets/common_alert_dialog.dart';
-import 'package:flutter_a2z/common_widgets/common_circle.dart';
 import 'package:flutter_a2z/models/flutter_complex_widget_model.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
 import 'package:flutter_a2z/utility/utility.dart';
@@ -18,9 +18,13 @@ class FlutterComplexWidgetScreen extends StatelessWidget {
       body: OrientationBuilder(
         builder: (BuildContext context, Orientation orientation) {
           return GridView.builder(
+            padding: appScreenDefaultPadding,
             itemCount: allModels.length,
-            gridDelegate:
-                SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: orientation == Orientation.portrait ? 2 : 3, crossAxisSpacing: 4, mainAxisSpacing: 4),
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: orientation == Orientation.portrait ? 2 : 3,
+              crossAxisSpacing: 4,
+              mainAxisSpacing: 4,
+            ),
             itemBuilder: (BuildContext context, int index) {
               return InkWell(
                 onTap: () {
@@ -37,19 +41,17 @@ class FlutterComplexWidgetScreen extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            commonCircle(
-                              width: 35,
-                              height: 35,
-                              isIndexRequired: true,
-                              index: index + 1,
+                        CircleAvatar(
+                          backgroundColor: Colors.blue,
+                          radius: 25,
+                          child: Text(
+                            '${index + 1}',
+                            style: const TextStyle(
+                              fontWeight: FontWeight.bold,
                             ),
-                            const Icon(Icons.arrow_forward_ios_sharp),
-                          ],
+                          ),
                         ),
-                        const Divider(height: 30),
+                        const SizedBox(height: 10),
                         Text(
                           allModels[index].name,
                           style: const TextStyle(fontWeight: FontWeight.bold),

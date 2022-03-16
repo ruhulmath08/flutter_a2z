@@ -62,9 +62,12 @@ dependencies:
   latlong2: ^0.8.1 #26-01-2022
   camera: ^0.9.4+10 #07-02-2022
   image_picker: ^0.8.4+6 #07-02-2022
+  #location related
   geolocator: ^8.1.1
   geocoding: ^2.0.2
   tree_view: ^0.0.6
+  #network related
+  http: ^0.13.4
 
 dev_dependencies:
   flutter_test:
@@ -102,11 +105,14 @@ flutter:
     - lib/screens/flutter_packages/flutter_photo_view/
     - lib/screens/flutter_packages/camera/
     - lib/screens/flutter_packages/image_picker/
-    #----------------flutter_complex_widget----------------
+    #----------------flutter_complex_widget: start----------------
     - lib/screens/flutter_complex_widget/mask_text_with_image/
     - lib/screens/flutter_complex_widget/set_state_in_alert_dialog/
     - lib/screens/flutter_complex_widget/flutter_focus/
     - lib/screens/flutter_complex_widget/transparent_app_bar/
+    - lib/screens/flutter_complex_widget/nested_listview_and_column/
+    - lib/screens/flutter_complex_widget/infinite_scrolling_listview/
+    #----------------flutter_complex_widget: end------------------
     #----------------flutter_advanced----------------------
     - lib/screens/flutter_advanced/
     - lib/screens/flutter_advanced/method_channel/

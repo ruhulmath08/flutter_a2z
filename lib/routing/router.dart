@@ -9,7 +9,9 @@ import 'package:flutter_a2z/screens/flutter_advanced/pixel_perfect_responsive_ui
 import 'package:flutter_a2z/screens/flutter_complex_widget/control_multiple_animations/control_multiple_animations.dart';
 import 'package:flutter_a2z/screens/flutter_complex_widget/flutter_complex_widget.dart';
 import 'package:flutter_a2z/screens/flutter_complex_widget/flutter_focus/flutter_focus.dart';
+import 'package:flutter_a2z/screens/flutter_complex_widget/infinite_scrolling_listview/infinite_scrolling_listview_screen.dart';
 import 'package:flutter_a2z/screens/flutter_complex_widget/mask_text_with_image/mask_text_with_image_screen.dart';
+import 'package:flutter_a2z/screens/flutter_complex_widget/nested_listview_and_column/nested_listview_and_column.dart';
 import 'package:flutter_a2z/screens/flutter_complex_widget/set_state_in_alert_dialog/set_state_in_alert_dialog_screen.dart';
 import 'package:flutter_a2z/screens/flutter_complex_widget/transparent_app_bar/transparent_app_bar.dart';
 import 'package:flutter_a2z/screens/flutter_packages/camera/camera_screen.dart';
@@ -211,6 +213,24 @@ Route<MaterialPageRoute>? generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => TransparentAppBar(
           title: transparentAppBarTitle,
+          model: settings.arguments!,
+        ),
+      );
+
+    //nested_listview_and_column
+    case nestedListviewAndColumnRoute:
+      return MaterialPageRoute(
+        builder: (context) => NestedListviewAndColumnScreen(
+          title: nestedListviewAndColumnTitle,
+          model: settings.arguments!,
+        ),
+      );
+
+    //infinite_scrolling_listview
+    case infiniteScrollingListViewRoute:
+      return MaterialPageRoute(
+        builder: (context) => InfiniteScrollingListViewScreen(
+          title: infiniteScrollingListViewTitle,
           model: settings.arguments!,
         ),
       );
