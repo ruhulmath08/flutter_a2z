@@ -121,6 +121,12 @@ const String infiniteScrollingListViewTitle = 'Infinite Scrolling Listview';
 const String infiniteScrollingListViewCode = '';
 const String infiniteScrollingListViewFilePath =
     'lib/screens/flutter_complex_widget/infinite_scrolling_listview/infinite_scrolling_listview_screen.dart';
+
+//flutter_clip_path
+const String flutterClipPathRoute = '/flutter_clip_path';
+const String flutterClipPathTitle = 'Flutter Clip Path';
+const String flutterClipPathCode = '';
+const String flutterClipPathFilePath = 'lib/screens/flutter_complex_widget/flutter_clip_path/flutter_clip_path_screen.dart';
 //---------------------------------FlutterComplexWidget: End-------------------------
 
 //---------------------------------flutter_advanced: Start---------------------------

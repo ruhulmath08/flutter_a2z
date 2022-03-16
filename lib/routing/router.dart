@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_a2z/models/flutter_widget_catalog/basic_widget_model.dart';
 import 'package:flutter_a2z/routing/routing_constants.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/flutter_advanced.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/flutter_location_as_service/flutter_location_as_service_screen.dart';
@@ -7,6 +8,7 @@ import 'package:flutter_a2z/screens/flutter_advanced/isolates_and_multithreading
 import 'package:flutter_a2z/screens/flutter_advanced/method_channel/method_channel_screen.dart';
 import 'package:flutter_a2z/screens/flutter_advanced/pixel_perfect_responsive_ui/pixel_perfect_responsive_ui_screen.dart';
 import 'package:flutter_a2z/screens/flutter_complex_widget/control_multiple_animations/control_multiple_animations.dart';
+import 'package:flutter_a2z/screens/flutter_complex_widget/flutter_clip_path/flutter_clip_path_screen.dart';
 import 'package:flutter_a2z/screens/flutter_complex_widget/flutter_complex_widget.dart';
 import 'package:flutter_a2z/screens/flutter_complex_widget/flutter_focus/flutter_focus.dart';
 import 'package:flutter_a2z/screens/flutter_complex_widget/infinite_scrolling_listview/infinite_scrolling_listview_screen.dart';
@@ -234,6 +236,16 @@ Route<MaterialPageRoute>? generateRoute(RouteSettings settings) {
           model: settings.arguments!,
         ),
       );
+
+    //flutter_clip_path
+    case flutterClipPathRoute:
+      return MaterialPageRoute(
+        builder: (context) => FlutterClipPathScreen(
+          title: flutterClipPathTitle,
+          model: settings.arguments!,
+        ),
+      );
+
     //---------------------------------flutter_complex_widget: End-----------------------
 
     //--------------------------------- flutter_widget_catalog: Start--------------------
@@ -309,8 +321,9 @@ Route<MaterialPageRoute>? generateRoute(RouteSettings settings) {
     //container
     case containerRoute:
       return MaterialPageRoute(
-        builder: (context) => const ContainerScreen(
+        builder: (context) => ContainerScreen(
           title: containerTitle,
+          model: settings.arguments as BasicWidgetModel,
         ),
       );
 

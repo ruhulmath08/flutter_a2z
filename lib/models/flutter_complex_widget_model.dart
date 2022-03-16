@@ -89,5 +89,14 @@ class FlutterComplexWidgetModel {
           youTubeLink: 'https://www.youtube.com/watch?v=eENDlIgadr4',
           gitLink: '',
         ),
+        FlutterComplexWidgetModel(
+          name: flutterClipPathTitle,
+          description:
+              '''How to clip widgets using ClipPath and Bezier Curves in Flutter. Also use the ClipPath Generator tool ShapeMaker to create custom paths.''',
+          documentation: '',
+          packageLink: '',
+          youTubeLink: 'https://www.youtube.com/watch?v=xuatM4pZkNk',
+          gitLink: '',
+        ),
       ];
 }

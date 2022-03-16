@@ -11,7 +11,10 @@ class FlutterLogoScreen extends StatelessWidget {
         title: Text(title),
       ),
       body: Center(
-        child: Text(title),
+        child: FlutterLogo(
+          size: 200,
+          style: FlutterLogoStyle.stacked,
+        ),
       ),
     );
   }

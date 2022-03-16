@@ -24,13 +24,14 @@ class FlutterA2zGridView extends StatelessWidget {
         mainAxisSpacing: 4,
       ),
       itemBuilder: (BuildContext context, int index) {
+        final Object model = models[index] as Object;
         final String name = models[index].name.toString();
         final String details = models[index].details.toString();
         final int numberOfElements = models[index].numberOfElements as int;
         return Card(
           elevation: 5,
           child: InkWell(
-            onTap: () => Utility.navigateScreen(context: context, title: name, model: null),
+            onTap: () => Utility.navigateScreen(context: context, title: name, model: model),
             child: Container(
               padding: const EdgeInsets.all(8.0),
               foregroundDecoration: (numberOfElements > 0)

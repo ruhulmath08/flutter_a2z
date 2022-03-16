@@ -81,6 +81,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/images/flutter_widget_catalog/basic_widgets/
     #----------------flutter_packages----------------
     - lib/screens/flutter_packages/syncfusion_flutter_data_grid/
     - lib/screens/flutter_packages/font_awesome_flutter/
@@ -112,6 +113,7 @@ flutter:
     - lib/screens/flutter_complex_widget/transparent_app_bar/
     - lib/screens/flutter_complex_widget/nested_listview_and_column/
     - lib/screens/flutter_complex_widget/infinite_scrolling_listview/
+    - lib/screens/flutter_complex_widget/flutter_clip_path/
     #----------------flutter_complex_widget: end------------------
     #----------------flutter_advanced----------------------
     - lib/screens/flutter_advanced/
