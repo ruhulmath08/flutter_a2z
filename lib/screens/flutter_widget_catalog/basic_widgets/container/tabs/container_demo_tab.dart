@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_a2z/models/common_model/flutter_lignment_model.dart';
 
 class ContainerDemoTab extends StatefulWidget {
   @override
@@ -166,7 +167,7 @@ class _ContainerDemoTabState extends State<ContainerDemoTab> {
             child: Expanded(
               child: ListView(
                 primary: false,
-                children: containerAlignmentListData.map((data) {
+                children: flutterAlignmentListModelData.map((data) {
                   //return Text('n');
                   return SingleChildScrollView(
                     child: RadioListTile(
@@ -190,52 +191,3 @@ class _ContainerDemoTabState extends State<ContainerDemoTab> {
     );
   }
 }
-
-class ContainerAlignmentList {
-  Alignment alignment;
-  int index;
-
-  ContainerAlignmentList({
-    required this.alignment,
-    required this.index,
-  });
-}
-
-final containerAlignmentListData = <ContainerAlignmentList>[
-  ContainerAlignmentList(
-    alignment: Alignment.center,
-    index: 1,
-  ),
-  ContainerAlignmentList(
-    alignment: Alignment.centerLeft,
-    index: 2,
-  ),
-  ContainerAlignmentList(
-    alignment: Alignment.centerRight,
-    index: 3,
-  ),
-  ContainerAlignmentList(
-    alignment: Alignment.topLeft,
-    index: 4,
-  ),
-  ContainerAlignmentList(
-    alignment: Alignment.topRight,
-    index: 5,
-  ),
-  ContainerAlignmentList(
-    alignment: Alignment.topCenter,
-    index: 6,
-  ),
-  ContainerAlignmentList(
-    alignment: Alignment.bottomLeft,
-    index: 7,
-  ),
-  ContainerAlignmentList(
-    alignment: Alignment.bottomRight,
-    index: 8,
-  ),
-  ContainerAlignmentList(
-    alignment: Alignment.bottomCenter,
-    index: 9,
-  ),
-];
