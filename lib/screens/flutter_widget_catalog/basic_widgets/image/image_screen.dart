@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/basic_widgets/image/tabs/image_asset_tab.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/basic_widgets/image/tabs/image_file_tab.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/basic_widgets/image/tabs/image_memory_tab.dart';
+import 'package:flutter_a2z/screens/flutter_widget_catalog/basic_widgets/image/tabs/image_network_tab.dart';
 
 class ImageScreen extends StatelessWidget {
   final String title;
@@ -7,7 +11,7 @@ class ImageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 5,
+      length: 4,
       child: Scaffold(
         appBar: AppBar(
           title: Text(title),
@@ -15,30 +19,31 @@ class ImageScreen extends StatelessWidget {
             isScrollable: true,
             tabs: [
               Tab(
-                text: 'Image',
-                icon: Icon(Icons.table_view),
-              ),
-              Tab(
                 text: 'Image.asset',
-                icon: Icon(Icons.apps_outlined),
+                icon: Icon(Icons.image_aspect_ratio_sharp),
               ),
               Tab(
                 text: 'Image.network',
-                icon: Icon(Icons.list_outlined),
+                icon: Icon(Icons.network_wifi),
               ),
               Tab(
                 text: 'Image.file',
-                icon: Icon(Icons.list_outlined),
+                icon: Icon(Icons.file_copy),
               ),
               Tab(
                 text: 'Image.memory',
-                icon: Icon(Icons.list_outlined),
+                icon: Icon(Icons.memory),
               ),
             ],
           ),
         ),
-        body: Center(
-          child: Text(title),
+        body: TabBarView(
+          children: [
+            ImageAssetTab(),
+            ImageNetworkTab(),
+            ImageFileTab(),
+            ImageMemoryTab(),
+          ],
         ),
       ),
     );

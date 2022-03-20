@@ -11,14 +11,31 @@ class ColumnScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: Center(
-        child: SingleChildScrollView(
-          padding: appScreenDefaultPadding,
-          child: Column(
-            children: [
-              Text(title),
-            ],
-          ),
+      body: Padding(
+        padding: appScreenDefaultPadding,
+        child: Column(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            Container(
+              color: Colors.red,
+              width: 200,
+              height: 100,
+            ),
+            const SizedBox(height: 5),
+            Container(
+              color: Colors.red,
+              width: 200,
+              height: 100,
+            ),
+            const SizedBox(height: 5),
+            Container(
+              color: Colors.red,
+              width: 200,
+              height: 100,
+            ),
+          ],
         ),
       ),
     );
